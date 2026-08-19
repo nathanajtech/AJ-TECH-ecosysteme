@@ -1,0 +1,6 @@
+{
+  "name": "AJ-TECH",
+  "description": "AJ-TECH — L'Écosystème Numérique Haïtien. Vision, Technologie et Avenir.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

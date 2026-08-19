@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AJ-TECH Official Palette -->
+    <color name="deep_blue_canvas">#0A192F</color>
+    <color name="deep_blue_dark">#030A16</color>
+    <color name="deep_blue_container">#102A45</color>
+    <color name="electric_blue">#0070F3</color>
+    <color name="electric_blue_glow">#00D2FF</color>
+    <color name="haitian_red">#D21034</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
