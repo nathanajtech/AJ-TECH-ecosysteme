@@ -6,8 +6,8 @@ import com.aistudio.ajtech.ecosystem.data.model.BookPart
 import com.aistudio.ajtech.ecosystem.data.model.PartType
 
 /**
- * PARTIE III — LES 21 ENTITÉS DE L'ÉCOSYSTÈME AJ-
- * Chapitres 25 à 45 (Exactement 21 entités, avec 18 rubriques obligatoires chacune).
+ * PARTIE III — LES 22 ENTITÉS DE L'ÉCOSYSTÈME AJ-
+ * Chapitres 25 à 46 (Exactement 22 entités, avec 18 rubriques obligatoires chacune).
  */
 object Part3Data {
 
@@ -15,11 +15,11 @@ object Part3Data {
         id = "part_3",
         partNumber = 3,
         type = PartType.MAIN_PART,
-        titleFr = "PARTIE III — LES 21 ENTITÉS DE L'ÉCOSYSTÈME AJ-",
-        titleHt = "PATI III — 21 ANTITE KI NAN EKOSISTÈM AJ- LA",
-        subtitleFr = "Cartographie encyclopédique, fiches d'ingénierie et feuilles de route 2026–2035",
-        subtitleHt = "Katografi ansiklopedi, fich enjenyri ak plan wout 2026–2035",
-        plannedPages = "pp. 125–230",
+        titleFr = "Partie III — Les 22 entités de l'écosystème AJ-TECH",
+        titleHt = "Pati III — 22 antite ki nan ekosistèm AJ-TECH",
+        subtitleFr = "Cartographie encyclopédique, fiches d'ingénierie et feuilles de route 2026–2035 — Pagination provisoire — à confirmer lors de la mise en page finale",
+        subtitleHt = "Katografi ansiklopedi, fich enjenyri ak plan wout 2026–2035 — Paj pwovizwa — pou konfime nan pajinasyon final la",
+        plannedPages = "pp. 47–74",
         status = BookContentStatus.IN_PROGRESS,
         chapters = listOf(
             // ==================== CHAPITRE 25 : AJ-TECH ====================
@@ -27,8 +27,8 @@ object Part3Data {
                 id = "ch_3_25",
                 chapterNumber = 25,
                 partId = "part_3",
-                titleFr = "Chapitre 25 — AJ-TECH : le noyau fondateur",
-                titleHt = "Chapit 25 — AJ-TECH : nwayo fondatè a",
+                titleFr = "Chapitre 25 — AJ-TECH",
+                titleHt = "Chapit 25 — AJ-TECH",
                 subtitleFr = "L'entreprise mère, gouvernance et clé de voûte de l'écosystème",
                 subtitleHt = "Manman konpayi an, gouvènans ak poto mitan ekosistèm nan",
                 summaryFr = "Fiche d'ingénierie et gouvernance du noyau central AJ-TECH, fondé à Port-au-Prince en 2025.",
@@ -46,7 +46,7 @@ object Part3Data {
                     
                     6. Problème résolu : Absence d'écosystème numérique intégré, dispersion des initiatives logicielles et fuite des capitaux pour des services cloud et digitaux extérieurs.
                     
-                    7. Solution proposée : Un écosystème modulaire unifié de 21 entités technologiques interconnectées par des protocoles partagés, une identité unique et une haute exigence de souveraineté.
+                    7. Solution proposée : Un écosystème modulaire unifié de 22 entités technologiques interconnectées par des protocoles partagés, une identité unique et une haute exigence de souveraineté.
                     
                     8. Public cible : Citoyens haïtiens, entreprises locales, diaspora, institutions publiques et partenaires technologiques internationaux.
                     
@@ -68,11 +68,11 @@ object Part3Data {
                     
                     15. Intégration avec AJ-TECH : Constitue la maison-mère, le socle architectural et l'autorité de gouvernance pour l'ensemble des entités.
                     
-                    16. Relations avec les autres entités : Connecté directement et transversalement à l'ensemble des 20 autres entités de l'écosystème.
+                    16. Relations avec les autres entités : Connecté directement et transversalement à l'ensemble des 21 autres entités de l'écosystème.
                     
                     17. Feuille de route 2026–2035 :
                     - Court terme (2025–2027) : Structuration juridique et technique, publication du socle open-source documentaire et développement des premières entités pilotes ;
-                    - Moyen terme (2028–2030) : Déploiement de l'infrastructure cloud souveraine (AJ-Cloud) et interconnexion des 21 piliers applicatifs ;
+                    - Moyen terme (2028–2030) : Déploiement de l'infrastructure cloud souveraine (AJ-Cloud) et interconnexion des 22 piliers applicatifs ;
                     - Long terme (2031–2035) : Consolidation de l'écosystème complet, autonomie financière durable et rayonnement caribéen.
                     
                     18. Perspectives internationales : Positionner Haïti comme un pôle caribéen d'ingénierie logicielle et exporter la suite logicielle souveraine auprès des marchés émergents et de la diaspora.
@@ -90,7 +90,7 @@ object Part3Data {
                     
                     6. Pwoblèm li rezoud : Mank yon ekosistèm nimerik entegre, eparpiyman inisyativ lojisyèl yo ak lajan k ap soti nan peyi a pou peye sèvis cloud etranje.
                     
-                    7. Solisyon li pote : Yon ekosistèm modilè inifye ki gen 21 antite teknolojik ki konekte ansanm ak pwotokòl pataje, yon idantite inik ak yon gwo respè pou souverènte done yo.
+                    7. Solisyon li pote : Yon ekosistèm modilè inifye ki gen 22 antite teknolojik ki konekte ansanm ak pwotokòl pataje, yon idantite inik ak yon gwo respè pou souverènte done yo.
                     
                     8. Moun li vize : Sitwayen ayisyen, antrepriz lokal, dyaspora, enstitisyon leta ak patnè teknolojik entènasyonal.
                     
@@ -112,17 +112,17 @@ object Part3Data {
                     
                     15. Entegrasyon ak AJ-TECH : Reprezante manman konpayi an, baz achitekti a ak otorite ki kontwole tout rès antite yo.
                     
-                    16. Relasyon ak lòt antite yo : Konekte dirèkteman ak tout 20 lòt antite ki nan ekosistèm nan.
+                    16. Relasyon ak lòt antite yo : Konekte dirèkteman ak tout 21 lòt antite ki nan ekosistèm nan.
                     
                     17. Plan wout 2026–2035 :
                     - Kout tèm (2025–2027) : Estriktirasyon legal ak teknik, piblikasyon dokimantasyon ouvè ak devlopman premye antite pilòt yo ;
-                    - Mwayen tèm (2028–2030) : Deplwaman enfrastrikti cloud souveren (AJ-Cloud) ak entèkoneksyon 21 poto mitan yo ;
+                    - Mwayen tèm (2028–2030) : Deplwaman enfrastrikti cloud souveren (AJ-Cloud) ak entèkoneksyon 22 poto mitan yo ;
                     - Long tèm (2031–2035) : Konsolidasyon ekosistèm konplè a, otonomi finansyè solid ak prezans nan tout Karayib la.
                     
                     18. Pèspektiv entènasyonal : Pozisyone Ayiti kòm yon poto mitan karibeyen nan jeni lojisyèl epi ekspòte solisyon sa yo bay lòt peyi k ap devlope ak nan dyaspora a.
                 """.trimIndent(),
-                plannedStartPage = 125,
-                plannedEndPage = 129,
+                plannedStartPage = 47,
+                plannedEndPage = 48,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -226,8 +226,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Posiblite pou anpil travayè endepandan ak ekip nan dyaspora ayisyen an ak lòt peyi k ap devlope itilize li.
                 """.trimIndent(),
-                plannedStartPage = 130,
-                plannedEndPage = 134,
+                plannedStartPage = 48,
+                plannedEndPage = 49,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -331,8 +331,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Travay ansanm ak ajans entènasyonal sou jesyon tè ak respè estanda Nasyonzini (ONU-Habitat).
                 """.trimIndent(),
-                plannedStartPage = 135,
-                plannedEndPage = 139,
+                plannedStartPage = 49,
+                plannedEndPage = 50,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -436,8 +436,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Rekonesans sètifika yo pa gwo inivèsite ak sant fòmasyon entènasyonal.
                 """.trimIndent(),
-                plannedStartPage = 140,
-                plannedEndPage = 144,
+                plannedStartPage = 51,
+                plannedEndPage = 52,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -541,8 +541,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Pèmèt moun nan dyaspora a peye bòdwo ak sèvis pou fanmi yo an Ayiti dirèkteman.
                 """.trimIndent(),
-                plannedStartPage = 145,
-                plannedEndPage = 149,
+                plannedStartPage = 52,
+                plannedEndPage = 53,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -646,8 +646,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Fasilite resevwa lajan dyaspora a voye bay fanmi yo san gwo frè ki koupe kòb la.
                 """.trimIndent(),
-                plannedStartPage = 150,
-                plannedEndPage = 154,
+                plannedStartPage = 53,
+                plannedEndPage = 54,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -751,8 +751,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Yon bon opsyon mesajri an sekirite pou tout moun nan Karayib la ak nan dyaspora a ki vle pwoteje lavi prive yo.
                 """.trimIndent(),
-                plannedStartPage = 155,
-                plannedEndPage = 159,
+                plannedStartPage = 55,
+                plannedEndPage = 56,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -801,7 +801,7 @@ object Part3Data {
                     
                     14. Modèle économique : À définir (Facturation à l'usage réel des ressources consommées et forfaits mensuels pour serveurs réservés).
                     
-                    15. Intégration avec AJ-TECH : Socle d'infrastructure sous-jacent hébergeant l'intégralité des 21 entités de l'écosystème.
+                    15. Intégration avec AJ-TECH : Socle d'infrastructure sous-jacent hébergeant l'intégralité des 22 entités de l'écosystème.
                     
                     16. Relations avec les autres entités : Connecté à toutes les entités de l'écosystème (AJ-Task, AJ-Mail, EDUKA, AJ-Bioklin, AJ-Pay, etc.).
                     
@@ -845,7 +845,7 @@ object Part3Data {
                     
                     14. Modèl ekonomik : Pou defini (Peye selon sa w itilize ak abònman chak mwa pou sèvè dedye).
                     
-                    15. Entegrasyon ak AJ-TECH : Fondasyon teknik ki kenbe epi ebèje tout 21 antite nan ekosistèm nan.
+                    15. Entegrasyon ak AJ-TECH : Fondasyon teknik ki kenbe epi ebèje tout 22 antite nan ekosistèm nan.
                     
                     16. Relasyon ak lòt antite yo : Konekte ak tout antite yo (AJ-Task, AJ-Mail, EDUKA, AJ-Bioklin, AJ-Pay, elatriye).
                     
@@ -856,8 +856,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Bay sèvis ebèjman sekou pou lòt peyi vwazen nan Karayib la (CARICOM).
                 """.trimIndent(),
-                plannedStartPage = 160,
-                plannedEndPage = 164,
+                plannedStartPage = 56,
+                plannedEndPage = 57,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -961,8 +961,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Yon solisyon ekselan pou tout lòt zile ak peyi k ap devlope ki gen menm pwoblèm entènèt la.
                 """.trimIndent(),
-                plannedStartPage = 165,
-                plannedEndPage = 169,
+                plannedStartPage = 57,
+                plannedEndPage = 58,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -1061,13 +1061,13 @@ object Part3Data {
                     
                     17. Plan wout 2026–2035 :
                     - Kout tèm (2026–2027) : Prepare sèvè tès yo epi mete tout règ sekirite entènasyonal pou imèl yo pa tonbe nan spèm ;
-                    - Mwayen tèm (2028–2030) : Sèvi ak li pou tout 21 antite AJ-TECH yo epi louvri sèvis la pou ti antrepriz lokal yo ;
+                    - Mwayen tèm (2028–2030) : Sèvi ak li pou tout 22 antite AJ-TECH yo epi louvri sèvis la pou ti antrepriz lokal yo ;
                     - Long tèm (2031–2035) : Sèvis ofisyèl pou gwo enstitisyon leta ak inivèsite nan tout peyi a.
                     
                     18. Pèspektiv entènasyonal : Mache san pwoblèm ak tout lòt sistèm imèl nan mond lan epi bay biznis ayisyen yo bon imaj entènasyonal.
                 """.trimIndent(),
-                plannedStartPage = 170,
-                plannedEndPage = 174,
+                plannedStartPage = 59,
+                plannedEndPage = 60,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -1171,8 +1171,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Fè tout mond lan dekouvri bèl kilti vizyèl ayisyen an epi vann imaj sa yo bay konpayi etranje.
                 """.trimIndent(),
-                plannedStartPage = 175,
-                plannedEndPage = 179,
+                plannedStartPage = 60,
+                plannedEndPage = 61,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -1201,7 +1201,7 @@ object Part3Data {
                     
                     6. Problème résolu : Isolement technique des développeurs locaux, manque d'environnements de test pour les solutions financières et cadastrales locales.
                     
-                    7. Solution proposée : Portail unifié pour développeurs regroupant la documentation officielle des 21 entités AJ-TECH, des kits de développement (SDKs), des exemples de code et un espace d'émulation.
+                    7. Solution proposée : Portail unifié pour développeurs regroupant la documentation officielle des 22 entités AJ-TECH, des kits de développement (SDKs), des exemples de code et un espace d'émulation.
                     
                     8. Public cible : Développeurs indépendants, étudiants en informatique, agences de développement web/mobile et startups tech.
                     
@@ -1245,7 +1245,7 @@ object Part3Data {
                     
                     6. Pwoblèm li rezoud : Devlopè ki travay poukont yo san èd, mank espas pou teste lojisyèl ak mank zouti lokal ki fyab.
                     
-                    7. Solisyon li pote : Pòtay inifye ki gen tout dokimantasyon ofisyèl sou 21 antite AJ-TECH yo, zouti SDK, egzanp kòd ak espas tès pou pwograme.
+                    7. Solisyon li pote : Pòtay inifye ki gen tout dokimantasyon ofisyèl sou 22 antite AJ-TECH yo, zouti SDK, egzanp kòd ak espas tès pou pwograme.
                     
                     8. Moun li vize : Devlopè endepandan, etidyan nan enfòmatik, konpayi k ap fè aplikasyon ak tout pasyone kòd.
                     
@@ -1276,8 +1276,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Travay ansanm ak gwo kominote open-source nan mond lan epi ede devlopè ayisyen jwenn bon kontra travay entènasyonal.
                 """.trimIndent(),
-                plannedStartPage = 180,
-                plannedEndPage = 184,
+                plannedStartPage = 61,
+                plannedEndPage = 62,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
@@ -1381,25 +1381,130 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Pataje done yo ak rezo entènasyonal OpenStreetMap epi montre kijan kominote ka bati pwòp kat pa yo.
                 """.trimIndent(),
-                plannedStartPage = 185,
-                plannedEndPage = 189,
+                plannedStartPage = 63,
+                plannedEndPage = 64,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 38 : AJ-Fondation Biz ====================
+            // ==================== CHAPITRE 38 : AJ-Fondation ====================
             BookChapter(
                 id = "ch_3_38",
                 chapterNumber = 38,
                 partId = "part_3",
-                titleFr = "Chapitre 38 — AJ-Fondation Biz",
-                titleHt = "Chapit 38 — AJ-Fondation Biz",
+                titleFr = "Chapitre 38 — AJ-Fondation",
+                titleHt = "Chapit 38 — AJ-Fondation",
+                subtitleFr = "Fondation philanthropique et bourses technologiques",
+                subtitleHt = "Fondasyon filantwopik ak bous teknolojik",
+                summaryFr = "Fiche d'ingénierie d'AJ-Fondation, bras philanthropique et social dédié à l'inclusion numérique et aux bourses d'études.",
+                summaryHt = "Fich enjenyri sou AJ-Fondation, bra filantwopik ak sosyal pou ede jèn yo jwenn bous fòmasyon ak zouti nimerik.",
+                contentFr = """
+                    1. Nom : AJ-Fondation (Fondation Philanthropique & Bourses Technologiques).
+                    
+                    2. Statut actuel officiel : CONCEPT / EN CONCEPTION. Bras philanthropique et d'impact social de l'écosystème.
+                    
+                    3. Origine du concept : Constat de la fracture numérique et de l'exclusion des jeunes talents défavorisés en Haïti par manque de moyens financiers pour accéder aux formations d'excellence.
+                    
+                    4. Mission : Soutenir l'éducation technologique, financer des bourses d'études et promouvoir l'émancipation économique par le numérique.
+                    
+                    5. Vision : Offrir une formation et des opportunités professionnelles concrètes à plus de 10 000 jeunes haïtiens défavorisés d'ici 2035.
+                    
+                    6. Problème résolu : Coût élevé du matériel informatique, manque de bourses de formation technologique et isolement des talents dans les provinces.
+                    
+                    7. Solution proposée : Programmes de bourses de formation, dons de matériel informatique reconditionné, ateliers technologiques communautaires et mentorat.
+                    
+                    8. Public cible : Jeunes talents, étudiants défavorisés, écoles communautaires, jeunes filles dans la tech et porteurs de projets à impact social.
+                    
+                    9. Fonctionnalités principales :
+                    - Bourses d'études complètes pour les filières numériques et le code ;
+                    - Dons d'ordinateurs et de kits solaires d'apprentissage ;
+                    - Hackathons et concours d'innovation sociale pour la jeunesse ;
+                    - Réseau de mentorat bénévole avec les ingénieurs d'AJ-TECH et la diaspora.
+                    
+                    10. Architecture technique : Plateforme de gestion transparente des bourses, des dons et du suivi d'impact des bénéficiaires.
+                    
+                    11. Technologies envisagées : Kotlin Compose Multiplatform, Web Portal, PostgreSQL, registre public auditable des attributions.
+                    
+                    12. Intelligence artificielle : Système de recommandation personnalisé des formations et analyse de l'impact social des cohortes de boursiers.
+                    
+                    13. Sécurité : Transparence publique des fonds alloués, audit indépendant et protection stricte des données personnelles des mineurs et boursiers.
+                    
+                    14. Modèle économique : Non lucratif / Philanthropie (Mécénat d'entreprise AJ-TECH, dons de la diaspora, subventions internationales et partenariats).
+                    
+                    15. Intégration avec AJ-TECH : Bras philanthropique finançant l'accès des apprenants méritants aux formations d'EDUKA et d'EDH.
+                    
+                    16. Relations avec les autres entités : Connecté à EDUKA, EDH, AJ-Learn et AJ-TECH.
+                    
+                    17. Feuille de route 2026–2035 :
+                    - Court terme (2026–2027) : Structuration juridique de la fondation et premier appel à candidatures pour 50 bourses pilotes ;
+                    - Moyen terme (2028–2030) : Octroi de 500 bourses annuelles et mise en place d'ateliers numériques dans 5 départements ;
+                    - Long terme (2031–2035) : Déploiement national complet avec 10 000 boursiers formés et insérés professionnellement.
+                    
+                    18. Perspectives internationales : Mobilisation de la diaspora haïtienne et partenariats avec les grandes fondations philanthropiques mondiales pour cofinancer les bourses technologiques.
+                """.trimIndent(),
+                contentHt = """
+                    1. Non : AJ-Fondation (Fondasyon Filantwopik & Bous Teknolojik).
+                    
+                    2. Estati ofisyèl kounye a : KONSÈP / AN KONSEPSYON. Bra sosyal ak filantwopik nan ekosistèm nan.
+                    
+                    3. Orijin konsèp la : Konsta anpil jèn ki gen talan an Ayiti pa ka aprann teknoloji paske yo pa gen mwayen pou peye bon fòmasyon ak achte òdinatè.
+                    
+                    4. Misyon : Soutni edikasyon teknolojik, bay bous etid epi ede jèn yo jwenn bon travay gras ak zouti nimerik.
+                    
+                    5. Vizyon : Bay plis pase 10 000 jèn ayisyen ki pa gen gwo mwayen bous fòmasyon ak opòtinite travay anvan lane 2035.
+                    
+                    6. Pwoblèm li rezoud : Mank mwayen pou peye gwo fòmasyon, òdinatè ki twò chè ak jèn nan pwovens ki pa jwenn chans devlope talan yo.
+                    
+                    7. Solisyon li pote : Pwogram bous etid, kado òdinatè ak ti sistèm solè, atelye fòmasyon gratis nan kominote yo ak konsèy pou gide jèn yo.
+                    
+                    8. Moun li vize : Jèn ki gen talan, etidyan ki pa gen anpil mwayen, lekòl kominotè, medam nan teknoloji ak pwojè sosyal.
+                    
+                    9. Fonksyonalite prensipal yo :
+                    - Bous etid konplè pou aprann pwogramasyon ak metye dijital ;
+                    - Kado òdinatè ak ti twous solè pou etidye menm kote pa gen kouran ;
+                    - Konkou inovasyon sosyal ak kreyativite pou jèn yo ;
+                    - Gid ak konsèy gratis nan men enjenyè AJ-TECH ak ekspè nan dyaspora a.
+                    
+                    10. Arkitekti teknik : Platfòm k ap jere bous ak kado yo nan transparans total ak zouti pou swiv kijan elèv yo ap pwogrese.
+                    
+                    11. Teknoloji yo prevwa itilize : Kotlin Compose Multiplatform, sitwèb, PostgreSQL, rejis piblik klè pou tout kòb ki rantre ak soti.
+                    
+                    12. Entèlijans atifisyèl : Zouti entèlijan pou oryante chak elèv nan bon fòmasyon ki koresponn ak talan l epi mezire bon enpak èd yo.
+                    
+                    13. Sekirite : Transparans total sou tout lajan k ap sèvi, kontwòl endepandan ak pwoteksyon lavi prive elèv yo.
+                    
+                    14. Modèl ekonomik : San bi likratif / Filantwopi (Èd konpayi AJ-TECH, kado dyaspora a, sibvansyon entènasyonal ak patenarya).
+                    
+                    15. Entegrasyon ak AJ-TECH : Bra sosyal k ap peye bous pou etidyan ki merite yo nan EDUKA ak EDH.
+                    
+                    16. Relasyon ak lòt antite yo : Konekte ak EDUKA, EDH, AJ-Learn ak AJ-TECH.
+                    
+                    17. Plan wout 2026–2035 :
+                    - Kout tèm (2026–2027) : Mete tout règleman fondasyon an kanpe epi bay premye 50 bous etid pilòt yo ;
+                    - Mwayen tèm (2028–2030) : Bay 500 bous chak ane epi louvri atelye fòmasyon nan 5 depatman nan peyi a ;
+                    - Long tèm (2031–2035) : Rive nan tout 10 depatman yo ak plis pase 10 000 jèn ki jwenn fòmasyon ak bon travay.
+                    
+                    18. Pèspektiv entènasyonal : Mobilize dyaspora ayisyen an ak gwo fondasyon entènasyonal pou finanse bous fòmasyon nan teknoloji.
+                """.trimIndent(),
+                plannedStartPage = 64,
+                plannedEndPage = 65,
+                estimatedReadMinutes = 5,
+                status = BookContentStatus.IN_PROGRESS
+            ),
+
+            // ==================== CHAPITRE 39 : AJ-Biz ====================
+            BookChapter(
+                id = "ch_3_39",
+                chapterNumber = 39,
+                partId = "part_3",
+                titleFr = "Chapitre 39 — AJ-Biz",
+                titleHt = "Chapit 39 — AJ-Biz",
                 subtitleFr = "Accompagnement et guichet numérique pour startups",
                 subtitleHt = "Akonpayman ak pòtay dijital pou nouvo antrepriz",
-                summaryFr = "Fiche d'ingénierie d'AJ-Fondation Biz, plateforme d'incubation numérique et de formalisation d'entreprises.",
-                summaryHt = "Fich enjenyri sou AJ-Fondation Biz, platfòm pou ede jèn yo monte biznis legal epi fè yo grandi.",
+                summaryFr = "Fiche d'ingénierie d'AJ-Biz, plateforme d'incubation numérique et de formalisation d'entreprises.",
+                summaryHt = "Fich enjenyri sou AJ-Biz, platfòm pou ede jèn yo monte biznis legal epi fè yo grandi.",
                 contentFr = """
-                    1. Nom : AJ-Fondation Biz (Accompagnement & Guichet Numérique pour Startups).
+                    1. Nom : AJ-Biz (Accompagnement & Guichet Numérique pour Startups).
                     
                     2. Statut actuel officiel : CONCEPT / EN CONCEPTION. Projet d'accompagnement entrepreneurial numérique.
                     
@@ -1433,7 +1538,7 @@ object Part3Data {
                     
                     15. Intégration avec AJ-TECH : Alimente l'écosystème en nouvelles entreprises utilisatrices des services AJ-Pay, AJ-Mail et AJ-Cloud.
                     
-                    16. Relations avec les autres entités : Connecté à AJ-Pay pour la monétisation, AJ-Mail pour la messagerie pro, AJ-Commerce pour les débouchés et AJ-TECH.
+                    16. Relations avec les autres entités : Connecté à AJ-Pay pour la monétisation, AJ-Mail pour la messagerie pro, AJ-Commerce pour les débouchés, AJ-Fondation et AJ-TECH.
                     
                     17. Feuille de route 2026–2035 :
                     - Court terme (2026–2027) : Rédaction des modèles juridiques et comptables avec des juristes locaux et prototypage de la plateforme web ;
@@ -1443,7 +1548,7 @@ object Part3Data {
                     18. Perspectives internationales : Création de ponts d'investissement entre les startups haïtiennes accompagnées et les réseaux de business angels de la diaspora nord-américaine et européenne.
                 """.trimIndent(),
                 contentHt = """
-                    1. Non : AJ-Fondation Biz (Akonpayman & Pòtay Dijital pou Nouvo Antrepriz).
+                    1. Non : AJ-Biz (Akonpayman & Pòtay Dijital pou Nouvo Antrepriz).
                     
                     2. Estati ofisyèl kounye a : KONSÈP / AN KONSEPSYON. Pwojè pou ede moun monte biznis sou entènèt.
                     
@@ -1477,7 +1582,7 @@ object Part3Data {
                     
                     15. Entegrasyon ak AJ-TECH : Nouri ekosistèm nan ak nouvo biznis ki pral itilize AJ-Pay, AJ-Mail ak AJ-Cloud.
                     
-                    16. Relasyon ak lòt antite yo : Konekte ak AJ-Pay pou peman, AJ-Mail pou bèl imèl biznis, AJ-Commerce pou vann machandiz ak AJ-TECH.
+                    16. Relasyon ak lòt antite yo : Konekte ak AJ-Pay pou peman, AJ-Mail pou bèl imèl biznis, AJ-Commerce pou vann machandiz, AJ-Fondation ak AJ-TECH.
                     
                     17. Plan wout 2026–2035 :
                     - Kout tèm (2026–2027) : Ekri tout modèl papye legal ak kontab ansanm ak avoka ayisyen epi prepare sitwèb la ;
@@ -1486,19 +1591,19 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Konekte antrepriz lokal yo ak moun nan dyaspora a ki vle envesti nan bon pwojè serye nan peyi a.
                 """.trimIndent(),
-                plannedStartPage = 190,
-                plannedEndPage = 194,
+                plannedStartPage = 65,
+                plannedEndPage = 66,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 39 : AJ-Commerce ====================
+            // ==================== CHAPITRE 40 : AJ-Commerce ====================
             BookChapter(
-                id = "ch_3_39",
-                chapterNumber = 39,
+                id = "ch_3_40",
+                chapterNumber = 40,
                 partId = "part_3",
-                titleFr = "Chapitre 39 — AJ-Commerce",
-                titleHt = "Chapit 39 — AJ-Commerce",
+                titleFr = "Chapitre 40 — AJ-Commerce",
+                titleHt = "Chapit 40 — AJ-Commerce",
                 subtitleFr = "Place de marché et commerce électronique local",
                 subtitleHt = "Mache dijital ak komès sou entènèt lokal",
                 summaryFr = "Fiche d'ingénierie d'AJ-Commerce, place de marché numérique pour les producteurs et marchands haïtiens.",
@@ -1591,19 +1696,19 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Pèmèt atizan ak moun ki fè kafe oswa kakawo an Ayiti vann dirèkteman bay kliyan nan tout mond lan.
                 """.trimIndent(),
-                plannedStartPage = 195,
-                plannedEndPage = 199,
+                plannedStartPage = 65,
+                plannedEndPage = 66,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 40 : AJ-MathQuest ====================
+            // ==================== CHAPITRE 41 : AJ-MathQuest ====================
             BookChapter(
-                id = "ch_3_40",
-                chapterNumber = 40,
+                id = "ch_3_41",
+                chapterNumber = 41,
                 partId = "part_3",
-                titleFr = "Chapitre 40 — AJ-MathQuest",
-                titleHt = "Chapit 40 — AJ-MathQuest",
+                titleFr = "Chapitre 41 — AJ-MathQuest",
+                titleHt = "Chapit 41 — AJ-MathQuest",
                 subtitleFr = "Apprentissage ludo-éducatif des mathématiques et de la logique",
                 subtitleHt = "Aprann matematik ak lojik nan jwèt amizan",
                 summaryFr = "Fiche d'ingénierie d'AJ-MathQuest, application gamifiée pour l'apprentissage des sciences et du raisonnement logique.",
@@ -1696,19 +1801,19 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Tradui jwèt la an lòt lang pou lòt timoun nan Karayib la ak Lafrik ka itilize l tou.
                 """.trimIndent(),
-                plannedStartPage = 200,
-                plannedEndPage = 204,
+                plannedStartPage = 67,
+                plannedEndPage = 68,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 41 : AJ-Bioklin ====================
+            // ==================== CHAPITRE 42 : AJ-Bioklin ====================
             BookChapter(
-                id = "ch_3_41",
-                chapterNumber = 41,
+                id = "ch_3_42",
+                chapterNumber = 42,
                 partId = "part_3",
-                titleFr = "Chapitre 41 — AJ-Bioklin",
-                titleHt = "Chapit 41 — AJ-Bioklin",
+                titleFr = "Chapitre 42 — AJ-Bioklin",
+                titleHt = "Chapit 42 — AJ-Bioklin",
                 subtitleFr = "Dossier médical numérique et gestion clinique",
                 subtitleHt = "Dosye medikal dijital ak jesyon lopital",
                 summaryFr = "Fiche d'ingénierie d'AJ-Bioklin, projet de dossier médical partagé et de gestion hospitalière sécurisée.",
@@ -1801,19 +1906,19 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Respekte tout prensip Òganizasyon Mondyal Lasante (OMS) sou zafè sante dijital.
                 """.trimIndent(),
-                plannedStartPage = 205,
-                plannedEndPage = 209,
+                plannedStartPage = 68,
+                plannedEndPage = 69,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 42 : AJ-Fitness ====================
+            // ==================== CHAPITRE 43 : AJ-Fitness ====================
             BookChapter(
-                id = "ch_3_42",
-                chapterNumber = 42,
+                id = "ch_3_43",
+                chapterNumber = 43,
                 partId = "part_3",
-                titleFr = "Chapitre 42 — AJ-Fitness",
-                titleHt = "Chapit 42 — AJ-Fitness",
+                titleFr = "Chapitre 43 — AJ-Fitness",
+                titleHt = "Chapit 43 — AJ-Fitness",
                 subtitleFr = "Bien-être, activité physique et nutrition équilibrée",
                 subtitleHt = "Byenèt, aktivite fizik ak bon manje pou lasante",
                 summaryFr = "Fiche d'ingénierie d'AJ-Fitness, application de santé préventive, remise en forme et nutrition adaptée aux produits locaux.",
@@ -1906,19 +2011,19 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Ede moun nan dyaspora a jwenn bon konsèy sante ki pale de manje kilti pa nou.
                 """.trimIndent(),
-                plannedStartPage = 210,
-                plannedEndPage = 214,
+                plannedStartPage = 69,
+                plannedEndPage = 70,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 43 : AJ-Assistant ====================
+            // ==================== CHAPITRE 44 : AJ-Assistant ====================
             BookChapter(
-                id = "ch_3_43",
-                chapterNumber = 43,
+                id = "ch_3_44",
+                chapterNumber = 44,
                 partId = "part_3",
-                titleFr = "Chapitre 43 — AJ-Assistant",
-                titleHt = "Chapit 43 — AJ-Assistant",
+                titleFr = "Chapitre 44 — AJ-Assistant",
+                titleHt = "Chapit 44 — AJ-Assistant",
                 subtitleFr = "Intelligence artificielle conversationnelle bilingue et souveraine",
                 subtitleHt = "Entèlijans atifisyèl konvèsasyonèl bileng ak souveren",
                 summaryFr = "Fiche d'ingénierie d'AJ-Assistant, modèle d'intelligence artificielle contextuel bilingue (Créole / Français).",
@@ -1956,7 +2061,7 @@ object Part3Data {
                     
                     14. Modèle économique : Version standard gratuite pour le grand public, API facturée à l'usage pour les développeurs et entreprises intégrant l'assistant.
                     
-                    15. Intégration avec AJ-TECH : Cerveau transversal et interface vocale universelle pour l'ensemble des 20 autres entités de l'écosystème.
+                    15. Intégration avec AJ-TECH : Cerveau transversal et interface vocale universelle pour l'ensemble des 21 autres entités de l'écosystème.
                     
                     16. Relations avec les autres entités : Connecté à AJ-Task (gestion vocale de tâches), EDUKA (tuteur scolaire), AJ-Bioklin (orientation santé) et AJ-Maps.
                     
@@ -2000,7 +2105,7 @@ object Part3Data {
                     
                     14. Modèl ekonomik : Gratis pou tout moun senp, API peye pou gwo biznis ki vle mete asistan an sou sitwèb pa yo.
                     
-                    15. Entegrasyon ak AJ-TECH : Sèvi kòm sèvo santral ak gid vwa pou tout 20 lòt pwojè nan ekosistèm nan.
+                    15. Entegrasyon ak AJ-TECH : Sèvi kòm sèvo santral ak gid vwa pou tout 21 lòt pwojè nan ekosistèm nan.
                     
                     16. Relasyon ak lòt antite yo : Konekte ak AJ-Task (ajoute travay ak vwa), EDUKA (ede elèv etidye), AJ-Bioklin ak AJ-Maps.
                     
@@ -2011,19 +2116,19 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Travay ak lòt inivèsite nan Karayib la pou pwoteje ak devlope lang Kreyòl la nan lemonn dijital.
                 """.trimIndent(),
-                plannedStartPage = 215,
-                plannedEndPage = 219,
+                plannedStartPage = 71,
+                plannedEndPage = 72,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 44 : EDUKA ====================
+            // ==================== CHAPITRE 45 : EDUKA ====================
             BookChapter(
-                id = "ch_3_44",
-                chapterNumber = 44,
+                id = "ch_3_45",
+                chapterNumber = 45,
                 partId = "part_3",
-                titleFr = "Chapitre 44 — EDUKA",
-                titleHt = "Chapit 44 — EDUKA",
+                titleFr = "Chapitre 45 — EDUKA",
+                titleHt = "Chapit 45 — EDUKA",
                 subtitleFr = "Système intégré de gestion scolaire et pédagogie numérique",
                 subtitleHt = "Sistèm entegre pou jesyon lekòl ak liv dijital",
                 summaryFr = "Fiche d'ingénierie d'EDUKA, système de gestion scolaire et d'accès aux manuels scolaires numériques.",
@@ -2116,19 +2221,19 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Pataje modèl sa a ak lòt peyi nan Karayib la ak Lafrik ki gen menm defi nan lekòl yo.
                 """.trimIndent(),
-                plannedStartPage = 220,
-                plannedEndPage = 224,
+                plannedStartPage = 72,
+                plannedEndPage = 73,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 45 : EDH ====================
+            // ==================== CHAPITRE 46 : EDH ====================
             BookChapter(
-                id = "ch_3_45",
-                chapterNumber = 45,
+                id = "ch_3_46",
+                chapterNumber = 46,
                 partId = "part_3",
-                titleFr = "Chapitre 45 — EDH",
-                titleHt = "Chapit 45 — EDH",
+                titleFr = "Chapitre 46 — EDH",
+                titleHt = "Chapit 46 — EDH",
                 subtitleFr = "École de Développement d'Haïti et académie de leadership technologique",
                 subtitleHt = "Lekòl Devlopman Ayiti ak akademi lidèchip teknolojik",
                 summaryFr = "Fiche d'ingénierie d'EDH, académie d'excellence formant les futurs leaders et ingénieurs de l'écosystème.",
@@ -2212,7 +2317,7 @@ object Part3Data {
                     
                     15. Entegrasyon ak AJ-TECH : Sèvi kòm gwo sous konesans ak rechèch ki fòme tout gwo direktè teknik ak enjenyè pou ekosistèm nan.
                     
-                    16. Relasyon ak lòt antite yo : Konekte ak AJ-Learn pou chwazi pi bon etidyan yo, AJ-Dev pou zouti kòd ak tout rès 20 antite yo pou fè pratik.
+                    16. Relasyon ak lòt antite yo : Konekte ak AJ-Learn pou chwazi pi bon etidyan yo, AJ-Dev pou zouti kòd ak tout rès 21 antite yo pou fè pratik.
                     
                     17. Plan wout 2026–2035 :
                     - Kout tèm (2026–2027) : Prepare tout pwogram kou ekselans yo ansanm ak gwo pwofesè inivèsite ak enjenyè nan dyaspora a ;
@@ -2221,8 +2326,8 @@ object Part3Data {
                     
                     18. Pèspektiv entènasyonal : Travay ansanm ak pi gwo inivèsite teknoloji nan Karayib la, Etazini, Kanada ak Ewòp.
                 """.trimIndent(),
-                plannedStartPage = 225,
-                plannedEndPage = 230,
+                plannedStartPage = 73,
+                plannedEndPage = 74,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             )

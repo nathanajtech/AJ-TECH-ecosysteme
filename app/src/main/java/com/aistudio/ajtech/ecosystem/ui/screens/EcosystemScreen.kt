@@ -102,7 +102,7 @@ fun EcosystemScreen(
                             )
                         )
                         Text(
-                            text = if (isFr) "Architecture des 21 Entités" else "Arkitekti 21 Antite yo",
+                            text = if (isFr) "Architecture des 22 Entités" else "Arkitekti 22 Antite yo",
                             style = MaterialTheme.typography.titleMedium.copy(
                                 color = PureWhite,
                                 fontWeight = FontWeight.Bold
@@ -155,7 +155,7 @@ fun EcosystemScreen(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Text(
-                                text = if (isFr) "21 entités officielles" else "21 antite ofisyèl",
+                                text = if (isFr) "22 entités officielles" else "22 antite ofisyèl",
                                 style = MaterialTheme.typography.titleMedium.copy(
                                     color = PureWhite,
                                     fontWeight = FontWeight.Bold
@@ -166,7 +166,7 @@ fun EcosystemScreen(
                                 shape = RoundedCornerShape(8.dp)
                             ) {
                                 Text(
-                                    text = "Total : 21 entités",
+                                    text = "Total : 22 entités",
                                     style = MaterialTheme.typography.labelSmall.copy(
                                         color = ElectricBlueGlow,
                                         fontWeight = FontWeight.Bold
@@ -178,9 +178,9 @@ fun EcosystemScreen(
 
                         Text(
                             text = if (isFr) {
-                                "AJ-TECH est l'entreprise mère et le noyau central. L'écosystème regroupe 21 entités standardisées selon 18 rubriques éditoriales rigoureuses."
+                                "AJ-TECH est l'entreprise mère et le noyau central. L'écosystème regroupe 22 entités standardisées selon 18 rubriques éditoriales rigoureuses."
                             } else {
-                                "AJ-TECH se konpayi manman an ak nwayo santral la. Ekosistèm nan rasanble 21 antite estandadize selon 18 ribrik editoryal egzak."
+                                "AJ-TECH se konpayi manman an ak nwayo santral la. Ekosistèm nan rasanble 22 antite estandadize selon 18 ribrik editoryal egzak."
                             },
                             style = MaterialTheme.typography.bodySmall.copy(
                                 color = PureWhite.copy(alpha = 0.85f),
@@ -201,7 +201,7 @@ fun EcosystemScreen(
                             Text("↓", color = ElectricBlueGlow, fontWeight = FontWeight.Bold)
                             HierarchyNode(title = "ÉCOSYSTÈME", subtitle = if (isFr) "Fédération" else "Federasyon")
                             Text("↓", color = ElectricBlueGlow, fontWeight = FontWeight.Bold)
-                            HierarchyNode(title = "21 ENTITÉS", subtitle = if (isFr) "Piliers" else "Poto Mitan")
+                            HierarchyNode(title = "22 ENTITÉS", subtitle = if (isFr) "Piliers" else "Poto Mitan")
                         }
                     }
                 }
@@ -215,7 +215,7 @@ fun EcosystemScreen(
                         .testTag("search_entities_field"),
                     placeholder = {
                         Text(
-                            text = if (isFr) "Rechercher parmi les 21 entités..." else "Chèche nan 21 antite yo...",
+                            text = if (isFr) "Rechercher parmi les 22 entités..." else "Chèche nan 22 antite yo...",
                             color = PureWhite.copy(alpha = 0.5f),
                             fontSize = 13.sp
                         )
@@ -263,7 +263,7 @@ fun EcosystemScreen(
                         onClick = { selectedStatusFilter = null },
                         label = {
                             Text(
-                                text = if (isFr) "Toutes (21)" else "Tout (21)",
+                                text = if (isFr) "Toutes (22)" else "Tout (22)",
                                 fontWeight = if (selectedStatusFilter == null) FontWeight.Bold else FontWeight.Normal
                             )
                         },
@@ -901,7 +901,7 @@ private fun EntityDetailView(
             shape = RoundedCornerShape(12.dp)
         ) {
             Text(
-                text = if (isFr) "Retour à la liste des 21 entités" else "Retounen nan lis 21 antite yo",
+                text = if (isFr) "Retour à la liste des 22 entités" else "Retounen nan lis 22 antite yo",
                 style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Bold)
             )
         }

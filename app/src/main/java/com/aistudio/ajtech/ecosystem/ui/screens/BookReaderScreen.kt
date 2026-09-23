@@ -436,7 +436,18 @@ fun BookReaderScreen(
                                 // Native Android Share Extrait
                                 IconButton(
                                     onClick = {
-                                        val shareText = "« ${activeChapter.title(activeLanguage)} »\n${activeChapter.subtitle(activeLanguage)}\n\n${activeChapter.content(activeLanguage)}\n\n— Extrait du livre : AJ-TECH, L'Écosystème Numérique Haïtien (Jonathan Germain)"
+                                        val summaryText = if (activeLanguage == BookLanguage.KREYOL) activeChapter.summaryHt else activeChapter.summaryFr
+                                        val shareText = """
+                                            « ${activeChapter.titleFr} »
+                                            « ${activeChapter.titleHt} »
+                                            
+                                            $summaryText
+                                            
+                                            ${activeChapter.content(activeLanguage)}
+                                            
+                                            — Extrait officiel du livre : AJ-TECH — L'Écosystème Numérique Haïtien (Jonathan Germain)
+                                            « L’innovation haïtienne au service du monde »
+                                        """.trimIndent()
                                         val sendIntent = Intent().apply {
                                             action = Intent.ACTION_SEND
                                             putExtra(Intent.EXTRA_TEXT, shareText)

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AJ-TECH</string>
+    <string name="loading_initializing_firebase">Initialisation de Firebase…</string>
+    <string name="loading_syncing_ecosystem">Chargement de l\'écosystème AJ-TECH…</string>
+    <string name="loading_syncing_data">Synchronisation sécurisée des données…</string>
+    <string name="loading_subtext">Connexion à l\'infrastructure cloud en cours</string>
 </resources>

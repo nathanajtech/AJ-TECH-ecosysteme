@@ -7,7 +7,8 @@ import com.aistudio.ajtech.ecosystem.data.model.PartType
 
 /**
  * PARTIE IV — ARCHITECTURE TECHNOLOGIQUE D'AJ-TECH
- * Chapitres 46 à 60 (Exactement 15 chapitres d'ingénierie logicielle et infrastructure).
+ * Chapitres 47 à 61 (Exactement 15 chapitres d'ingénierie logicielle et infrastructure).
+ * Pagination : pp. 75–94 (Pagination provisoire — à confirmer lors de la mise en page finale).
  */
 object Part4Data {
 
@@ -16,725 +17,753 @@ object Part4Data {
         partNumber = 4,
         type = PartType.MAIN_PART,
         titleFr = "PARTIE IV — ARCHITECTURE TECHNOLOGIQUE",
-        titleHt = "PATI IV — ACHITEKTI TEKNOLOJIK",
+        titleHt = "PATI IV — ACHITEKTI TEKNOLOJIK AJ-TECH",
         subtitleFr = "Ingénierie logicielle, protocoles, robustesse offline et vision d'infrastructure 2026–2035",
         subtitleHt = "Enjenyri lojisyèl, pwotokòl, fonksyone san entènèt ak plan enfrastrikti 2026–2035",
-        plannedPages = "pp. 231–285",
+        plannedPages = "pp. 75–94",
         status = BookContentStatus.IN_PROGRESS,
         chapters = listOf(
-            // ==================== CHAPITRE 46 : L'architecture globale d'AJ-TECH ====================
-            BookChapter(
-                id = "ch_4_46",
-                chapterNumber = 46,
-                partId = "part_4",
-                titleFr = "Chapitre 46 — L'architecture globale d'AJ-TECH",
-                titleHt = "Chapit 46 — Achitekti jeneral AJ-TECH",
-                subtitleFr = "Fondations modulaires, séparation des responsabilités et cartographie systémique",
-                subtitleHt = "Fondasyon modilè, separasyon wòl yo ak kat jeneral sistèm nan",
-                summaryFr = "Vue d'ensemble de l'architecture systémique d'AJ-TECH, distinguant les briques logicielles actuelles, les prototypes et l'infrastructure cible.",
-                summaryHt = "Vizyon jeneral sou achitekti sistèm AJ-TECH la, ki eksplike sa ki la kounye a, sa k nan tès ak sa ki planifye pou pi devan.",
-                contentFr = """
-                    1. Principes directeurs de l'architecture :
-                    L'architecture logicielle d'AJ-TECH repose sur trois impératifs cardinaux : la modularité stricte, la résilience face aux pannes de connectivité (Offline-First) et l'évolutivité progressive sans dette technique toxique.
-                    
-                    2. Distinctions technologiques fondamentales :
-                    - Technologies réellement utilisées aujourd'hui dans l'application mobile de référence : Kotlin, Jetpack Compose, Material 3, architecture MVVM (Model-View-ViewModel), repositories en mémoire typés (BookRepository, EcosystemRepository), recherche textuelle bilingue temps réel, système d'onglets de navigation Compose, suite de tests locaux JVM avec Robolectric sous le namespace « com.aistudio.ajtech.ecosystem ».
-                    - Technologies présentes dans le prototype : Architecture Progressive Web App (PWA) pour AJ-Task, exploitation de Service Workers pour la mise en cache applicative et IndexedDB pour la persistance locale sur le poste client.
-                    - Technologies envisagées à moyen terme : Moteurs de persistance Room / DataStore sur Android, API Gateway unifiée, microservices d'authentification centralisée (AJ-ID) et services backends conteneurisés.
-                    - Technologies futures : Infrastructure physique de serveurs distribués en Haïti (AJ-Cloud), protocoles cryptographiques sur puces matérielles (HSM pour AJ-Pay/AJ-Wallet) et fédération inter-îles caribéenne.
-                    
-                    3. Séparation des couches logicielles :
-                    L'écosystème isole rigoureusement la couche de présentation (UI déclarative réactive), la couche de domaine (logique métier et filtrage) et la couche de données (abstraction via des repositories). Cette séparation garantit que l'interface utilisateur peut être entièrement redessinée ou adaptée sans impacter la logique métier ou la structure des entités.
-                    
-                    4. Avantages et limites de l'architecture actuelle :
-                    - Avantages : Rapidité d'exécution extrême, zéro latence réseau, indépendance énergétique et réseau totale, couverture de tests instantanée sur machine virtuelle locale.
-                    - Limites actuelles : Absence actuelle de synchronisation automatique multi-appareils dans l'application compagnon, persistance limitée au cycle de vie de l'application et absence de base de données relationnelle distante en production à ce jour.
-                """.trimIndent(),
-                contentHt = """
-                    1. Prensip debaz achitekti a :
-                    Achitekti lojisyèl AJ-TECH chita sou twa gwo prensip : modilarite solid, kapasite pou travay san entènèt (Offline-First) ak posibilite pou grandi etap pa etap san kreye vye erè nan kòd la.
-                    
-                    2. Diferans klè nan nivo teknoloji yo :
-                    - Teknoloji k ap itilize tout bon vre jodi a nan aplikasyon referans lan : Kotlin, Jetpack Compose, Material 3, achitekti MVVM (Model-View-ViewModel), depo done nan memwa (BookRepository, EcosystemRepository), rechèch tèks bileng an tan reyèl, navigasyon Compose, tès lokal sou machin ak Robolectric anba namespace « com.aistudio.ajtech.ecosystem ».
-                    - Teknoloji ki nan pwototip : Achitekti Progressive Web App (PWA) pou AJ-Task, itilizasyon Service Workers pou sere paj nan navigatè a ak IndexedDB pou sere done sou machin itilizatè a.
-                    - Teknoloji nou prevwa itilize talè konsa : Room ak DataStore pou sere done sou Android, API Gateway santral, mikwosèvis pou idantite inik (AJ-ID) ak sèvè backend.
-                    - Teknoloji pou pi devan : Enfrastrikti sèvè fizik an Ayiti (AJ-Cloud), sekirite materyèl pou lajan (AJ-Pay/AJ-Wallet) ak koneksyon ak lòt peyi nan Karayib la.
-                    
-                    3. Separasyon wòl yo nan kòd la :
-                    Sistèm nan separe aklè pati k ap afiche sou ekran an (UI Compose), pati ki gen règ ak lojik yo (Domain) ak pati ki kenbe done yo (Data/Repositories). Sa pèmèt nou chanje fòm ekran an san nou pa kraze règ biznis yo.
-                    
-                    4. Avantaj ak limit achitekti aktyèl la :
-                    - Avantaj : Li rapid anpil, li pa bezwen entènèt pou l mache, li pa pran tan pou l ouvri, epi tès yo pase rapid sou òdinatè.
-                    - Limit kounye a : Li poko ka voye done otomatikman soti sou yon telefòn pou al sou yon lòt, epi li poko konekte ak yon gwo baz done sou entènèt nan nivo pwodiksyon.
-                """.trimIndent(),
-                plannedStartPage = 231,
-                plannedEndPage = 234,
-                estimatedReadMinutes = 5,
-                status = BookContentStatus.IN_PROGRESS
-            ),
-
-            // ==================== CHAPITRE 47 : Kotlin et Jetpack Compose ====================
+            // ==================== CHAPITRE 47 : L'architecture comme fondation ====================
             BookChapter(
                 id = "ch_4_47",
                 chapterNumber = 47,
                 partId = "part_4",
-                titleFr = "Chapitre 47 — Kotlin et Jetpack Compose",
-                titleHt = "Chapit 47 — Kotlin ak Jetpack Compose",
-                subtitleFr = "Le paradigme déclaratif moderne au service de la performance et de la lisibilité",
-                subtitleHt = "Fason modèn pou kreye ekran rapid, bèl epi fasil pou modifye",
-                summaryFr = "Analyse approfondie de l'utilisation de Kotlin et Jetpack Compose dans l'application AJ-TECH.",
-                summaryHt = "Eksplikasyon detaye sou fason nou itilize Kotlin ak Jetpack Compose nan aplikasyon AJ-TECH la.",
+                titleFr = "Chapitre 47 — L'architecture comme fondation",
+                titleHt = "Chapit 47 — Achitekti kòm fondasyon",
+                subtitleFr = "Une conception logicielle cohérente, modulaire et adaptée aux réalités haïtiennes",
+                subtitleHt = "Yon konsepsyon lojisyèl ki klè, modilè epi ki adapte ak reyalite peyi d Ayiti",
+                summaryFr = "Présentation des principes architecturaux fondamentaux garantissant la modularité, la robustesse et l'adéquation au contexte infrastructurel haïtien.",
+                summaryHt = "Prezantasyon gwo prensip achitekti ki garanti sistèm nan byen separe, solid epi adapte ak kontèks difisil Ayiti a.",
                 contentFr = """
-                    1. Choix du langage Kotlin :
-                    Kotlin a été retenu comme langage de référence pour l'application Android d'AJ-TECH en raison de sa concision, de sa sécurité vis-à-vis des pointeurs nuls (Null Safety), de la richesse de ses fonctions d'extension et du support natif des coroutines pour le traitement asynchrone non-bloquant.
+                    1. L'architecture au cœur de la pérennité :
+                    Une architecture logicielle n'est pas un simple assemblage d'outils techniques à la mode ; elle constitue la colonne vertébrale garantissant qu'un système peut grandir sans s'effondrer sous son propre poids. Pour AJ-TECH, concevoir l'architecture comme fondation signifie bâtir des structures claires, documentées et découpées en responsabilités précises.
                     
-                    2. L'interface déclarative avec Jetpack Compose :
-                    Contrairement à l'ancien paradigme XML basé sur l'impératif et la manipulation d'arbres de vues instables, Jetpack Compose décrit l'interface utilisateur comme une fonction directe de son état. Dès que l'état change, le moteur de rendu recompose uniquement les éléments visuels modifiés.
+                    2. Adaptation aux réalités haïtiennes :
+                    Développer en Haïti impose des contraintes spécifiques que les architectures occidentales traditionnelles ignorent souvent :
+                    - Instabilité énergétique récurrente et coupures d'électricité ;
+                    - Connectivité internet intermittente, coûteuse ou à bande passante réduite ;
+                    - Hétérogénéité du parc de terminaux mobiles avec prédominance d'appareils aux ressources mémoires limitées.
+                    L'architecture d'AJ-TECH intègre ces contraintes dès le premier jour par la légèreté du code, l'autonomie locale et la résilience matérielle.
                     
-                    3. Système de Design Material 3 :
-                    L'application s'appuie sur la bibliothèque Material 3 (M3) pour garantir une cohérence esthétique irréprochable :
-                    - Typographie hiérarchisée adaptée à la lecture prolongée d'ouvrages volumineux ;
-                    - Palette dynamique respectant les contrastes d'accessibilité en mode clair et sombre ;
-                    - Composants natifs optimisés : Scaffolds, TopAppBars, NavigationBars, Modals, Cards et Badges.
+                    3. Modularité et découplage :
+                    Chaque composant applicatif est conçu comme une brique indépendante reliée par des interfaces stables. Cette modularité permet de faire évoluer un sous-système (par exemple le moteur de stockage ou l'interface utilisateur) sans risquer de déstabiliser l'ensemble de l'écosystème des 22 entités.
                     
-                    4. Pratiques d'ingénierie et bonnes pratiques Compose :
-                    - Découpage en fonctions composables atomiques et réutilisables ;
-                    - Utilisation de paramètres immuables pour favoriser le saut de recomposition (recomposition skipping) ;
-                    - Utilisation de `remember` et `derivedStateOf` pour éviter les recalculs superflus lors du défilement ou des frappes de recherche.
+                    4. Trajectoire d'évolution transparente :
+                    - 🟢 Opérationnel : Architecture modulaire de l'application compagnon mobile (Kotlin, Jetpack Compose, MVVM) ;
+                    - 🟡 En développement / Prototype : Architecture PWA pour AJ-Task ;
+                    - 🔵 Concept : Passerelle unifiée d'interconnexion de l'écosystème ;
+                    - ⚪ Vision future : Infrastructure décentralisée multisite sur le territoire national.
                 """.trimIndent(),
                 contentHt = """
-                    1. Poukisa nou chwazi langaj Kotlin :
-                    Nou chwazi Kotlin kòm langaj prensipal pou aplikasyon Android AJ-TECH la paske kòd li kout, li anpeche aplikasyon an kraze sou erè vid (Null Safety), li gen bèl zouti pou trete travay an paralèl (Coroutines) san telefòn lan pa ralanti.
+                    1. Achitekti se fondasyon tout bagay :
+                    Yon bon achitekti lojisyèl se pa sèlman chwazi dènye zouti alamòd yo ; se fondasyon ki pèmèt yon sistèm grandi san li pa kraze. Pou AJ-TECH, konsidere achitekti a kòm yon fondasyon vle di kreye estrikti ki klè, byen dokimante epi kote chak pati gen yon wòl egzak.
                     
-                    2. Ekran deklaratif ak Jetpack Compose :
-                    Olye nou itilize vye sistèm XML ki te konplike pou jere, Jetpack Compose pèmèt nou ekri kijan ekran an dwe parèt selon done ki disponib yo. Kou done yo chanje, se sèl ti pati ki chanje a ki re-desine sou ekran an.
+                    2. Adapte ak reyalite peyi d Ayiti :
+                    Kreye lojisyèl pou Ayiti mande pou nou pran an kont difikilte espesyal ki genyen nan peyi a :
+                    - Kouran ki koupe souvan ak pwoblèm enèji ;
+                    - Entènèt ki pa toujou la, ki koute chè oswa ki pa gen gwo debi ;
+                    - Telefòn ki pa gen gwo memwa oswa gwo processeur.
+                    Achitekti AJ-TECH la pran tout bagay sa yo an kont depi nan premye liy kòd la gras ak yon kòd ki lejè epi ki kapab travay san entènèt.
                     
-                    3. Sistèm Design Material 3 :
-                    Aplikasyon an sèvi ak Material 3 (M3) pou l gen yon aparans pwòp ak pwofesyonèl :
-                    - Ekriti ki byen klè ki fè li fasil pou li gwo liv ak atik long san je pa fatige ;
-                    - Koulè ki byen separe pou moun ka wè byen ni lajounen ni lannwit ;
-                    - Bonjan bouton, meni, bwat mesaj ak kat enfòmasyon ki respekte tout estanda entènasyonal yo.
+                    3. Sistèm modilè ki separe byen :
+                    Chak pati nan aplikasyon an fèt tankou yon blòk endepandan ki konekte ak lòt yo gras ak kòmand klè. Sa pèmèt nou chanje yon pati nan kòd la san nou pa kraze rès 22 antite yo.
                     
-                    4. Bon prensip nan kòd Compose nou an :
-                    - Separe chak ti moso ekran an ti moso kòd senp nou ka re-itilize ;
-                    - Fè kòd la pa re-kalkile menm bagay yo plizyè fwa san rezon ;
-                    - Itilize `remember` pou kalkil rechèch yo pa ralanti lè itilizatè a ap defile paj yo.
+                    4. Eta reyèl pwojè a an tout transparans :
+                    - 🟢 Sa k ap mache jodi a : Achitekti modilè aplikasyon referans lan (Kotlin, Compose, MVVM) ;
+                    - 🟡 Pwototip k ap devlope : Achitekti PWA pou AJ-Task ;
+                    - 🔵 Konsèp : Pòtay inifye pou konekte tout sistèm nan ;
+                    - ⚪ Vizyon pou lavni : Enfrastrikti distribye nan plizyè zòn nan peyi a.
                 """.trimIndent(),
-                plannedStartPage = 235,
-                plannedEndPage = 238,
+                plannedStartPage = 75,
+                plannedEndPage = 76,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 48 : Architecture MVVM ====================
+            // ==================== CHAPITRE 48 : Progressive Web Apps et accessibilité ====================
             BookChapter(
                 id = "ch_4_48",
                 chapterNumber = 48,
                 partId = "part_4",
-                titleFr = "Chapitre 48 — Architecture MVVM",
-                titleHt = "Chapit 48 — Achitekti MVVM",
-                subtitleFr = "Model-View-ViewModel : flux unidirectionnel des données et séparation des rôles",
-                subtitleHt = "Model-View-ViewModel : chemen done yo nan yon sèl sans ak bon lòd nan kòd la",
-                summaryFr = "Présentation du pattern MVVM et du flux de données unidirectionnel (UDF) appliqué à l'écosystème AJ-TECH.",
-                summaryHt = "Prezantasyon sou modèl MVVM ak jan done yo sikile nan yon sèl sans (UDF) nan aplikasyon an.",
+                titleFr = "Chapitre 48 — Progressive Web Apps et accessibilité",
+                titleHt = "Chapit 48 — Progressive Web Apps ak aksè pou tout moun",
+                subtitleFr = "PWA, installation universelle, responsive design, faible consommation et multiplateforme",
+                subtitleHt = "PWA, enstalasyon fasil sou tout aparèy, konsepsyon fleksib ak lekti pou tout moun",
+                summaryFr = "Exploration du modèle Progressive Web App (PWA) garantissant l'accès universel, l'installation sans friction et la frugalité numérique.",
+                summaryHt = "Eksplikasyon sou fason PWA pèmèt aplikasyon yo louvri sou nenpòt aparèy san telechajman lou epi san gaspiye entènèt.",
                 contentFr = """
-                    1. Définition et rôle du pattern MVVM :
-                    L'architecture Model-View-ViewModel (MVVM) structure le code applicatif en trois strates distinctes :
-                    - Modèle (Model) : Représente les entités de données pures (BookPart, BookChapter, EcosystemEntity, MetricItem).
-                    - Vue (View) : Composables Jetpack Compose purs qui observent l'état et émettent des événements utilisateurs.
-                    - ViewModel : Détenteur de l'état de l'écran, insensible aux recréations d'activité, encapsulant la logique de présentation et orchestrant les interactions avec les repositories.
+                    1. Le modèle Progressive Web App (PWA) :
+                    Une PWA combine le meilleur du Web et des applications natives. Accessible directement via une simple URL, elle offre une expérience fluide, peut être installée sur l'écran d'accueil sans passer par des magasins d'applications lourds, et fonctionne même en cas de rupture de réseau.
                     
-                    2. Le flux unidirectionnel des données (UDF - Unidirectional Data Flow) :
-                    Dans l'architecture AJ-TECH, les données circulent dans un sens unique :
-                    - L'état (UI State) descend du ViewModel vers les Composables via des flux `StateFlow` ou `mutableStateOf`.
-                    - Les événements utilisateurs (clic sur un chapitre, saisie d'un filtre, bascule linguistique FR/HT, ajout d'un signet) remontent des Composables vers le ViewModel sous forme de rappels d'événements (callbacks).
+                    2. Frugalité et faible consommation :
+                    Dans le contexte haïtien où le coût des données mobiles (data) pèse lourdement sur le budget des utilisateurs, les PWA permettent une réduction drastique de la taille des téléchargements (souvent moins de 5 Mo contre 50 à 100 Mo pour une application native classique) et optimisent la consommation de batterie.
                     
-                    3. Avantages pour la robustesse et la maintenabilité :
-                    - Testabilité maximale : La logique métier peut être testée unitairement sans instancier le moteur graphique Android.
-                    - Prévisibilité : Aucun composant d'interface ne peut modifier l'état directement de manière anarchique.
-                    - Résilience aux changements de configuration : L'état de lecture, la requête de recherche et la position de défilement restent préservés.
+                    3. Responsive Design et accessibilité universelle :
+                    L'interface s'adapte automatiquement à toutes les résolutions : smartphones d'entrée de gamme, tablettes, ordinateurs de bureau ou navigateurs allégés. L'accessibilité inclut également le respect des contrastes de couleurs, la taille minimale des zones tactiles (≥48dp) et la compatibilité avec les lecteurs d'écran.
+                    
+                    4. Application concrète au sein d'AJ-TECH :
+                    - 🟢 Opérationnel : Principes d'accessibilité et de design réactif dans l'application compagnon Android ;
+                    - 🟡 En développement / Prototype : Prototype PWA d'AJ-Task avec Service Workers et manifeste web pour installation directe ;
+                    - ⚪ Vision future : Déploiement multiplateforme universel des interfaces de gestion citoyenne et éducative.
                 """.trimIndent(),
                 contentHt = """
-                    1. Kisa modèl MVVM ye epi ki wòl li :
-                    Achitekti Model-View-ViewModel (MVVM) separe kòd aplikasyon an an twa gwo branch :
-                    - Modèl (Model) : Done senp yo (chapit liv, antite, mezi estatistik).
-                    - Vi (View) : Ekran Jetpack Compose ki afiche done yo epi ki tande lè itilizatè a klike.
-                    - ViewModel : Pati ki kenbe eta ekran an, ki pa pèdi lè telefòn lan vire, epi ki pale ak depo done yo.
+                    1. Kisa yon PWA (Progressive Web App) ye :
+                    Yon PWA pran sa ki pi bon nan sitwèb ak aplikasyon telefòn. Li louvri fasil nan navigatè a gras ak yon lyen, li ka enstale sou ekran telefòn nan san pase pa magazen aplikasyon lou, epi li mache menm lè pa gen rezo.
                     
-                    2. Sikilasyon done yo nan yon sèl sans (UDF) :
-                    Nan kòd AJ-TECH la, done yo toujou vwayaje nan yon sèl direksyon :
-                    - Done yo (State) desann soti nan ViewModel la pou al sou ekran an pou afiche.
-                    - Aksyon itilizatè a (klike sou yon chapit, tape nan rechèch, chanje lang FR/HT, mete yon mak-paj) monte soti sou ekran an pou al jwenn ViewModel la.
+                    2. Ekonomi entènèt ak batri :
+                    Nan peyi d Ayiti kote pri megabayt chè anpil, PWA ede moun telechaje aplikasyon ki peze mwens pase 5 Mo olye de gwo fichye 100 Mo, epi li pa fini batri telefòn nan rapid.
                     
-                    3. Poukisa sa rann kòd la solid anpil :
-                    - Li fasil pou teste : Nou ka verifye si tout kalkil yo bon san nou pa bezwen limen ekran an.
-                    - Pa gen sipriz : Pa gen okenn ti bouton ki ka chanje done yo an kachèt.
-                    - Pwoteksyon lè telefòn lan vire : Paj kote w t ap li a ak sa w t ap chèche a rete la menm si oryantasyon ekran an chanje.
+                    3. Konsepsyon ki adapte ak tout kalite ekran :
+                    Ekran an adapte otomatikman kit se sou yon ti telefòn senp, yon tablèt oswa yon gwo òdinatè. Nou mete bouton ki fasil pou peze ak dwèt (omwen 48dp), bèl koulè ki pa fatige je, epi sipò pou moun ki gen pwoblèm vizyon.
+                    
+                    4. Eta pwojè a nan AJ-TECH :
+                    - 🟢 Sa k ap mache jodi a : Prensip aksè ak bèl ekran ki adapte nan aplikasyon Android referans lan ;
+                    - 🟡 Pwototip k ap devlope : Pwototip PWA pou AJ-Task ak Service Workers pou enstale dirèkteman ;
+                    - ⚪ Vizyon pou lavni : PWA disponib pou tout sistèm lekòl ak sèvis piblik yo.
                 """.trimIndent(),
-                plannedStartPage = 239,
-                plannedEndPage = 242,
+                plannedStartPage = 76,
+                plannedEndPage = 77,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 49 : Données, modèles et repositories ====================
+            // ==================== CHAPITRE 49 : L'approche Offline-First ====================
             BookChapter(
                 id = "ch_4_49",
                 chapterNumber = 49,
                 partId = "part_4",
-                titleFr = "Chapitre 49 — Données, modèles et repositories",
-                titleHt = "Chapit 49 — Done, modèl ak depo done (Repositories)",
-                subtitleFr = "Structuration des entités, BookRepository, EcosystemRepository et recherche bilingue",
-                subtitleHt = "Fason done yo estriktire, BookRepository, EcosystemRepository ak rechèch bileng",
-                summaryFr = "Documentation des modèles immuables de l'application, du découpage des repositories et de l'indexation de recherche bilingue.",
-                summaryHt = "Dokimantasyon sou fòm done yo, fason nou separe depo done yo ak jan rechèch bileng lan fonksyone.",
+                titleFr = "Chapitre 49 — L'approche Offline-First",
+                titleHt = "Chapit 49 — Apwòch Offline-First",
+                subtitleFr = "Garantir des applications pleinement fonctionnelles malgré les connexions faibles ou interrompues",
+                subtitleHt = "Fè aplikasyon yo fonksyone nèt ale menm lè pa gen kouran oswa entènèt",
+                summaryFr = "Principes d'ingénierie Offline-First : considérer la connectivité comme une amélioration temporaire et non un prérequis obligatoire.",
+                summaryHt = "Prensip Offline-First : konsidere entènèt kòm yon bonis k ap pase, pandan tout travay aplikasyon an fèt sou aparèy la an premye.",
                 contentFr = """
-                    1. Conception des modèles de données :
-                    Tous les modèles fondamentaux de l'écosystème sont définis sous forme de `data class` Kotlin immuables (`BookPart`, `BookChapter`, `EcosystemEntity`, `TechnicalMetric`, `EntityMilestone`). L'immuabilité garantit l'absence d'effets de bord lors des lectures concurrentes et simplifie grandement les tests de non-régression.
+                    1. Le paradigme Offline-First :
+                    Dans les architectures traditionnelles, l'application effectue une requête au serveur distant pour chaque action utilisateur et bloque l'interface si la connexion échoue. L'approche Offline-First inverse fondamentalement ce modèle : toute opération (lecture, écriture, modification) s'exécute d'abord localement sur l'appareil de l'utilisateur avec zéro latence.
                     
-                    2. Le rôle du BookRepository et d'EcosystemRepository :
-                    - `BookRepository` : Centralise l'intégralité du corpus littéraire et technique de l'ouvrage officiel, découpé en parties logiques (Part1Data, Part2Data, Part3Data, Part4Data) pour éviter les fichiers monolithiques indigestes et optimiser les temps de compilation.
-                    - `EcosystemRepository` : Expose la cartographie complète des 21 entités officielles avec leurs attributs, statuts officiels, catégories sectorielles, liens de parenté et fiches techniques.
+                    2. Une nécessité absolue en Haïti :
+                    En contexte haïtien, l'absence de réseau n'est pas une anomalie passagère, mais un état nominal fréquent. Une application qui affiche un écran blanc ou un cercle de chargement infini dès que la 4G faiblit est inutilisable au quotidien. Avec l'Offline-First, l'utilisateur continue de gérer ses tâches, lire ses cours ou consulter ses fiches sans interruption.
                     
-                    3. Moteur de recherche textuelle bilingue :
-                    L'application intègre un algorithme de recherche synchrone haute performance capable d'indexer instantanément les titres, sous-titres, résumés et contenus intégraux, simultanément en français et en créole haïtien, avec normalisation diacritique pour garantir des résultats pertinents même avec des variations d'accents.
+                    3. Architecture des Service Workers et de la mise en cache :
+                    Le Service Worker intercepte toutes les requêtes réseau au niveau du navigateur, servant les ressources critiques depuis le cache local (Cache Storage API) et garantissant un démarrage instantané en mode hors-ligne.
                     
-                    4. Namespace officiel :
-                    L'ensemble des classes, repositories et composants d'ingénierie réside sous le namespace standardisé : `com.aistudio.ajtech.ecosystem`.
+                    4. Trajectoire d'implémentation :
+                    - 🟢 Opérationnel : Fonctionnement 100% autonome et hors-ligne de l'application compagnon Android (corpus complet de 165 chapitres embarqué) ;
+                    - 🟡 En développement / Prototype : Cache intelligent Service Worker dans le prototype AJ-Task ;
+                    - ⚪ Vision future : Réplication de données peer-to-peer en réseau local d'urgence (Mesh / Wi-Fi direct).
                 """.trimIndent(),
                 contentHt = """
-                    1. Fason modèl done yo bati :
-                    Tout gwo klas done yo bati ak `data class` Kotlin ki pa ka modifye an dirèk (`BookPart`, `BookChapter`, `EcosystemEntity`). Sa anpeche yon pati nan kòd la chanje done yo san lòt pati a pa konnen, epi sa rann tès yo fasil pou fè.
+                    1. Prensip Offline-First la :
+                    Nan vye fason yo te konn pwograme, chak fwa yon moun klike sou yon bouton, telefòn nan oblije voye mande yon sèvè lòt bò dlo repons. Si pa gen entènèt, tout bagay bloke. Apwòch Offline-First la chanje sa nèt : tout sa w ap fè (li, ekri, chanje) fèt dirèkteman sou telefòn ou an premye san tann anyen.
                     
-                    2. Wòl BookRepository ak EcosystemRepository :
-                    - `BookRepository` : Kenbe tout liv ofisyèl la, li separe an plizyè modil pwòp (Part1Data, Part2Data, Part3Data, Part4Data) pou kòd la pa twò lou epi pou l bati rapid nan zouti devlopman yo.
-                    - `EcosystemRepository` : Bay tout enfòmasyon sou 21 antite ofisyèl yo, nivo avansman yo, kategori yo ak tout detay teknik sou yo.
+                    2. Yon bezwen endispansab pou Ayiti :
+                    Nan peyi nou, mank entènèt se pa yon bagay ki rive pa aksidan, se yon reyalite chak jou. Yon aplikasyon ki rete ap vire nan vid depi rezo a febli pa ka sèvi moun. Gras ak Offline-First, moun nan kontinye travay, li liv li oswa jere aktivite l san pwoblèm.
                     
-                    3. Motè rechèch bileng lan :
-                    Aplikasyon an gen yon motè rechèch rapid ki fouye nan tit, rezime ak tout kontni an alafwa an Fransè ak an Kreyòl Ayisyen, epi ki konprann aksan yo pou moun ka jwenn sa y ap chèche a san difikilte.
+                    3. Kijan Service Workers ede nan sa :
+                    Zouti Service Worker la aji tankou yon gadyen nan navigatè a : depi li wè pa gen entènèt, li pran paj ak fichye li te deja sere nan memwa aparèy la pou louvri aplikasyon an touswit.
                     
-                    4. Namespace ofisyèl la :
-                    Tout kòd ak zouti teknik yo klase anba non ofisyèl sa a : `com.aistudio.ajtech.ecosystem`.
+                    4. Eta pwojè a nan AJ-TECH :
+                    - 🟢 Sa k ap mache jodi a : Aplikasyon Android referans lan mache 100% san bezwen yon grenn koneksyon entènèt ;
+                    - 🟡 Pwototip k ap devlope : Sistèm kach Service Worker nan pwototip AJ-Task ;
+                    - ⚪ Vizyon pou lavni : Pataje done dirèkteman ant de telefòn san pase sou entènèt (Wi-Fi lokal).
                 """.trimIndent(),
-                plannedStartPage = 243,
-                plannedEndPage = 246,
+                plannedStartPage = 77,
+                plannedEndPage = 79,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 50 : Applications PWA et applications mobiles ====================
+            // ==================== CHAPITRE 50 : Stockage local et IndexedDB ====================
             BookChapter(
                 id = "ch_4_50",
                 chapterNumber = 50,
                 partId = "part_4",
-                titleFr = "Chapitre 50 — Applications PWA et applications mobiles",
-                titleHt = "Chapit 50 — Aplikasyon PWA ak aplikasyon mobil",
-                subtitleFr = "PWA, Android natif, Web classique et backend serveur : distinctions et complémentarités",
-                subtitleHt = "PWA, Android natif, Sitwèb klasik ak sèvè : diferans ak fason yo konplete",
-                summaryFr = "Explication comparative des paradigmes applicatifs au sein d'AJ-TECH, avec focus sur le statut pilote de la PWA AJ-Task.",
-                summaryHt = "Konparezon ant diferan fason pou kreye aplikasyon nan AJ-TECH, ak detay sou PWA AJ-Task ki nan tès kounye a.",
+                titleFr = "Chapitre 50 — Stockage local et IndexedDB",
+                titleHt = "Chapit 50 — Depo lokal ak IndexedDB",
+                subtitleFr = "Persistance robuste, moteurs de bases de données locales, cache et intégrité",
+                subtitleHt = "Sere done sou aparèy la, baz done lokal, memwa kach ak sekirite enfòmasyon yo",
+                summaryFr = "Étude des mécanismes de persistance locale : IndexedDB sur le Web/PWA, Room et DataStore sur Android pour des données fiables et résilientes.",
+                summaryHt = "Eksplikasyon sou kijan nou sere done sou aparèy la ak IndexedDB sou wèb epi Room sou Android pou anyen pa janm pèdi.",
                 contentFr = """
-                    1. Distinctions architecturales fondamentales :
-                    - Progressive Web App (PWA) : Application web moderne enrichie de Service Workers et d'un manifeste, capable de s'installer sur l'écran d'accueil sans passer par un magasin d'applications, de s'exécuter hors-ligne et de se mettre à jour instantanément.
-                    - Application Android Native : Développée en Kotlin avec Jetpack Compose, accédant directement aux APIs bas niveau du système d'exploitation (capteurs, notifications système, chiffrement matériel Keystore).
-                    - Application Web Classique : Pages web dépendantes d'un serveur distant, nécessitant une connexion Internet continue pour chaque interaction ou rechargement.
-                    - Application Serveur (Backend) : Services d'arrière-plan exécutant la logique métier lourde, gérant les bases de données et exposant des APIs sécurisées.
+                    1. Les impératifs de la persistance locale :
+                    Pour soutenir l'approche Offline-First, le stockage local doit offrir des garanties ACID (Atomicité, Cohérence, Isolation, Durabilité), une capacité volumétrique suffisante et des temps d'accès quasi instantanés, sans risque de corruption lors d'un arrêt brutal de l'appareil.
                     
-                    2. Le statut spécifique d'AJ-Task :
-                    AJ-Task constitue aujourd'hui le prototype fonctionnel le plus avancé de l'écosystème AJ-TECH. Développé sous la forme d'une PWA Offline-First, il est actuellement en phase de test pilote restreint auprès d'utilisateurs pionniers. Ce choix a permis de valider rapidement l'ergonomie et la résilience hors-ligne sans friction de distribution.
+                    2. IndexedDB pour l'environnement Web et PWA :
+                    IndexedDB est une base de données NoSQL transactionnelle et asynchrone intégrée nativement dans les navigateurs modernes. Elle permet de stocker des objets structurés complexes, des index de recherche et des volumes significatifs de données sans bloquer le fil d'exécution principal (UI Thread).
                     
-                    3. Stratégie multiplateforme d'AJ-TECH :
-                    L'écosystème ne s'enferme pas dans une technologie unique : les services à large diffusion publique privilégient la légèreté des PWA, tandis que les outils de productivité avancée et les services financiers s'orientent vers des clients natifs robustes.
+                    3. Room et DataStore pour l'écosystème Android natif :
+                    Sur plateforme Android native, AJ-TECH privilégie la bibliothèque Room (couche d'abstraction SQLite sécurisée au typage) et Jetpack DataStore pour les préférences utilisateurs et les configurations de langue bilingue.
+                    
+                    4. État des technologies et intégrité :
+                    - 🟢 Opérationnel : Modèles de données immuables typés et gestionnaires de session dans l'application compagnon ;
+                    - 🟡 En développement / Prototype : Schéma IndexedDB avec clés auto-générées pour les tâches d'AJ-Task ;
+                    - ⚪ Vision future : Chiffrement matériel AES-256 transparent de l'ensemble des bases locales embarquées.
                 """.trimIndent(),
                 contentHt = """
-                    1. Diferans prensipal ant kalite aplikasyon yo :
-                    - Progressive Web App (PWA) : Yon aplikasyon web modèn ki gen Service Workers, ki ka enstale sou telefòn san pase nan Play Store, ki mache san entènèt epi ki mete ajou otomatikman.
-                    - Aplikasyon Android Natif : Bati ak Kotlin ak Jetpack Compose, ki pale dirèkteman ak sistèm telefòn lan (kamera, notifikasyon, sekirite pyès telefòn lan).
-                    - Sitwèb Klasik : Paj web senp ki bezwen entènèt tout tan pou yo ka ouvri oswa pou klike sou nenpòt bouton.
-                    - Aplikasyon Sèvè (Backend) : Pwogram ki kache sou gwo òdinatè a distans pou kalkile gwo operasyon epi voye done bay telefòn yo.
+                    1. Poukisa depo lokal la enpòtan konsa :
+                    Pou yon aplikasyon ka travay san entènèt, fòk li gen yon bon kote pou l sere done yo sou aparèy la. Depo sa a dwe solid, li dwe rapid, epi menm si telefòn nan ta etenn britsoukou paske batri a fini, okenn done pa dwe pèdi oswa gate.
                     
-                    2. Ka espesyal AJ-Task la :
-                    AJ-Task se pwodui ki pi avanse nan tès yo jodi a nan AJ-TECH. Li fèt kòm yon PWA ki mache san entènèt (Offline-First), epi li nan faz tès pilòt ak kèk itilizatè kounye a. Sa pèmèt nou verifye kijan moun itilize li san difikilte pou telechaje.
+                    2. IndexedDB sou entènèt ak PWA :
+                    IndexedDB se yon vrè ti baz done ki andedan navigatè a. Li pèmèt aplikasyon an sere anpil enfòmasyon san l pa ralanti telefòn nan, epi li ka klase done yo pou jwenn yo fasil.
                     
-                    3. Estrateji AJ-TECH sou plizyè aparèy :
-                    Nou pa rete kole sou yon sèl zouti : sèvis pou tout moun ap itilize PWA ki lejè, pandan zouti pwofesyonèl ak zafè lajan ap bezwen aplikasyon natif ki pi an sekirite.
+                    3. Room ak DataStore sou Android :
+                    Pou aplikasyon Android yo, nou itilize Room (ki bati sou SQLite) ak DataStore pou sere chwa itilizatè a (tankou lang Kreyòl oswa Fransè) an sekirite.
+                    
+                    4. Eta pwojè a an tout transparans :
+                    - 🟢 Sa k ap mache jodi a : Modèl done ki pa ka gate ak depo memwa nan aplikasyon Android referans lan ;
+                    - 🟡 Pwototip k ap devlope : Estrikti IndexedDB pou sere lis travay nan AJ-Task ;
+                    - ⚪ Vizyon pou lavni : Chifreman otomatik pou tout baz done lokal yo pou pèsonn pa ka vòlè done yo.
                 """.trimIndent(),
-                plannedStartPage = 247,
-                plannedEndPage = 250,
+                plannedStartPage = 79,
+                plannedEndPage = 80,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 51 : Cloud, serveurs et infrastructure ====================
+            // ==================== CHAPITRE 51 : Synchronisation et gestion des conflits ====================
             BookChapter(
                 id = "ch_4_51",
                 chapterNumber = 51,
                 partId = "part_4",
-                titleFr = "Chapitre 51 — Cloud, serveurs et infrastructure",
-                titleHt = "Chapit 51 — Cloud, sèvè ak enfrastrikti",
-                subtitleFr = "Perspectives d'hébergement, souveraineté des données et résilience énergétique",
-                subtitleHt = "Pwojè pou sèvè, pwoteksyon done nan peyi a ak jesyon kouran",
-                summaryFr = "Analyse prospective de l'infrastructure d'hébergement d'AJ-TECH, distinguant l'état local actuel des ambitions cloud futures.",
-                summaryHt = "Analiz sou pwojè sèvè ak cloud AJ-TECH yo, ak diferans ant sa k ap fèt sou aparèy la jodi a ak sa ki planifye pou pi devan.",
+                titleFr = "Chapitre 51 — Synchronisation et gestion des conflits",
+                titleHt = "Chapit 51 — Senkronizasyon ak jesyon konfli",
+                subtitleFr = "Synchronisation locale/cloud, résolution de conflits, cohérence à terme et reprise sur reconnexion",
+                subtitleHt = "Konekte done lokal ak sèvè, rezoud lè gen de moun ki chanje menm bagay la, ak rekoneksyon",
+                summaryFr = "Mécanismes de synchronisation bidirectionnelle résiliente et stratégies de résolution de conflits pour maintenir la cohérence des données.",
+                summaryHt = "Fason pou voye done sou sèvè lè entènèt retounen san anyen pa efase pa erè lè plizyè moun ap travay.",
                 contentFr = """
-                    1. État actuel de l'infrastructure :
-                    À ce stade de développement, l'application compagnon AJ-TECH fonctionne de manière autonome et auto-hébergée sur l'appareil client (On-Device Architecture). Aucun serveur cloud distant n'est requis pour la consultation de l'ouvrage, garantissant une disponibilité permanente sans dépendance d'hébergeur tiers.
+                    1. La problématique de la synchronisation asynchrone :
+                    Dès lors que plusieurs appareils modifient des données en mode déconnecté, la reconnexion au réseau pose le défi critique de la réconciliation : quelles modifications prévalent ? Comment fusionner les changements sans écraser de données légitimes ?
                     
-                    2. Perspectives futures et projet AJ-Cloud :
-                    Pour les entités nécessitant de la synchronisation distante (AJ-Task en équipe, EDUKA, AJ-Mail), l'écosystème envisage le déploiement progressif d'une infrastructure cloud souveraine :
-                    - Stockage d'objets sécurisé et redondant ;
-                    - Moteur de synchronisation bidirectionnelle avec résolution de conflits ;
-                    - Sauvegardes chiffrées automatisées ;
-                    - Grappes de microservices conteneurisés hautement disponibles.
+                    2. Stratégies de réconciliation :
+                    - Horodatage vectoriel et réplication optimiste : application immédiate en local, puis mise en file d'attente sécurisée pour envoi différé ;
+                    - Stratégie du « Last Write Wins » (LWW) pour les entités simples : la dernière mise à jour validée par l'horloge logique l'emporte ;
+                    - Structures CRDT (Conflict-free Replicated Data Types) pour les documents collaboratifs complexes (notes, inventaires).
                     
-                    3. Prudence et réalisme d'ingénierie :
-                    Ces infrastructures serveur ne sont pas encore déployées à l'échelle commerciale et font l'objet d'études de dimensionnement technique et énergétique.
+                    3. Reprise après reconnexion (Background Sync API) :
+                    L'architecture prévoit l'écoute des événements de connectivité du système d'exploitation. Dès qu'un réseau stable est détecté, un travailleur d'arrière-plan (WorkManager sur Android, Background Sync sur Web) vide la file de synchronisation de manière transparente.
                     
-                    4. Le défi de la souveraineté et de l'énergie en Haïti :
-                    L'implantation future de centres de données locaux devra impérativement intégrer des sources d'énergie renouvelable (solaire, batteries de secours) et des connexions satellites redondantes pour pallier les défaillances des réseaux publics d'électricité et de télécommunications.
+                    4. Niveau de maturité :
+                    - 🟢 Opérationnel : Détection de l'état réseau et navigation fluide hors-ligne ;
+                    - 🟡 En développement / Prototype : File d'attente d'actions locales pour réémission différée dans AJ-Task ;
+                    - ⚪ Vision future : Algorithmes de consensus distribué pour synchronisation multi-nœuds régionaux.
                 """.trimIndent(),
                 contentHt = """
-                    1. Kote enfrastrikti a ye jodi a :
-                    Kounye a, aplikasyon AJ-TECH sa a fonksyone nèt sou telefòn itilizatè a san l pa bezwen okenn sèvè deyò pou ouvri liv la. Sa fè l toujou disponib san l pa depann de okenn konpayi entènèt etranje.
+                    1. Pwoblèm senkronizasyon lè pa gen entènèt tout tan :
+                    Lè yon moun travay sou telefòn li san entènèt epi yon lòt moun fè menm bagay la sou yon lòt aparèy, lè entènèt la retounen, sistèm nan dwe konnen ki enfòmasyon ki bon pou l pa efase travay pèsonn pa erè.
                     
-                    2. Pwojè pou pi devan ak AJ-Cloud :
-                    Pou pwojè ki pral bezwen pataje done ant plizyè moun (AJ-Task an ekip, EDUKA, AJ-Mail), nou gen nan plan pou deplwaye yon bon enfrastrikti cloud souveren :
-                    - Espas pou sere fichye an sekirite ;
-                    - Motè senkronizasyon ki rezoud pwoblèm si de moun modifye menm bagay la ;
-                    - Sovgad otomatik ki byen pwoteje ;
-                    - Gwoup sèvè ki pa fasil tonbe an pàn.
+                    2. Fason pou rezoud konfli nan done yo :
+                    - Mete lè ak dat sou chak chanjman : aplikasyon an anrejistre chanjman an touswit sou telefòn nan, epi li mete l nan yon lis pou voye l pita ;
+                    - Règ dènye chanjman ki fèt la : pou bagay senp, dènye moun ki modifye a se vèsyon l lan ki rete ;
+                    - Zouti avanse CRDT : pou dokiman kote plizyè moun ap ekri ansanm san youn pa kraze travay lòt.
                     
-                    3. Verite ak pridans sou sa ki la :
-                    Sèvè sa yo poko lanse nan nivo komèsyal jodi a, y ap etidye kijan pou yo bati yo kòrèkteman selon mwayen ak kouran ki disponib.
+                    3. Retounen voye done lè rezo a parèt :
+                    Sistèm nan veye lè entènèt la retounen. Kou rezo a bon, yon ti pwogram nan background (WorkManager sou Android oswa Background Sync sou wèb) voye tout sa ki te anreta san deranje itilizatè a.
                     
-                    4. Defi kouran ak souverènte an Ayiti :
-                    Lè nou pral mete gwo sant sèvè an Ayiti, nou dwe planifye enèji solè ak gwo batri ak entènèt satelit pou sèvè yo pa janm etenn menm lè kouran leta oswa kab koupe.
+                    4. Nivo avansman an tout verite :
+                    - 🟢 Sa k ap mache jodi a : Deteksyon rezo ak aplikasyon ki fonksyone nèt offline ;
+                    - 🟡 Pwototip k ap devlope : Lis aksyon ki pare pou voye lè koneksyon retounen nan AJ-Task ;
+                    - ⚪ Vizyon pou lavni : Senkronizasyon konplè ant tout sèvè nan divès depatman nan peyi a.
                 """.trimIndent(),
-                plannedStartPage = 251,
-                plannedEndPage = 254,
+                plannedStartPage = 80,
+                plannedEndPage = 82,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 52 : Bases de données et persistance ====================
+            // ==================== CHAPITRE 52 : API REST et services numériques ====================
             BookChapter(
                 id = "ch_4_52",
                 chapterNumber = 52,
                 partId = "part_4",
-                titleFr = "Chapitre 52 — Bases de données et persistance",
-                titleHt = "Chapit 52 — Baz done ak fason done yo rete anrejistre",
-                subtitleFr = "Du stockage local en mémoire aux moteurs relationnels et distribués",
-                subtitleHt = "Soti nan depo nan memwa telefòn rive nan gwo baz done distribye",
-                summaryFr = "Panorama des technologies de persistance utilisées aujourd'hui et envisagées pour les futures versions de l'écosystème.",
-                summaryHt = "Eksplikasyon sou fason done yo sere jodi a ak sa nou prevwa itilize nan vèsyon k ap vini yo.",
+                titleFr = "Chapitre 52 — API REST et services numériques",
+                titleHt = "Chapit 52 — API REST ak sèvis nimerik",
+                subtitleFr = "Communication inter-applications, contrats d'interface, sécurité des endpoints et versionnement",
+                subtitleHt = "Kominikasyon ant aplikasyon yo, estanda API, sekirite pòt antre yo ak jesyon vèsyon",
+                summaryFr = "Conception des interfaces de programmation applicative (API REST) reliant les 22 entités d'AJ-TECH avec sécurité, clarté et frugalité.",
+                summaryHt = "Fason nou bati API REST pou pèmèt 22 antite AJ-TECH yo pale ansanm nan sekirite ak bon jan estanda.",
                 contentFr = """
-                    1. Persistance actuelle dans l'application compagnon :
-                    L'application Android actuelle exploite des structures de données en mémoire Kotlin hautement optimisées au sein de repositories modulaires (`BookRepository`, `EcosystemRepository`), complétées par des mécanismes d'état Compose pour les préférences de lecture, les signets et la progression.
+                    1. Les APIs comme artères de l'écosystème :
+                    Les interfaces de programmation applicative et les services API REST permettent aux 22 entités de l'écosystème de dialoguer de façon standardisée sans créer de dépendances monolithiques enchevêtrées.
                     
-                    2. Technologies de persistance envisagées pour Android :
-                    - Jetpack DataStore (Preferences / Proto) : Pour la persistance sécurisée des paramètres utilisateurs, du mode sombre et des clés de session légères.
-                    - Room Database (SQLite) : Moteur d'abstraction relationnel pour les entités nécessitant des requêtes complexes, des filtres avancés et un cache hors-ligne volumineux.
+                    2. Principes de conception RESTful chez AJ-TECH :
+                    - Utilisation sémantique stricte des verbes HTTP (GET, POST, PUT, PATCH, DELETE) au sein de chaque API REST ;
+                    - Formats de données JSON épurés et compressés (GZIP/Brotli) pour minimiser la consommation de bande passante ;
+                    - Codes de statut HTTP normalisés (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Error) ;
+                    - Pagination obligatoire pour toutes les listes de données volumineuses.
                     
-                    3. Persistance dans le prototype PWA (AJ-Task) :
-                    Dans le prototype AJ-Task, les données de projets, tâches et colonnes Kanban sont persistées sur le terminal de l'utilisateur grâce à la base de données standard IndexedDB du navigateur web.
+                    3. Authentification et sécurité des points d'accès :
+                    Chaque requête protégée requiert un jeton cryptographique éphémère (JWT / OAuth2). Les points d'entrée appliquent une limitation de débit (Rate Limiting) pour prévenir les attaques par déni de service et les abus.
                     
-                    4. Moteurs de bases de données distants envisagés :
-                    Pour les futurs services backend centraux, PostgreSQL constitue le choix privilégié pour sa robustesse relationnelle, son support JSON avancé et ses extensions géospatiales (PostGIS pour AJ-Tè et AJ-Maps).
+                    4. Versionnement et rétrocompatibilité :
+                    Pour garantir que les anciennes versions d'applications mobiles continuent de fonctionner sans forcer des mises à jour coûteuses en data pour les utilisateurs, les services API REST intègrent un versionnement explicite dans l'URI (`/api/v1/`, `/api/v2/`).
                 """.trimIndent(),
                 contentHt = """
-                    1. Kijan done yo sere kounye a nan aplikasyon an :
-                    Aplikasyon Android aktyèl la itilize modèl done nan memwa Kotlin ki optimize anpil nan depo (`BookRepository`, `EcosystemRepository`), ansanm ak sistèm eta Compose pou kenbe paj ou te ye a, mak-paj yo ak nivo lekti a.
+                    1. Wòl API yo nan ekosistèm nan :
+                    Sèvis API REST (Application Programming Interface) se tankou wout ki pèmèt 22 antite yo pale youn ak lòt san youn pa depann twòp de lòt nan yon sèl gwo blòk difisil pou repare.
                     
-                    2. Teknoloji nou prevwa mete sou Android :
-                    - Jetpack DataStore : Pou sere chwa itilizatè a (koulè nwa/blan, opsyon lekti) san sa pa lou.
-                    - Room Database (SQLite) : Pou sere gwo kantite done sou telefòn lan ak rechèch konplike san entènèt.
+                    2. Prensip REST nou respekte :
+                    - Itilize kòmand estanda HTTP (GET pou li, POST pou kreye, PUT/PATCH pou chanje, DELETE pou efase) nan tout API REST nou yo ;
+                    - Fòma done JSON ki lejè anpil pou pa gaspiye entènèt moun yo ;
+                    - Mesaj erè klè ak kòd estanda entènasyonal ;
+                    - Koupe lis ki long yo an ti paj pou yo pa lou pou ouvri.
                     
-                    3. Kijan PWA AJ-Task sere done li yo :
-                    Nan pwototip AJ-Task la, tout travay, lis ak tablo Kanban yo sere dirèkteman nan navigatè a gras ak baz done IndexedDB.
+                    3. Sekirite ak kontwòl aksè :
+                    Tout kominikasyon ki gen done prive mande yon kle sekirite espesyal (Token JWT). Gen baryè pou anpeche moun atake oswa voye twòp demann pou bloke sistèm nan.
                     
-                    4. Gwo baz done pou sèvè pi devan :
-                    Pou sèvè santral yo pi devan, PostgreSQL se premye chwa nou paske li solid anpil, li jere done konplike byen epi li ka jere kat jeyografik (PostGIS pou AJ-Tè ak AJ-Maps).
+                    4. Jesyon vèsyon pou pa bloke ansyen telefòn :
+                    Nou mete nimewo vèsyon nan lyen API REST yo (`/api/v1/`) pou menm si nou mete nouvo zouti, moun ki gen ansyen vèsyon aplikasyon an ka kontinye sèvi avè l san pwoblèm.
                 """.trimIndent(),
-                plannedStartPage = 255,
-                plannedEndPage = 258,
+                plannedStartPage = 82,
+                plannedEndPage = 83,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 53 : API et interopérabilité ====================
+            // ==================== CHAPITRE 53 : Architecture modulaire de l'écosystème ====================
             BookChapter(
                 id = "ch_4_53",
                 chapterNumber = 53,
                 partId = "part_4",
-                titleFr = "Chapitre 53 — API et interopérabilité",
-                titleHt = "Chapit 53 — API ak kominikasyon ant sistèm yo",
-                subtitleFr = "Standards REST, protocoles d'échange et interfaces d'intégration de l'écosystème",
-                subtitleHt = "Estanda REST, fason aplikasyon yo pale ansanm ak koneksyon nan sistèm nan",
-                summaryFr = "Principes d'interopérabilité, conception d'APIs REST et communication inter-entités au sein d'AJ-TECH.",
-                summaryHt = "Prensip sou kijan aplikasyon yo ap kominike ansanm gras ak API REST ak bon estanda.",
+                titleFr = "Chapitre 53 — Architecture modulaire de l'écosystème",
+                titleHt = "Chapit 53 — Achitekti modilè ekosistèm nan",
+                subtitleFr = "Modules indépendants, interfaces standardisées, réutilisation et réduction de la dette technique",
+                subtitleHt = "Blòk kòd ki endepandan, zouti pataje, re-itilize sa k bon epi evite kòd sal",
+                summaryFr = "Organisation architecturale en modules autonomes et réutilisables au sein des 22 entités pour assurer la robustesse et la maintenabilité.",
+                summaryHt = "Fason nou òganize kòd la an ti moso endepandan pou fasilite devlopman tout 22 antite yo san konplikasyon.",
                 contentFr = """
-                    1. Rôle des APIs dans l'écosystème :
-                    Les interfaces de programmation applicative (APIs) représentent les artères de communication reliant les 21 entités de l'écosystème, permettant l'échange sécurisé de données sans couplage rigide entre les briques logicielles.
+                    1. Le piège du monolithe face à la complexité :
+                    Développer un écosystème ambitieux de 22 entités sans une rigoureuse modularité conduit inévitablement à un code « spaghetti » où la moindre modification sur une entité (comme AJ-Pay) risque de casser une entité non liée (comme AJ-Learn).
                     
-                    2. Conception des APIs REST envisagées :
-                    - Verbes HTTP standardisés (GET, POST, PUT, DELETE, PATCH) ;
-                    - Formats de données stricts en JSON avec validation de schéma ;
-                    - Codes de statut explicites (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Error) ;
-                    - Pagination uniforme pour les listes volumineuses.
+                    2. Piliers de la modularisation :
+                    - Isolation des domaines : chaque entité dispose de ses propres modèles et logiques métiers ;
+                    - Modules partagés (Shared Core) : mutualisation des utilitaires universels (thème de design M3, gestionnaires de dates, algorithmes de normalisation bilingue, composants d'accessibilité) ;
+                    - Inversion de dépendance : les modules de haut niveau ne dépendent pas des modules de bas niveau, mais d'abstractions (interfaces).
                     
-                    3. Sécurité des échanges client/serveur :
-                    Les communications futures reposeront obligatoirement sur le protocole HTTPS / TLS 1.3, avec authentification par jetons sécurisés (JSON Web Tokens - JWT) à durée de vie courte et clés de rafraîchissement révocables.
+                    3. Architecture des repositories dans le Livre Compagnon :
+                    L'application de référence démontre concrètement cette modularité : le corpus littéraire est scindé en modules autonomes (`Part1Data` à `Part11Data`) agrégés par un `BookRepository` unifié, évitant les fichiers géants et optimisant les temps de compilation Gradle.
                     
-                    4. APIs internes vs APIs tierces :
-                    - APIs internes : Protocoles optimisés pour la communication transversale entre services de l'écosystème (ex. AJ-Pay appelant AJ-ID).
-                    - APIs tierces : Interfaces sécurisées et documentées ouvertes aux développeurs externes, entreprises partenaires et institutions haïtiennes pour stimuler l'innovation locale.
+                    4. État de mise en œuvre :
+                    - 🟢 Opérationnel : Découpage modulaire strict de l'application Android et de ses référentiels de données ;
+                    - 🟡 En développement / Prototype : Bibliothèque de composants UI partagés pour le Web ;
+                    - ⚪ Vision future : Architecture en micro-frontends et microservices conteneurisés pour l'ensemble des plateformes cloud.
                 """.trimIndent(),
                 contentHt = """
-                    1. Wòl API yo nan tout ekosistèm nan :
-                    API yo se tankou wout ki pèmèt 21 antite yo pale youn ak lòt, pou yo ka pataje enfòmasyon an sekirite san youn pa depann twòp de lòt.
+                    1. Danje ki genyen lè tout bagay melanje nan yon sèl gwo blòk :
+                    Bati yon gwo ekosistèm ki gen 22 antite mande anpil lòd nan kòd la. Si tout bagay melanje, yon ti chanjman nan AJ-Pay ka vin kraze AJ-Learn san pèsonn pa konprann poukisa.
                     
-                    2. Fason API REST yo fèt :
-                    - Itilize kòmand estanda HTTP (GET, POST, PUT, DELETE) ;
-                    - Fòma done JSON ki byen estriktire pou pa gen erè ;
-                    - Kòd repons ki klè (200 lè l bon, 404 lè l pa jwenn li, 401 lè w pa gen dwa) ;
-                    - Paginasyon pou separe gwo lis done yo an plizyè paj.
+                    2. Prensip modilarite nou aplike :
+                    - Chak pwojè apa : chak antite gen règ pa l ak fason pa l pou fonksyone ;
+                    - Zouti pataje (Core) : nou mete ansanm sa tout moun bezwen (koulè, fason pou ekri dat, zouti pou jere Kreyòl ak Fransè) ;
+                    - Pwoteje kòd la : pati ki pi enpòtan yo pa dwe depann de ti detay ki ka chanje nenpòt lè.
                     
-                    3. Sekirite nan kominikasyon an :
-                    Tout kominikasyon ant telefòn ak sèvè dwe pase nan HTTPS / TLS 1.3 ak paspò dijital (JWT) ki chanje souvan pou anpeche moun entèsepte mesaj yo.
+                    3. Egzanp pratik nan aplikasyon liv sa a :
+                    Aplikasyon n ap li a montre sa byen : olye nou mete tout liv la nan yon sèl gwo fichye ki t ap twò lou, nou separe l an plizyè modil (`Part1Data` rive `Part11Data`) epi `BookRepository` mete yo ansanm san fòse.
                     
-                    4. API pou nou menm vs API pou moun deyò :
-                    - API entèn : Pou aplikasyon AJ-TECH yo pale vit youn ak lòt (pa egzanp AJ-Pay ki verifye idantite sou AJ-ID).
-                    - API pou lòt devlopè : Zouti ki byen dokimante pou devlopè ayisyen ak biznis ka konekte sou sèvis nou yo pou kreye nouvo solisyon.
+                    4. Nivo avansman aktyèl la :
+                    - 🟢 Sa k ap mache jodi a : Separasyon kòd la an modil pwòp nan aplikasyon Android referans lan ;
+                    - 🟡 Pwototip k ap devlope : Bibliyotèk bèl bouton ak eleman grafik pataje sou wèb ;
+                    - ⚪ Vizyon pou lavni : Mikwosèvis ak ti blòk kòd ki ka travay sou nenpòt gwo sèvè nan nwaj la.
                 """.trimIndent(),
-                plannedStartPage = 259,
-                plannedEndPage = 262,
+                plannedStartPage = 83,
+                plannedEndPage = 85,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 54 : Intelligence artificielle dans l'écosystème ====================
+            // ==================== CHAPITRE 54 : Applications Android et Jetpack Compose ====================
             BookChapter(
                 id = "ch_4_54",
                 chapterNumber = 54,
                 partId = "part_4",
-                titleFr = "Chapitre 54 — Intelligence artificielle dans l'écosystème",
-                titleHt = "Chapit 54 — Entèlijans atifisyèl nan ekosistèm nan",
-                subtitleFr = "Opportunités applicatives, éthique, prévention des hallucinations et responsabilité humaine",
-                subtitleHt = "Opòtinite, prensip etik, anpeche radòt ak responsablite moun sou zafè IA",
-                summaryFr = "Vision pragmatique et éthique de l'intégration de l'IA dans les entités d'AJ-TECH, avec garde-fous stricts.",
-                summaryHt = "Vizyon klè ak responsab sou kijan nou pral itilize Entèlijans Atifisyèl nan AJ-TECH ak tout prekosyon ki nesesè.",
+                titleFr = "Chapitre 54 — Applications Android et Jetpack Compose",
+                titleHt = "Chapit 54 — Aplikasyon Android ak Jetpack Compose",
+                subtitleFr = "Kotlin, Jetpack Compose, Material 3, MVVM, gestion d'état et accessibilité native",
+                subtitleHt = "Kotlin, Jetpack Compose, Material 3, achitekti MVVM, jesyon eta ak lekti fasil",
+                summaryFr = "Ingénierie de l'application native Android : paradigme déclaratif Jetpack Compose, architecture MVVM et respect strict des standards Material 3.",
+                summaryHt = "Eksplikasyon sou fason nou bati aplikasyon Android la ak Kotlin, Jetpack Compose ak MVVM pou l bèl, rapid epi fasil pou itilize.",
                 contentFr = """
-                    1. Cas d'usage de l'IA au sein d'AJ-TECH :
-                    L'Intelligence Artificielle est envisagée comme un multiplicateur de capacités cognitives et d'efficacité :
-                    - Assistance contextuelle bilingue (Français / Créole) via l'entité AJ-Assistant ;
-                    - Aide à la rédaction, synthèse de documents et recherche sémantique avancée ;
-                    - Tuteurs d'apprentissage adaptatifs dans AJ-Learn et EDUKA ;
-                    - Automatisation de tâches répétitives et assistance au codage dans AJ-Dev ;
-                    - Détection des anomalies et patterns suspects de fraude dans AJ-Pay.
+                    1. Le choix de Kotlin et de Jetpack Compose :
+                    Pour les applications mobiles natives, AJ-TECH adopte Kotlin et Jetpack Compose. Ce framework moderne remplace les anciens fichiers de mise en page XML par une approche déclarative où l'interface réagit directement aux flux de données immuables.
                     
-                    2. Garde-fous éthiques et prévention des hallucinations :
-                    L'IA ne doit jamais se substituer au jugement critique humain. L'écosystème applique des principes stricts :
-                    - Rejet de l'illusion de perfection : les modèles génératifs sont sujets aux hallucinations et doivent être systématiquement encadrés par des règles déterministes ;
-                    - Validation humaine obligatoire (Human-in-the-Loop) pour toute décision critique juridique, financière ou éducative ;
-                    - Transparence : tout contenu généré ou assisté par IA doit être clairement identifié comme tel.
+                    2. L'architecture MVVM (Model-View-ViewModel) :
+                    - Model : Représente les entités de données pures et immuables (`BookChapter`, `EcosystemEntity`) ;
+                    - ViewModel : Détient et expose l'état de l'interface via des flux réactifs (`StateFlow`), protégeant l'état des reconstitutions d'écran lors des rotations ;
+                    - View (Composables) : Fonctions pures décrivant l'affichage en fonction de l'état fourni, sans logique métier directe.
                     
-                    3. Confidentialité et souveraineté des données :
-                    Aucune donnée sensible ou personnelle des utilisateurs haïtiens ne doit être transmise sans consentement à des modèles tiers à des fins d'entraînement non sollicité.
+                    3. Respect rigoureux de Material 3 :
+                    L'application compagnon applique la charte graphique officielle d'AJ-TECH :
+                    - Bleu Nuit Institutionnel (`#0A192F`), Or Solaire (`#FFD700`), Rouge Haïtien (`#D21034`) ;
+                    - Typographie soignée favorisant la lisibilité prolongée du créole haïtien et du français ;
+                    - Cibles tactiles d'au moins 48dp conformes aux normes d'accessibilité Android.
+                    
+                    4. Performance et fluidité :
+                    Utilisation de `LazyColumn` avec des clés stables (`key = { it.id }`) pour un défilement à 60/120 images par seconde même sur des listes comprenant des centaines de chapitres ou d'entités.
                 """.trimIndent(),
                 contentHt = """
-                    1. Kijan IA ka ede nan AJ-TECH :
-                    Nou konsidere Entèlijans Atifisyèl kòm yon zouti pou ede moun travay pi vit epi aprann pi byen :
-                    - Asistans bileng (Fransè / Kreyòl) gras ak AJ-Assistant ;
-                    - Ede ekri, fè rezime sou gwo tèks ak rechèch entèlijan ;
-                    - Ede elèv yo konprann leson pi byen nan AJ-Learn ak EDUKA ;
-                    - Ede devlopè ekri bon kòd pi vit nan AJ-Dev ;
-                    - Detekte tranzaksyon sispèk pou evite vòl nan AJ-Pay.
+                    1. Poukisa nou chwazi Kotlin ak Jetpack Compose :
+                    Pou aplikasyon Android yo, AJ-TECH chwazi Kotlin ak Jetpack Compose. Fason modèn sa a pèmèt nou desine ekran yo ak kòd senp kote ekran an chanje otomatikman lepli vit ke done yo chanje, san kouri dèyè vye fichye XML konplike.
                     
-                    2. Règleman etik ak kontwòl sou erè IA ka fè :
-                    IA pa ka ranplase konprann yon moun. Nou mete gwo baryè pou sekirite :
-                    - Pa janm kwè IA pa fè erè : modèl sa yo ka envante bagay ki pa vre (hallucinations), kidonk nou dwe toujou verifye yo ;
-                    - Moun dwe toujou valide (Human-in-the-Loop) anvan yo pran gwo desizyon sou lajan, lalwa oswa lekòl ;
-                    - Transparans : tout sa IA ede ekri dwe make aklè pou tout moun konnen.
+                    2. Achitekti MVVM (Model-View-ViewModel) :
+                    - Model : Done yo menm ki pa ka chanje san kontwòl (`BookChapter`, `EcosystemEntity`) ;
+                    - ViewModel : Pati ki kenbe eta ekran an pou l pa pèdi lè w vire telefòn nan ;
+                    - View (Composables) : Ti moso kòd ki montre bèl bouton, tèks ak imaj sou ekran an.
                     
-                    3. Pwoteksyon lavi prive ak done moun :
-                    Nou pa dwe janm voye done prive itilizatè ayisyen bay gwo konpayi etranje pou antrene modèl san konsantman yo.
+                    3. Respekte estanda Material 3 :
+                    Aplikasyon referans lan gen bèl koulè ofisyèl AJ-TECH yo :
+                    - Ble Nwa Pwofon (`#0A192F`), Lò Solèy (`#FFD700`), Wouj Ayisyen (`#D21034`) ;
+                    - Bèl lèt ki klè pou moun ka li liv la swa an Kreyòl swa an Fransè san je yo pa fatige ;
+                    - Bouton omwen 48dp pou fasil peze ak dwèt.
+                    
+                    4. Vitès ak jan l glise byen sou ekran :
+                    Itilize `LazyColumn` ak kle espesyal pou ekran an pa janm bloke oswa ralanti menm lè gen plizyè santèn chapit oswa antite k ap desann.
                 """.trimIndent(),
-                plannedStartPage = 263,
-                plannedEndPage = 266,
+                plannedStartPage = 85,
+                plannedEndPage = 87,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 55 : Sécurité applicative ====================
+            // ==================== CHAPITRE 55 : Cloud et infrastructure numérique ====================
             BookChapter(
                 id = "ch_4_55",
                 chapterNumber = 55,
                 partId = "part_4",
-                titleFr = "Chapitre 55 — Sécurité applicative",
-                titleHt = "Chapit 55 — Sekirite aplikasyon yo",
-                subtitleFr = "Gestion des secrets, authentification, chiffrement et protection des données",
-                subtitleHt = "Jesyon sekrè, otantifikasyon, chifreman ak pwoteksyon done itilizatè yo",
-                summaryFr = "Principes d'ingénierie de sécurité pour protéger les applications et utilisateurs de l'écosystème AJ-TECH.",
-                summaryHt = "Prensip sekirite enfòmatik pou pwoteje aplikasyon ak tout moun k ap itilize sistèm AJ-TECH la.",
+                titleFr = "Chapitre 55 — Cloud et infrastructure numérique",
+                titleHt = "Chapit 55 — Cloud ak enfrastrikti nimerik",
+                subtitleFr = "Cloud computing, hébergement, stockage distribué, disponibilité et maîtrise des coûts",
+                subtitleHt = "Teknoloji Cloud, kote yo sere done sou entènèt, sekirite ak kontwòl depans",
+                summaryFr = "Panorama des architectures cloud contemporaines et des impératifs d'ingénierie pour héberger des services numériques fiables et économiques.",
+                summaryHt = "Eksplikasyon sou kijan enfrastrikti cloud fonksyone ak fason pou jere sèvè san fè twòp depans.",
                 contentFr = """
-                    1. Principes de sécurité appliqués :
-                    La sécurité n'est pas une option surajoutée mais une contrainte architecturale permanente dès la première ligne de code :
-                    - Principe du moindre privilège : chaque module n'accède qu'aux seules données strictement indispensables à sa fonction ;
-                    - Défense en profondeur : superposition de barrières de sécurité logicielles et protocolaires.
+                    1. Fondements du Cloud Computing :
+                    Le cloud computing permet de louer à la demande des capacités de calcul (CPU/GPU), du stockage d'objets, des bases de données managées et des réseaux sécurisés sans devoir acquérir et maintenir des serveurs physiques dès le premier jour.
                     
-                    2. Gestion des secrets et des identifiants :
-                    - Jamais de clés d'API, de jetons secrets ou de mots de passe en clair dans le code source ou dans les dépôts de versions ;
-                    - Injection des variables sensibles au moment de la compilation ou via des gestionnaires de secrets sécurisés.
+                    2. Modèles de déploiement et conteneurisation :
+                    Pour éviter tout verrouillage propriétaire (Vendor Lock-in), AJ-TECH préconise des architectures basées sur des standards ouverts :
+                    - Conteneurisation Docker pour encapsuler chaque service avec ses dépendances exactes ;
+                    - Orchestration légère pour assurer la haute disponibilité et le redémarrage automatique en cas de défaillance ;
+                    - Déploiement sans serveur (Serverless) pour les micro-tâches à exécution ponctuelle afin de réduire les coûts opérationnels.
                     
-                    3. Chiffrement et intégrité des données :
-                    - Chiffrement au repos (AES-256) pour les données locales sensibles ;
-                    - Chiffrement en transit via TLS 1.3 obligatoire pour tous les flux réseau ;
-                    - Validation et assainissement systématique de toutes les entrées utilisateurs pour prévenir les injections de code (XSS, SQL Injection).
+                    3. Maîtrise des coûts dans une économie en émergence :
+                    L'infrastructure doit être calibrée avec une rigueur financière absolue. Chaque dollar investi dans l'hébergement doit correspondre à une valeur d'usage réelle, en exploitant d'abord les quotas gratuits et les architectures frugales avant toute montée en charge.
                     
-                    4. Prudence et honnêteté sur les certifications :
-                    Aucun système futur ne doit être prétendu « inviolable » ou pré-certifié (PCI-DSS, ISO 27001) avant d'avoir subi de véritables audits indépendants et formels.
+                    4. État d'avancement réel :
+                    - 🟢 Opérationnel : Architecture 100% autonome locale ne générant aucun coût serveur pour l'application compagnon ;
+                    - 🔵 Concept : Schéma d'infrastructure conteneurisée pour les futurs backends d'AJ-Task et AJ-Pay ;
+                    - ⚪ Vision future : grappe de serveurs distribués à l'échelle régionale.
                 """.trimIndent(),
                 contentHt = """
-                    1. Prensip sekirite nou aplike yo :
-                    Sekirite se pa yon bagay nou ajoute apre, se yon règ debaz depi premye liy kòd la :
-                    - Bay chak pati nan kòd la sèlman dwa li bezwen pou l travay, pa plis ;
-                    - Mete plizyè kouch sekirite youn dèyè lòt pou bare atakè yo.
+                    1. Kisa Cloud Computing vle di :
+                    Cloud la se lwe espas nan gwo òdinatè (sèvè) lòt bò dlo pou sere done, kouri pwogram ak jere baz done san ou pa bezwen achte gwo machin ki chè anpil depi premye jou a.
                     
-                    2. Kijan nou jere sekrè ak modpas yo :
-                    - Pa janm ekri modpas, kle API oswa sekrè an klè nan kòd la oswa sou GitHub ;
-                    - Mete sekrè yo nan zouti espesyal ki pwoteje yo pandan aplikasyon an ap bati.
+                    2. Fason pou kòd la pa bloke nan men yon sèl konpayi :
+                    Pou AJ-TECH pa janm depann de yon sèl founisè sèvè, nou itilize zouti estanda ouvè :
+                    - Bwat Docker pou mete chak pwogram ak tout sa l bezwen pou l mache ;
+                    - Sistèm ki relanse pwogram nan otomatikman si yon ti machin ta vin gen pwoblèm ;
+                    - Pwogram Serverless ki kouri sèlman lè gen moun ki mande yon bagay pou pa peye sèvè k ap vire pou anyen.
                     
-                    3. Chifreman ak pwoteksyon done yo :
-                    - Fèmen done sansib yo ak kle chifreman solid (AES-256) sou telefòn lan ;
-                    - Tout kominikasyon sou entènèt dwe pase nan TLS 1.3 ki an sekirite ;
-                    - Netwaye epi verifye tout sa itilizatè a tape pou anpeche moun voye vye kòd pirate (XSS, SQL Injection).
+                    3. Jere kòb ak bidjè a byen :
+                    Fòk nou kalkile chak kòb nou depanse nan enfrastrikti ak anpil atansyon. Nou kòmanse ak sa k gratis oswa ki pa koute chè anvan nou grandi.
                     
-                    4. Onètete sou sètifika sekirite :
-                    Nou pa dwe janm di yon sistèm ki nan plan deja gen sètifika entènasyonal si li poko pase nan men gwo ekspè endepandan ki teste l tout bon.
+                    4. Eta pwojè a an tout verite :
+                    - 🟢 Sa k ap mache jodi a : Aplikasyon referans lan mache 100% sou aparèy la san depanse yon goud nan sèvè ;
+                    - 🔵 Konsèp : Plan teknik pou sèvè backend AJ-Task ak AJ-Pay ;
+                    - ⚪ Vizyon pou lavni : Rezo gwo sèvè nan peyi a ak nan Karayib la.
                 """.trimIndent(),
-                plannedStartPage = 267,
-                plannedEndPage = 270,
+                plannedStartPage = 87,
+                plannedEndPage = 88,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 56 : Performance et optimisation ====================
+            // ==================== CHAPITRE 56 : Vers un cloud souverain haïtien ====================
             BookChapter(
                 id = "ch_4_56",
                 chapterNumber = 56,
                 partId = "part_4",
-                titleFr = "Chapitre 56 — Performance et optimisation",
-                titleHt = "Chapit 56 — Vitès ak optimize kòd la",
-                subtitleFr = "Optimisations réelles : Canvas drawLine(), LazyColumn, clés stables et gestion de la mémoire",
-                subtitleHt = "Sa nou optimize tout bon vre : Canvas drawLine(), LazyColumn, kle ki pa chanje ak memwa",
-                summaryFr = "Documentation technique des choix d'optimisation réels intégrés dans l'application compagnon AJ-TECH.",
-                summaryHt = "Dokimantasyon teknik sou fason nou rann aplikasyon AJ-TECH la rapid epi lejè sou telefòn yo.",
+                titleFr = "Chapitre 56 — Vers un cloud souverain haïtien",
+                titleHt = "Chapit 56 — Vè yon cloud souvren ayisyen",
+                subtitleFr = "Souveraineté numérique, hébergement local, centres de données et résilience territoriale",
+                subtitleHt = "Souverènte nimerik, kenbe done lakay nou, sant sèvè ak sekirite nasyonal",
+                summaryFr = "Vision prospective et feuille de route pour l'émergence d'une infrastructure cloud souveraine implantée sur le sol haïtien.",
+                summaryHt = "Gwo vizyon ak plan pou pi devan pou Ayiti ka gen pwòp gwo sant sèvè pa l pou pwoteje done nasyonal yo.",
                 contentFr = """
-                    1. Optimisations concrètement déployées dans le code :
-                    L'application compagnon applique des optimisations de bas niveau pour garantir une fluidité parfaite à 60/120 FPS :
-                    - Rendu Canvas optimisé : Utilisation de primitives graphiques directes `drawLine()` dans les composants de visualisation pour réduire le nombre de nœuds de mise en page (Layout Nodes) ;
-                    - Réduction drastique des allocations d'objets dans les boucles de rendu pour soulager le ramasse-miettes (Garbage Collector) ;
-                    - Mémorisation avec `remember` et `derivedStateOf` : Calculs de filtrage et d'indexation de recherche exécutés uniquement lorsque la requête ou les métadonnées changent.
+                    1. L'enjeu stratégique de la souveraineté numérique :
+                    Un pays dont 100% des données citoyennes, bancaires, médicales et éducatives sont hébergées sur des serveurs étrangers dépend entièrement de la bienveillance d'acteurs tiers et des liaisons sous-marines internationales. La souveraineté numérique est une condition incontournable de la souveraineté nationale au XXIe siècle.
                     
-                    2. Listes virtuelles et recyclage avec LazyColumn :
-                    Pour afficher le corpus de 60 chapitres et les 21 entités sans saturer la mémoire vive :
-                    - Utilisation de `LazyColumn` avec des clés d'éléments stables (`key = { chapter.id }`) pour permettre à Compose de recycler et réordonner les éléments sans recomposition complète ;
-                    - Chargement paresseux du contenu texte pour préserver l'empreinte mémoire sur les smartphones à ressources limitées.
+                    2. Une vision et une trajectoire future (Transparence) :
+                    Il convient d'être parfaitement clair et transparent : AJ-TECH ne dispose pas aujourd'hui d'un cloud souverain physique opérationnel. Ce projet (AJ-Cloud) représente un cap stratégique décennal (2026–2035) nécessitant des investissements majeurs en génie électrique, solaire, refroidissement et télécommunications.
                     
-                    3. Optimisations futures envisagées :
-                    - Compilation de profils de référence (Baseline Profiles) pour réduire le temps de démarrage à froid de 30% ;
-                    - Pagination dynamique des flux de données et compression binaire des métadonnées.
+                    3. Les défis d'un datacenter sur le sol haïtien :
+                    - Autonomie énergétique 24/7 : couplage solaire photovoltaïque, batteries industrielles et groupes électrogènes de secours ;
+                    - Connectivité redondante : multiples sorties fibre optique et liaisons satellitaires géostationnaires / LEO ;
+                    - Sécurité physique et protection contre les catastrophes naturelles (séismes, cyclones).
+                    
+                    4. Feuille de route progressive :
+                    - 2026–2028 : Études de faisabilité technique et micro-datacenters pilotes à faible consommation ;
+                    - 2029–2032 : Déploiement du premier centre de données éco-responsable certifié en Haïti ;
+                    - 2033–2035 : Interconnexion des institutions publiques et privées haïtiennes au sein du cloud souverain AJ-Cloud.
                 """.trimIndent(),
                 contentHt = """
-                    1. Sa nou optimize tout bon vre nan kòd la :
-                    Aplikasyon an gen bonjan zouti optimize pou l kouri byen sou nenpòt kalite telefòn :
-                    - Desen Canvas rapid : Nou itilize `drawLine()` dirèkteman pou desine bèl liy san sa pa louvri twòp kouch sou ekran an ;
-                    - Evite kreye twòp ti objè san rezon pou memwa telefòn lan pa janm plen ;
-                    - Itilize `remember` ak `derivedStateOf` : Nou fè kalkil rechèch yo fèt sèlman lè moun nan tape yon nouvo mo.
+                    1. Poukisa souverènte nimerik la enpòtan pou peyi a :
+                    Yon peyi kote tout done labank, lopital, lekòl ak leta sere lòt bò dlo nan men etranje se yon peyi ki pa gen kontwòl sou avni l. Si kab anba lanmè a ta koupe, tout bagay rete bloke. Se poutèt sa nou dwe travay pou n ka gen pwòp sèvè pa nou lakay nou.
                     
-                    2. Lis entèlijan ak LazyColumn :
-                    Pou afiche 60 chapit liv la ak 21 antite yo san telefòn lan pa ralanti :
-                    - Nou itilize `LazyColumn` ak kle inik sou chak chapit (`key = { chapter.id }`) pou Compose ka re-itilize ti moso ekran yo san l pa refè tout paj la ;
-                    - Chaje gwo tèks yo sèlman lè itilizatè a rive sou yo pou ti telefòn ki pa gen anpil memwa ka louvri l fasil.
+                    2. Yon vizyon ak yon objektif pou pi devan (San manti) :
+                    Nou dwe di sa aklè san kache anyen : AJ-TECH pa gen yon gwo sant sèvè souvren ki deja konstwi jodi a. Pwojè sa a (AJ-Cloud) se yon gwo vizyon pou 10 lane k ap vini yo (2026–2035) ki pral mande anpil kòb, bon kouran solèy ak gwo enjenyè.
                     
-                    3. Sa nou prevwa optimize pi devan :
-                    - Kreye Baseline Profiles pou aplikasyon an ouvri 30% pi vit lè w klike sou li ;
-                    - Paginasyon otomatik sou gwo lis done yo.
+                    3. Defi pou bati yon sant sèvè an Ayiti :
+                    - Kouran 24 sou 24 : panno solèy, gwo batri ak dèlko pou sèvè yo pa janm etenn ;
+                    - Entènèt ki gen plizyè wout sekirite : plizyè liy fib optik ak satelit ;
+                    - Pwoteje batiman an kont tranblemanntè ak siklòn.
+                    
+                    4. Plan etap pa etap :
+                    - 2026–2028 : Fè etid teknik epi teste premye ti sèvè ki pa pran anpil kouran ;
+                    - 2029–2032 : Bati premye vrè ti sant sèvè solè nan peyi a ;
+                    - 2033–2035 : Konekte lekòl, lopital ak biznis yo sou AJ-Cloud.
                 """.trimIndent(),
-                plannedStartPage = 271,
-                plannedEndPage = 274,
+                plannedStartPage = 88,
+                plannedEndPage = 89,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 57 : Accessibilité et expérience utilisateur ====================
+            // ==================== CHAPITRE 57 : Sécurité dès la conception ====================
             BookChapter(
                 id = "ch_4_57",
                 chapterNumber = 57,
                 partId = "part_4",
-                titleFr = "Chapitre 57 — Accessibilité et expérience utilisateur",
-                titleHt = "Chapit 57 — Fasilite pou tout moun itilize (Accessibilité & UX)",
-                subtitleFr = "Cibles tactiles ≥48dp, TalkBack, contrastes et confort de lecture bilingue",
-                subtitleHt = "Bouton ≥48dp pou dwèt, TalkBack pou moun ki pa wè byen ak lekti bileng fasil",
-                summaryFr = "Standards d'accessibilité et de design inclusif appliqués dans l'interface utilisateur d'AJ-TECH.",
-                summaryHt = "Estanda pou pèmèt tout kalite moun, menm moun ki gen difikilte pou wè, itilize aplikasyon an fasil.",
+                titleFr = "Chapitre 57 — Sécurité dès la conception",
+                titleHt = "Chapit 57 — Sekirite depi nan konsepsyon",
+                subtitleFr = "Security by Design, authentification, autorisation, chiffrement, gestion des secrets et moindre privilège",
+                subtitleHt = "Sekirite depi nan premye liy kòd la, otantifikasyon, chifreman ak pwoteje sekrè",
+                summaryFr = "Principes fondamentaux de sécurité logicielle appliqués dès l'architecture pour protéger les applications et les utilisateurs.",
+                summaryHt = "Prensip sekirite lojisyèl depi nan kòmansman pou anpeche moun pirate oswa vòlè enfòmasyon nan sistèm nan.",
                 contentFr = """
-                    1. Principes d'inclusion et d'accessibilité numérique :
-                    Pour qu'une technologie soit réellement émancipatrice, elle doit être utilisable par tous les citoyens, sans barrière physique, visuelle ou linguistique.
+                    1. Le principe du « Security by Design » :
+                    La sécurité ne doit jamais être ajoutée comme un vernis superficiel à la fin du développement ; elle doit être pensée, intégrée et auditée dès la première esquisse architecturale. Chaque ligne de code est écrite avec l'hypothèse qu'elle pourrait être ciblée par des attaques.
                     
-                    2. Règles d'accessibilité appliquées dans l'application :
-                    - Cibles tactiles minimales : Tous les boutons, icônes interactives et onglets respectent une zone de toucher minimale de 48dp x 48dp (`minimumInteractiveComponentSize`) pour éviter les erreurs de frappe ;
-                    - Descriptions sémantiques : Présence systématique de `contentDescription` explicites sur toutes les icônes et illustrations pour la compatibilité avec le lecteur d'écran Android TalkBack ;
-                    - Ratios de contraste élevés : Conformité avec les critères WCAG AA pour assurer une lisibilité optimale en plein soleil haïtien ou en environnement sombre ;
-                    - Typographie dynamique : Adaptation harmonieuse aux préférences de taille de police définies par l'utilisateur au niveau du système.
+                    2. Les piliers de la sécurité chez AJ-TECH :
+                    - Authentification forte et gestion des sessions : mots de passe hachés avec des algorithmes modernes (Argon2 / bcrypt) et support futur de l'authentification multi-facteurs (MFA / passkeys) ;
+                    - Autorisation stricte basée sur les rôles (RBAC) et principe du moindre privilège : chaque composant ne dispose que des droits strictement nécessaires à son exécution ;
+                    - Chiffrement systématique : HTTPS/TLS 1.3 obligatoire pour toutes les communications réseau et chiffrement au repos (AES-256) pour les données sensibles ;
+                    - Gestion rigoureuse des secrets : aucune clé d'API, aucun mot de passe ni certificat en clair dans le code source ou les dépôts Git.
                     
-                    3. Expérience utilisateur bilingue native :
-                    Bascule instantanée en un clic entre le Français et le Kreyòl Ayisyen sans rechargement ni perte du contexte de navigation.
+                    3. Validation rigoureuse des entrées :
+                    Toutes les entrées utilisateurs sont systématiquement assainies et validées côté client et côté serveur afin d'éradiquer les failles d'injection (SQL, XSS, injection de commandes).
+                    
+                    4. État d'implémentation :
+                    - 🟢 Opérationnel : Code source exempt de secrets codés en dur, typage fort prévenant les fuites mémoires et injections ;
+                    - 🟡 En développement / Prototype : Protocoles d'authentification sécurisés pour AJ-Task ;
+                    - ⚪ Vision future : Centre des opérations de sécurité (SOC) national surveillant les flux de l'écosystème.
                 """.trimIndent(),
                 contentHt = """
-                    1. Prensip pou tout moun ka itilize l :
-                    Pou yon teknoloji sèvi peyi a tout bon, tout moun dwe ka sèvi avè l san pwoblèm, menm moun ki gen difikilte pou wè oswa pou li.
+                    1. Prensip sekirite depi nan kòmansman (Security by Design) :
+                    Sekirite se pa yon bagay ou vin ajoute nan fen yon pwojè tankou yon kouch penti ; fòk li panse depi nan premye liy kòd la. Chak pati nan lojisyèl la fèt kòmsi ta gen moun ki pral eseye atake l.
                     
-                    2. Règleman nou respekte nan ekran yo :
-                    - Gwosè bouton pou dwèt : Tout bouton ak ti kote ou ka klike gen omwen 48dp x 48dp pou moun pa klike sou move kote pa erè ;
-                    - Eksplikasyon pou moun ki pa wè : Tout ti desen ak bouton gen `contentDescription` pou zouti TalkBack ka li l bay moun ki avèg ;
-                    - Koulè ki byen separe : Tèks yo parèt byen klè menm anba gwo solèy cho oswa nan fènwa ;
-                    - Ekriti ki ka gwosi : Si itilizatè a chwazi gwo lèt nan paramèt telefòn li, aplikasyon an adapte otomatikman.
+                    2. Poto mitan sekirite nan AJ-TECH :
+                    - Otantifikasyon solid : modpas yo byen kache ak algoritm Argon2/bcrypt epi prepare pou teknoloji modèn tankou kle MFA ;
+                    - Kontwòl sou ki moun ki gen dwa fè kisa : chak itilizatè oswa pwogram gen dwa sèlman sou sa l bezwen pou l travay la ;
+                    - Chifreman tout kote : HTTPS/TLS pou tout sa k ap pase sou rezo a ak AES-256 pou done ki sere sou machin yo ;
+                    - Pa janm ekri modpas nan kòd la : okenn kle sekrè pa dwe janm parèt nan fichye kòd piblik yo.
                     
-                    3. Chanje lang fasil nan yon sèl klik :
-                    Itilizatè a ka chanje ant Fransè ak Kreyòl Ayisyen nan yon sèl klik san paj la pa fèmen epi san l pa pèdi kote l t ap li a.
+                    3. Netwaye tout sa itilizatè a tape :
+                    Tout tèks yon moun tape nan yon bwat dwe verifye byen pou moun pa ka voye move kòd (atak XSS oswa SQL) pou kraze sistèm nan.
+                    
+                    4. Eta pwojè a jodi a :
+                    - 🟢 Sa k ap mache jodi a : Kòd la pwòp, li pa gen okenn kle sekrè ki ekri an kachèt ;
+                    - 🟡 Pwototip k ap devlope : Sistèm otantifikasyon pwoteje pou AJ-Task ;
+                    - ⚪ Vizyon pou lavni : Ekip espesyalis ayisyen k ap veye sekirite tout rezo AJ-TECH la 24 sou 24.
                 """.trimIndent(),
-                plannedStartPage = 275,
-                plannedEndPage = 277,
+                plannedStartPage = 89,
+                plannedEndPage = 90,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 58 : Tests, qualité et maintenance ====================
+            // ==================== CHAPITRE 58 : Protection des données et vie privée ====================
             BookChapter(
                 id = "ch_4_58",
                 chapterNumber = 58,
                 partId = "part_4",
-                titleFr = "Chapitre 58 — Tests, qualité et maintenance",
-                titleHt = "Chapit 58 — Tès, kalite ak antretyen kòd la",
-                subtitleFr = "Tests unitaires, Robolectric, non-régression et limites de la validation automatique",
-                subtitleHt = "Tès sou machin, Robolectric, verifye si anyen pa kraze ak limit tès otomatik yo",
-                summaryFr = "Stratégie de test et d'assurance qualité du projet AJ-TECH, entre rigueur automatisée et vigilance continue.",
-                summaryHt = "Estrateji pou teste kòd la epi asire bon kalite nan aplikasyon AJ-TECH la.",
+                titleFr = "Chapitre 58 — Protection des données et vie privée",
+                titleHt = "Chapit 58 — Pwoteksyon done ak vi prive",
+                subtitleFr = "Données personnelles, minimisation, consentement explicite, chiffrement, transparence et éthique",
+                subtitleHt = "Pwoteksyon enfòmasyon pèsonèl moun, pran sèlman sa k nesesè, respè ak transparans",
+                summaryFr = "Politique et principes techniques garantissant le respect scrupuleux de la vie privée et la souveraineté des utilisateurs sur leurs données.",
+                summaryHt = "Prensip etik ak teknik pou asire AJ-TECH pa janm vann oswa abize enfòmasyon pèsonèl itilizatè yo.",
                 contentFr = """
-                    1. Pyramide des tests dans AJ-TECH :
-                    La qualité logicielle repose sur une suite de vérifications multicouches :
-                    - Tests unitaires de logique métier : Validation des calculs, des filtres sectoriels et des modèles de données sans dépendance Android ;
-                    - Tests Robolectric sur machine virtuelle locale JVM : Simulation réaliste de l'environnement Android permettant de tester les ViewModels, l'état Compose et les interactions de navigation sans nécessiter d'émulateur lourd ;
-                    - Compilation continue et validation des types stricts.
+                    1. La protection de la vie privée comme droit inaliénable :
+                    À l'ère de l'économie de la surveillance et du capitalisme de données, AJ-TECH fait le choix éthique résolu de considérer les données personnelles non comme une marchandise à monétiser, mais comme un dépôt sacré appartenant exclusivement à l'utilisateur.
                     
-                    2. Tests de non-régression de l'écosystème :
-                    Des suites de tests dédiées (`FilterAndShareRobolectricTest`) valident automatiquement que les 21 entités officielles, leurs 18 rubriques obligatoires et l'intégralité des chapitres bilingues demeurent intacts après chaque modification de code.
+                    2. Les règles de gouvernance des données :
+                    - Principe de minimisation : l'application ne collecte que les données strictement indispensables à son bon fonctionnement fonctionnel ;
+                    - Consentement clair et explicite : aucune collecte opaque, aucun pistage publicitaire tiers, aucune revente d'informations ;
+                    - Droit d'accès, d'exportation et de suppression : l'utilisateur conserve la pleine propriété de ses données et peut les exporter ou les effacer à tout moment ;
+                    - Stockage local privilégié : toutes les données personnelles restent sur l'appareil de l'utilisateur tant qu'une synchronisation distante n'est pas explicitement demandée.
                     
-                    3. Honnêteté et limites des tests automatisés :
-                    Le succès des tests automatisés atteste de la conformité du code aux scénarios prévus, mais ne saurait garantir l'absence absolue de bugs dans des conditions réelles imprévues (variations extrêmes de matériel, coupures soudaines de batterie, etc.). La maintenance continue et les retours d'utilisateurs restent indispensables.
+                    3. Transparence algorithmique :
+                    Les critères de classement, de recherche ou d'assistance algorithmique sont documentés et compréhensibles, sans « boîtes noires » discriminatoires.
+                    
+                    4. Engagement écosystémique :
+                    Ces principes s'appliquent à l'ensemble des 22 entités d'AJ-TECH, de la simple application de tâches (AJ-Task) aux futures solutions financières (AJ-Pay) et éducatives (EDUKA).
                 """.trimIndent(),
                 contentHt = """
-                    1. Kijan nou teste kòd la nan AJ-TECH :
-                    Nou verifye kòd la nan plizyè nivo pou n asire li pa gen erè :
-                    - Tès senp sou kalkil ak lojik : Verifye si rechèch ak filtè yo ap mache kòrèkteman ;
-                    - Tès Robolectric sou òdinatè (JVM) : Sa simulation yon telefòn Android pou teste ViewModels ak ekran yo san nou pa bezwen yon emilatè lou ;
-                    - Verifikasyon konpilasyon pou wè si pa gen move liy kòd.
+                    1. Respekte lavi prive moun se yon prensip sakre :
+                    Pandan anpil gwo konpayi ap fè komès ak done moun sou entènèt, AJ-TECH pran desizyon fèm pou l pa janm vann enfòmasyon moun. Done yon itilizatè se pou li sèlman yo ye.
                     
-                    2. Tès pou verifye si anyen pa kraze :
-                    Nou gen gwo dosye tès (`FilterAndShareRobolectricTest`) ki verifye si 21 antite yo, 18 ribrik yo ak tout chapit bileng yo la kòrèkteman chak fwa nou chanje yon ti kòd.
+                    2. Règ nou fikse pou jere enfòmasyon moun :
+                    - Pran sèlman sa k nesesè : aplikasyon an pa mande anyen ki pa gen rapò ak travay l ap fè a ;
+                    - Moun nan dwe dakò klè : nou pa mete okenn ti espyon nan aplikasyon an pou veye moun ;
+                    - Dwa pou efase tout bagay : itilizatè a ka retire tout enfòmasyon sou li nenpòt lè li vle ;
+                    - Sere sou telefòn nan an premye : tout sa w fè rete sou aparèy ou an toutotan ou pa chwazi voye l sou entènèt.
                     
-                    3. Verite sou limit tès otomatik yo :
-                    Lè tout tès yo pase vèt, sa vle di kòd la respekte sa nou te prevwa a, men sa pa vle di pa ka janm gen okenn ti pwoblèm sou kèk telefòn diferan oswa lè batri a koupe sibit. Nou dwe toujou koute moun k ap itilize l yo pou kontinye amelyore l.
+                    3. Eksplikasyon klè sou jan kòd la travay :
+                    Nou pa gen anyen kache : moun konnen kijan rechèch la ak zouti yo fonksyone san okenn paspouki.
+                    
+                    4. Angajman pou tout 22 antite yo :
+                    Règ sa yo se pou tout pwojè nan AJ-TECH, kit se sou AJ-Task, sou EDUKA oswa sou solisyon lajan tankou AJ-Pay.
                 """.trimIndent(),
-                plannedStartPage = 278,
-                plannedEndPage = 280,
+                plannedStartPage = 90,
+                plannedEndPage = 91,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 59 : Architecture évolutive 2026–2035 ====================
+            // ==================== CHAPITRE 59 : Performance et optimisation ====================
             BookChapter(
                 id = "ch_4_59",
                 chapterNumber = 59,
                 partId = "part_4",
-                titleFr = "Chapitre 59 — Architecture évolutive 2026–2035",
-                titleHt = "Chapit 59 — Plan achitekti k ap grandi 2026–2035",
-                subtitleFr = "Feuille de route technique progressive : stabilisation, persistance, cloud et maturité",
-                subtitleHt = "Plan travay etap pa etap : estabilizasyon, baz done, cloud ak gwo enfrastrikti",
-                summaryFr = "Feuille de route technique décennale progressive pour la montée en puissance de l'écosystème AJ-TECH.",
-                summaryHt = "Plan travay sou 10 lane pou grandi achitekti teknoloji AJ-TECH la etap pa etap.",
+                titleFr = "Chapitre 59 — Performance et optimisation",
+                titleHt = "Chapit 59 — Pèfòmans ak optimizasyon",
+                subtitleFr = "Temps de chargement, gestion mémoire, CPU, cache intelligent, compression et frugalité",
+                subtitleHt = "Vitès ouvèti, jesyon memwa ak processeur, kach entèlijan ak respè pou ti telefòn yo",
+                summaryFr = "Méthodes d'optimisation logicielle garantissant une réactivité maximale et une consommation minimale sur tous types de terminaux.",
+                summaryHt = "Teknik pou fè lojisyèl yo louvri rapid epi mache byen menm sou telefòn ki pa gen gwo kapasite.",
                 contentFr = """
-                    1. Nature des projections décennales :
-                    Les étapes ci-dessous constituent une vision d'ingénierie progressive et des repères stratégiques, et non des engagements contractuels rigides.
+                    1. La performance comme composante de l'accessibilité :
+                    Une application lente ou consommant excessivement de mémoire exclut de facto les utilisateurs disposant d'appareils modestes ou usagés. Chez AJ-TECH, l'optimisation n'est pas un luxe pour appareils haut de gamme, mais un devoir d'inclusivité.
                     
-                    2. Phases d'évolution progressive de l'architecture :
-                    - 2026 — Stabilisation & Consolidation : Finalisation du socle logiciel documentaire, stabilisation de la PWA AJ-Task en bêta publique et durcissement des tests de non-régression.
-                    - 2027–2028 — Persistance & Services locaux : Intégration de Room / DataStore sur Android, déploiement des premières APIs locales et formalisation des protocoles d'échange de données.
-                    - 2029–2030 — Cloud souverain & APIs avancées : Prototypage et mise en service pilote d'AJ-Cloud pour la synchronisation multi-terminaux et ouverture de la passerelle d'APIs tierces.
-                    - 2031–2033 — Infrastructure mature & Décentralisation : Déploiement de micro-centres de données résilients alimentés à l'énergie solaire et montée en charge des services éducatifs et cadastraux.
-                    - 2034–2035 — Rayonnement & Fédérations régionales : Interconnexion avec les réseaux régionaux caribéens et valorisation du savoir-faire technologique haïtien sur les marchés internationaux.
+                    2. Techniques d'optimisation concrètes :
+                    - Optimisation du rendu graphique : utilisation de `Canvas` avec tracé direct (`drawLine()`, `drawRect()`) pour les visualisations complexes plutôt que d'empiler des dizaines de composants Composable imbriqués ;
+                    - Stabilité des recompositions Compose : typage immuable des modèles de données et utilisation systématique de `remember` et `derivedStateOf` pour éviter les calculs redondants ;
+                    - Réduction de l'empreinte mémoire : compression des ressources textuelles, suppression des bibliothèques superflues et chargement paresseux (Lazy Loading) des listes étendues ;
+                    - Réseau frugal : compression des flux et élimination des requêtes d'arrière-plan inutiles pour préserver la batterie.
+                    
+                    3. Métriques et profils de performance :
+                    Suivi strict du temps de démarrage à froid (Cold Start < 1 seconde), de la fluidité à 60 images/seconde et du maintien de la consommation RAM sous les seuils critiques des appareils à 2 Go de mémoire.
                 """.trimIndent(),
                 contentHt = """
-                    1. Kisa plan 10 lane sa a vle di :
-                    Dat sa yo se yon gid estratejik ak yon vizyon travay, se pa yon pwomès kontra ki pa ka chanje.
+                    1. Fè aplikasyon an rapid se yon fason pou ede tout moun :
+                    Si yon aplikasyon lou oswa li pran twòp memwa, moun ki gen ti telefòn senp p ap ka sèvi avè l. Nan AJ-TECH, nou travay di pou kòd nou an lejè pou nenpòt moun ka sèvi avè l san difikilte.
                     
-                    2. Etap kòman achitekti a pral grandi :
-                    - 2026 — Estabilizasyon ak Konsolidasyon : Fini byen bati liv la ak aplikasyon an, mete PWA AJ-Task la disponib pou tout moun epi asire tout tès yo solid.
-                    - 2027–2028 — Baz done ak Sèvis lokal : Mete baz done Room ak DataStore sou Android, prepare premye API yo pou aplikasyon yo ka pale ansanm.
-                    - 2029–2030 — Cloud souveren ak gwo API : Kòmanse teste sèvè AJ-Cloud pou moun ka pataje done sou plizyè aparèy epi louvri zouti pou lòt devlopè.
-                    - 2031–2033 — Enfrastrikti solid ak Enèji solè : Mete ti sant sèvè ki mache ak solè an Ayiti epi elaji sèvis pou lekòl (EDUKA) ak tè (AJ-Tè).
-                    - 2034–2035 — Prezans nan Karayib la : Konekte sèvis nou yo ak lòt peyi nan Karayib la epi montre konpetans teknolojik jèn Ayisyen sou mache entènasyonal la.
+                    2. Fason nou optimize kòd la tout bon vre :
+                    - Desine dirèkteman ak Canvas : nou itilize zouti grafik dirèk tankou `drawLine()` pou bèl fòm olye nou anpile twòp kouch sou ekran an ;
+                    - Re-itilize sa k nan memwa : nou itilize `remember` nan Compose pou telefòn nan pa rekalkile menm bagay la dis fwa ;
+                    - Pa gaspiye memwa : retire tout kòd ki pa sèvi anyen epi louvri chapit yo sèlman lè moun nan ap li yo ;
+                    - Pa fini batri moun yo : pa kite pwogram nan ap vire san rezon nan background.
+                    
+                    3. Egzijans sou vitès la :
+                    Aplikasyon an dwe louvri nan mwens pase yon segonn epi li dwe glise byen sou ekran an san sakad menm sou telefòn ki gen sèlman 2 Go memwa RAM.
                 """.trimIndent(),
-                plannedStartPage = 281,
-                plannedEndPage = 283,
+                plannedStartPage = 91,
+                plannedEndPage = 92,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 60 : Vers une infrastructure technologique haïtienne ====================
+            // ==================== CHAPITRE 60 : Qualité logicielle et tests ====================
             BookChapter(
                 id = "ch_4_60",
                 chapterNumber = 60,
                 partId = "part_4",
-                titleFr = "Chapitre 60 — Vers une infrastructure technologique haïtienne",
-                titleHt = "Chapit 60 — Pou yon gwo enfrastrikti teknolojik ayisyen",
-                subtitleFr = "Construire l'autonomie numérique, former des bâtisseurs et hisser Haïti sur l'échiquier mondial",
-                subtitleHt = "Bati otonomi dijital, fòme moun ki konn travay epi mete Ayiti sou kat mondyal la",
-                summaryFr = "Chapitre de clôture de la Partie IV exposant l'ambition d'une souveraineté technologique durable pour Haïti.",
-                summaryHt = "Dènye chapit Pati IV la ki eksplike gwo rèv pou Ayiti kreye, kenbe epi ekspòte pwòp teknoloji pa l.",
+                titleFr = "Chapitre 60 — Qualité logicielle et tests",
+                titleHt = "Chapit 60 — Kalite lojisyèl ak tès",
+                subtitleFr = "Tests unitaires, intégration, tests UI, Robolectric, non-régression, CI/CD et revues de code",
+                subtitleHt = "Tès sou kòd la, tès Robolectric sou machin, verifye si anyen pa kraze ak bon jan kalite",
+                summaryFr = "Stratégie globale d'assurance qualité logicielle : tests automatisés rapides, non-régression et rigueur d'ingénierie continue.",
+                summaryHt = "Fason nou teste kòd la regilyèman pou nou asire tout bagay ap mache byen epi okenn nouvo chanjman pa kraze sa k te deja la.",
                 contentFr = """
-                    1. L'ambition à long terme :
-                    L'objectif ultime d'AJ-TECH n'est pas simplement de concevoir une collection d'applications logicielles, mais de poser méthodiquement les jalons d'une capacité technologique nationale durable en Haïti.
+                    1. La qualité comme culture d'ingénierie :
+                    Bâtir un écosystème technologique digne de confiance exige une discipline sans faille. Un bogue dans une application éducative perturbe un cours ; un bogue dans une application financière ou médicale peut avoir des conséquences critiques.
                     
-                    2. Une ambition d'avenir, non une réalité achevée :
-                    Cette vision ne doit en aucun cas être présentée comme une réalité déjà accomplie. Elle constitue un cap exigeant qui demandera des années de labeur acharné, de discipline intellectuelle, de formation rigoureuse et d'investissements patients.
+                    2. La pyramide des tests chez AJ-TECH :
+                    - Tests unitaires rapides (JUnit) : validation systématique de la logique métier pure, du calcul des métriques et des algorithmes de recherche bilingue en quelques millisecondes ;
+                    - Tests d'intégration locaux sur JVM avec Robolectric : émulation fidèle de l'environnement Android sans la lenteur d'un émulateur physique lourd, permettant de valider les flux utilisateurs critiques (CUJ) ;
+                    - Tests d'intégrité du corpus : vérification automatisée de l'exhaustivité des 165 chapitres, de la correspondance stricte des identifiants et de l'équilibre des contenus français et créole.
                     
-                    3. Les trois piliers de la souveraineté technologique :
-                    - L'autonomie de conception : Former des ingénieurs et créateurs locaux capables d'architecturer, de programmer et d'auditer leurs propres systèmes sans dépendance servile ;
-                    - La maîtrise des infrastructures : Développer progressivement des serveurs, des protocoles et des outils de sécurisation adaptés aux réalités environnementales et économiques du pays ;
-                    - Le rayonnement international : Démontrer à la face du monde que la jeunesse haïtienne possède le talent, la rigueur et la créativité nécessaires pour exporter des solutions logicielles de premier plan.
+                    3. Automatisation et intégration continue (CI/CD) :
+                    Chaque modification du code déclenche automatiquement la compilation du projet (`compile_applet`) et l'exécution complète de la suite de tests (`gradle :app:testDebugUnitTest`), interdisant tout déploiement en cas d'échec.
                     
-                    4. Conclusion de la Partie IV :
-                    Le chemin vers le sommet est long et semé d'obstacles, mais la méthode est claire : coder avec rigueur, documenter avec honnêteté et bâtir sans relâche pour les générations futures.
+                    4. Bilan de la suite de tests actuelle :
+                    - 🟢 Opérationnel : 100% de succès sur la suite de tests Robolectric et unitaires couvrant les 22 entités et la navigation séquentielle intégrale.
                 """.trimIndent(),
                 contentHt = """
-                    1. Gwo rèv pou pi devan :
-                    Objektif final AJ-TECH se pa sèlman fè kèk aplikasyon, men se mete baz pou Ayiti gen kapasite teknik pou l kreye, jere epi kenbe pwòp teknoloji pa l pou tout tan.
+                    1. Bon kalite lojisyèl se yon prensip debaz :
+                    Pou moun ka fè AJ-TECH konfyans, fòk nou pa travay nan kouri. Yon erè nan yon aplikasyon lekòl ka deranje yon klas ; yon erè nan yon zouti lajan oswa sante ka lakòz gwo pwoblèm.
                     
-                    2. Yon gwo rèv k ap bati, pa yon bagay ki deja fini :
-                    Nou pa dwe janm prezante rèv sa a kòm yon bagay ki deja reyalize jodi a. Se yon gwo misyon ki pral mande plizyè lane gwo travay, disiplin, etid solid ak pasyans.
+                    2. Kalite tès nou fè sou kòd la :
+                    - Ti tès rapid (JUnit) : verifye kalkil ak motè rechèch la nan yon fraksyon segonn ;
+                    - Tès Robolectric sou machin : verifye tout fonksyon Android yo byen vit san nou pa bezwen tann gwo emilatè lou ;
+                    - Tès sou tout liv la : zouti otomatik ki verifye si tout 165 chapit yo la, si nimewo yo kòrèk epi si tèks Kreyòl ak Fransè yo byen ekri.
                     
-                    3. Twa gwo poto pou otonomi teknolojik la :
-                    - Konpetans pou bati : Fòme jèn enjenyè ak devlopè ayisyen ki kapab ekri kòd, jere sistèm epi verifye sekirite san yo pa bezwen depann de lòt moun ;
-                    - Kontwòl sou enfrastrikti : Bati ti pa ti pa sèvè, zouti ak rezo ki adapte ak kouran ak reyalite peyi a ;
-                    - Fè Ayiti briye deyò : Montre tout mond lan ke jèn Ayisyen gen talan, lespri ak kapasite pou kreye bon zouti teknolojik ki ka sèvi lòt nasyon.
+                    3. Tès otomatik chak fwa nou chanje yon bagay :
+                    Chak fwa nou modifye kòd la, sistèm nan kouri tout tès yo nèt (`gradle :app:testDebugUnitTest`) pou wè si anyen pa kraze anvan nou pibliye nouvo vèsyon an.
+                    
+                    4. Rezilta jodi a :
+                    - 🟢 Sa k ap mache jodi a : Tout tès yo pase 100% vèt sou tout 22 antite yo ak tout paj nan liv la.
+                """.trimIndent(),
+                plannedStartPage = 92,
+                plannedEndPage = 93,
+                estimatedReadMinutes = 5,
+                status = BookContentStatus.IN_PROGRESS
+            ),
+
+            // ==================== CHAPITRE 61 : Une architecture prête pour l'avenir ====================
+            BookChapter(
+                id = "ch_4_61",
+                chapterNumber = 61,
+                partId = "part_4",
+                titleFr = "Chapitre 61 — Une architecture prête pour l'avenir",
+                titleHt = "Chapit 61 — Yon achitekti ki pare pou lavni",
+                subtitleFr = "APIs, intelligence artificielle, cloud, scalabilité, interopérabilité et vision 2026–2035",
+                subtitleHt = "API, entèlijans atifisyèl, cloud, kapasite pou grandi ak vizyon 2026–2035",
+                summaryFr = "Synthèse architecturale et perspectives d'avenir : bâtir une base solide et progressive pour faire grandir l'écosystème AJ-TECH vers 2035.",
+                summaryHt = "Konklizyon sou achitekti a ak gwo vizyon pou lavni : bati yon fondasyon solid ki pare pou fè ekosistèm AJ-TECH la grandi rive nan 2035.",
+                contentFr = """
+                    1. Synthèse de la fondation architecturale :
+                    L'objectif premier d'AJ-TECH n'est pas de chercher immédiatement la complexité technique pour impressionner, mais d'établir une base d'ingénierie saine, solide, modulaire et parfaitement documentée. C'est cette rigueur initiale qui permettra à l'écosystème de traverser les décennies sans devenir obsolète.
+                    
+                    2. L'intégration harmonieuse des technologies émergentes :
+                    - Intelligence Artificielle éthique : intégration de modules d'assistance contextuelle au service de l'apprentissage (EDUKA) et de la productivité (AJ-Task) sans compromettre la vie privée ;
+                    - Interopérabilité étendue : ouverture d'APIs publiques et de kits de développement (SDKs) permettant aux développeurs et startups de la communauté haïtienne de bâtir leurs propres solutions sur le socle AJ-TECH ;
+                    - Scalabilité horizontale : capacité d'absorber des millions de transactions et de consultations sans refonte structurelle.
+                    
+                    3. La vision décennale 2026–2035 :
+                    L'architecture technologique détaillée dans ces 15 chapitres constitue le plan directeur de la renaissance numérique haïtienne. De l'application mobile autonome aux futurs centres de données nationaux, le chemin est tracé avec clarté, lucidité et détermination.
+                    
+                    4. Conclusion de la Partie IV :
+                    « L'innovation haïtienne au service du monde » n'est pas un slogan abstrait, c'est un engagement d'ingénierie qui commence par des fondations logicielles irréprochables.
+                """.trimIndent(),
+                contentHt = """
+                    1. Rezime sou fondasyon achitekti a :
+                    Objektif prensipal AJ-TECH se pa chèche fè bagay ki twò konplike pou montre moun, men se bati yon fondasyon solid, pwòp, byen separe epi byen dokimante. Se bon travay sa a ki pral pèmèt ekosistèm nan grandi pandan plizyè dizèn ane san l pa janm demode.
+                    
+                    2. Prepare pou nouvo teknoloji k ap vini yo :
+                    - Entèlijans Atifisyèl responsab : mete zouti entèlijan pou ede moun aprann pi byen (EDUKA) ak travay pi vit (AJ-Task) san vòlè done pèsonn ;
+                    - Louvri zouti pou lòt jèn pwogramè : bay lòt devlopè ayisyen API ak zouti pou yo ka bati pwòp solisyon pa yo sou baz AJ-TECH ;
+                    - Kapasite pou grandi : yon sistèm ki pare pou resevwa plizyè milyon moun san l pa janm tonbe an pann.
+                    
+                    3. Vizyon pou 10 lane k ap vini yo (2026–2035) :
+                    Achitekti nou prezante nan 15 chapit sa yo se gid ki pral mennen chanjman nimerik peyi d Ayiti. Soti nan ti aplikasyon ki mache san entènèt jodi a rive nan gwo sèvè nasyonal demen, wout la trase ak fòs, sajès ak detèminasyon.
                     
                     4. Konklizyon Pati IV la :
-                    Wout pou rive nan somè a long epi li gen anpil defi, men chemen an klè : ekri bon kòd ak disiplin, dokimante tout bagay nan laverite, epi travay san pran souf pou jenerasyon k ap vini yo.
+                    « Inovasyon ayisyen nan sèvis lemonn » se pa yon senp bèl fraz, se yon angajman solid nan kòd la ki kòmanse ak yon bèl achitekti ki pa ka kraze.
                 """.trimIndent(),
-                plannedStartPage = 284,
-                plannedEndPage = 285,
+                plannedStartPage = 93,
+                plannedEndPage = 94,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             )

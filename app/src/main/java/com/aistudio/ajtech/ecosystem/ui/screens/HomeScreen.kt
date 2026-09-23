@@ -338,7 +338,7 @@ fun HomeScreen(
             )
             HomeNavTile(
                 icon = Icons.Default.Category,
-                title = "21 Entités",
+                title = "22 Entités",
                 subtitle = "Écosystème Officiel",
                 modifier = Modifier
                     .weight(1f)

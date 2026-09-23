@@ -7,7 +7,7 @@ import com.aistudio.ajtech.ecosystem.data.model.PartType
 
 /**
  * PARTIE VI — ÉDUCATION, COMPÉTENCES ET CAPITAL HUMAIN
- * Chapitres 76 à 90 (Exactement 15 chapitres d'analyse éducative, formation technique et souveraineté cognitive).
+ * Chapitres 77 à 91 (Exactement 15 chapitres d'analyse éducative, formation technique, autodidaxie et stratégie 2026–2035).
  */
 object Part6Data {
 
@@ -15,692 +15,806 @@ object Part6Data {
         id = "part_6",
         partNumber = 6,
         type = PartType.MAIN_PART,
-        titleFr = "PARTIE VI — ÉDUCATION, COMPÉTENCES ET CAPITAL HUMAIN",
-        titleHt = "PATI VI — EDIKASYON, KONPETANS AK KAPITAL IMEN",
+        titleFr = "PARTIE VI — Éducation, compétences et capital humain",
+        titleHt = "PATI VI — Edikasyon, Konpetans ak Kapital Imèn",
         subtitleFr = "Formation d'une génération de bâtisseurs, autodidaxie, intelligence artificielle et stratégie 2026–2035",
-        subtitleHt = "Fòmasyon yon jenerasyon moun k ap bati, aprann poukont ou, entèlijans atifisyèl ak plan 2026–2035",
-        plannedPages = "pp. 341–395",
+        subtitleHt = "Fòmasyon yon jenerasyon moun k ap bati, aprantisaj poukont ou, entèlijans atifisyèl ak estrateji 2026–2035",
+        plannedPages = "pp. 115–134",
         status = BookContentStatus.IN_PROGRESS,
         chapters = listOf(
-            // ==================== CHAPITRE 76 : L'éducation numérique en Haïti ====================
-            BookChapter(
-                id = "ch_6_76",
-                chapterNumber = 76,
-                partId = "part_6",
-                titleFr = "Chapitre 76 — L'éducation numérique en Haïti",
-                titleHt = "Chapit 76 — Edikasyon nimerik an Ayiti",
-                subtitleFr = "Fracture numérique, infrastructures scolaires et impératif de transformation",
-                subtitleHt = "Diferans nan aksè teknoloji, lekòl san mwayen ak obligasyon pou n chanje sa",
-                summaryFr = "Analyse des défis structurels de l'éducation en Haïti et du potentiel du numérique pour démocratiser l'accès au savoir.",
-                summaryHt = "Analiz sou gwo pwoblèm lekòl genyen an Ayiti ak jan zouti nimerik ka ede tout timoun jwenn konesans pi fasil.",
-                contentFr = """
-                    1. État des lieux et fracture numérique :
-                    Le système éducatif haïtien fait face à des disparités géographiques et économiques aiguës. La grande majorité des établissements scolaires, en particulier dans les provinces et les zones rurales, ne disposent ni de laboratoires informatiques, ni de connexion Internet stable, ni d'alimentation électrique permanente.
-                    
-                    2. Coût des équipements et du haut débit :
-                    Le coût prohibitif des ordinateurs, tablettes et forfaits de données mobiles constitue un frein majeur pour les familles et les étudiants. L'accès aux bibliothèques numériques mondiales demeure un privilège réservé à une minorité urbaine.
-                    
-                    3. Le défi de la formation pédagogique :
-                    L'intégration efficace des technologies ne se résume pas à distribuer du matériel : elle exige la formation continue des enseignants à la pédagogie numérique, à la création de supports interactifs et à l'évaluation formative.
-                    
-                    4. L'impératif de solutions adaptées et hors-ligne :
-                    Pour être équitable, l'éducation numérique en Haïti doit s'émanciper de la dépendance à Internet continu grâce à des architectures de contenus préchargés, des applications légères et des supports bilingues accessibles à tous.
-                """.trimIndent(),
-                contentHt = """
-                    1. Reyalite lekòl yo ak diferans nan aksè teknoloji :
-                    Sistèm lekòl la an Ayiti gen gwo pwoblèm : pifò lekòl, sitou sa ki nan pwovens yo ak nan zòn andeyò yo, pa gen sal enfòmatik, pa gen entènèt ki fyab, epi pa gen kouran tout tan.
-                    
-                    2. Pri òdinatè ak kat entènèt ki twò chè :
-                    Òdinatè, tablèt ak megabay koute twòp kòb pou pifò fanmi ak elèv. Se yon ti ponyen moun lavil sèlman ki gen mwayen pou fouye nan gwo liv sou entènèt.
-                    
-                    3. Bezwen fòme pwofesè yo :
-                    Mete teknoloji nan lekòl se pa sèlman bay aparèy : fòk nou fòme mèt ak metrès yo sou fason pou anseye ak zouti sa yo, pou prepare bon leson epi ede elèv yo pi byen konprann.
-                    
-                    4. Zouti ki dwe mache san entènèt :
-                    Pou tout timoun ka jwenn menm chans, zouti edikasyon yo dwe ka mache san yo pa bezwen entènèt tout tan, ak leson ki deja telechaje epi ki ekri an kreyòl ak fransè pou tout moun konprann.
-                """.trimIndent(),
-                plannedStartPage = 341,
-                plannedEndPage = 344,
-                estimatedReadMinutes = 5,
-                status = BookContentStatus.IN_PROGRESS
-            ),
-
-            // ==================== CHAPITRE 77 : EDUKA : une vision pour l'éducation ====================
+            // ==================== CHAPITRE 77 : L'éducation comme fondation du développement numérique ====================
             BookChapter(
                 id = "ch_6_77",
                 chapterNumber = 77,
                 partId = "part_6",
-                titleFr = "Chapitre 77 — EDUKA : une vision pour l'éducation",
-                titleHt = "Chapit 77 — EDUKA : yon vizyon pou edikasyon",
-                subtitleFr = "Plateforme éducative modulaire, contenus structurés et statut de conception",
-                subtitleHt = "Yon platfòm edikasyon modilè, leson byen prepare ak nivo konsepsyon li ye kounye a",
-                summaryFr = "Présentation de l'entité EDUKA, son statut officiel de conception et son architecture pédagogique envisagée.",
-                summaryHt = "Prezantasyon pwojè EDUKA a, nivo konsepsyon li ye jodi a ak sa nou vle li fè pou lekòl yo.",
+                titleFr = "Chapitre 77 — L'éducation comme fondation du développement numérique",
+                titleHt = "Chapit 77 — Edikasyon kòm fondasyon devlopman nimerik",
+                subtitleFr = "Souveraineté cognitive, transformation des cursus et démocratisation du savoir",
+                subtitleHt = "Endepandans nan lespri, transfòmasyon pwogram lekòl ak pataje konesans pou tout moun",
+                summaryFr = "Analyse du rôle fondamental de l'éducation dans l'émancipation technologique d'Haïti et les conditions requises pour une alphabétisation numérique universelle.",
+                summaryHt = "Analiz sou wòl fondamantal edikasyon jwe nan libète teknolojik Ayiti ak sa ki nesesè pou tout moun konn sèvi ak zouti nimerik.",
                 contentFr = """
-                    1. Statut officiel et transparence :
-                    L'entité EDUKA est officiellement classée sous le statut « CONCEPT / EN CONCEPTION » au sein de l'écosystème. Elle ne constitue pas à ce jour une plateforme en ligne commercialisée ni déployée dans les écoles. Aucun partenariat scolaire officiel, aucune certification d'État ni aucun chiffre d'étudiants n'est actuellement revendiqué.
-                    
-                    2. Vision et finalité d'EDUKA :
-                    EDUKA est conçue pour devenir une plateforme éducative unifiée offrant :
-                    - Des cours structurés couvrant le cursus fondamental, secondaire et technique ;
-                    - Des exercices interactifs avec correction pas à pas et explications conceptuelles ;
-                    - Un fonctionnement 100 % hors-ligne avec synchronisation périodique facultative ;
-                    - Une adaptation linguistique intégrale en Kreyòl Ayisyen et en Français.
-                    
-                    3. Architecture pédagogique modulaire :
-                    Le contenu est découpé en micro-modules d'apprentissage progressifs (micro-learning) permettant à chaque élève d'avancer à son propre rythme selon ses disponibilités énergétiques et temporelles.
-                    
-                    4. Collaborations futures visées :
-                    À terme, EDUKA ambitionne de collaborer avec les pédagogues, linguistes et associations d'enseignants haïtiens pour garantir la conformité et la rigueur académique des contenus.
+                    1. L'impératif de la souveraineté cognitive :
+                    Aucune nation ne peut bâtir une indépendance économique ou technologique durable sans maîtriser préalablement les savoirs qui la sous-tendent. En Haïti, l'éducation numérique ne doit pas être perçue comme un luxe pédagogique ou une discipline accessoire, mais comme la pierre angulaire de la reconstruction nationale.
+
+                    2. Diagnostic du système éducatif contemporain :
+                    Le paysage scolaire haïtien souffre de fractures profondes :
+                    - Disparités territoriales aiguës entre la zone métropolitaine de Port-au-Prince et les départements provinciaux ;
+                    - Rareté des infrastructures de base (électricité fiable, salles informatiques, connectivité Internet) ;
+                    - Pénurie d'enseignants formés aux méthodes pédagogiques modernes et à l'informatique appliquée ;
+                    - Prédominance de méthodes d'apprentissage passives fondées sur la mémorisation mécanique plutôt que sur la résolution active de problèmes.
+
+                    3. Les quatre piliers d'une éducation numérique émancipatrice :
+                    Pour opérer une rupture féconde, l'enseignement technologique doit reposer sur :
+                    - La pensée algorithmique dès le cycle fondamental : apprendre à décomposer un problème complexe en sous-ensembles logiques simples ;
+                    - L'expérimentation pratique continue : privilégier la manipulation, le codage réel et la construction d'artefacts fonctionnels ;
+                    - La bilinguisation intégrale des supports : enseigner en Kreyòl Ayisyen pour l'assimilation conceptuelle profonde et en Français/Anglais pour l'ouverture internationale ;
+                    - L'adaptation aux contraintes réelles : concevoir des curricula fonctionnant hors-ligne et sur des terminaux à faibles ressources.
+
+                    4. L'engagement d'AJ-TECH :
+                    AJ-TECH place le capital humain au sommet de ses priorités. Tous les logiciels de l'écosystème sont pensés pour être des vecteurs d'apprentissage, dotés d'interfaces pédagogiques et de documentations exhaustives ouvertes à la jeunesse.
                 """.trimIndent(),
                 contentHt = """
-                    1. Nivo pwojè a ye jodi a ak verite total :
-                    Pwojè EDUKA anrejistre ofisyèlman anba estati « KONSÈP / AN KONSEPSYON ». Li poko yon sitwèb ki louvri pou tout moun ni li poko enstale nan lekòl yo jodi a. Nou pa gen okenn kontra ofisyèl ak lekòl, okenn diplòm leta ni okenn chif sou elèv kounye a (Tout bagay sa yo se : Pou defini / An kou konsepsyon).
-                    
-                    2. Sa nou vle EDUKA fè pi devan :
-                    EDUKA fèt nan lide pou vin yon gwo zouti edikasyon ki genyen :
-                    - Bon leson ki byen prepare pou elèv lekòl primè, segondè ak pwofesyonèl ;
-                    - Egzèsis ak bon eksplikasyon etap pa etap sou sa w pa t konprann ;
-                    - Kapasite pou fonksyone 100 % san entènèt sou nenpòt ti aparèy ;
-                    - Tout leson yo disponib ni an Kreyòl Ayisyen ni an Fransè.
-                    
-                    3. Ti leson kout ki fasil pou aprann :
-                    Leson yo separe an ti moso kout pou elèv la ka etidye ti pa ti pa selon lè li gen kouran oswa tan lib.
-                    
-                    4. Moun nou ta renmen travay avèk yo pi devan :
-                    Lè pwojè a va fin pare, nou ta renmen travay ak pwofesè, moun ki konn lang kreyòl ak asosyasyon edikatè ayisyen pou leson yo gen bon kalite kòrèk.
+                    1. Poukisa edikasyon se premye kondisyon pou nou lib :
+                    Okenn peyi pa ka gen libète ekonomik oswa teknolojik si pèp li a pa metrize konesans ki kreye teknoloji a. Ann Ayiti, edikasyon nimerik se pa yon senp ti opsyon nan lekòl, se fondasyon sou kote tout rekonstriksyon nasyonal la dwe chita.
+
+                    2. Gwo difikilte lekòl yo genyen jodi a :
+                    Sistèm lekòl nou an ap fè fas ak gwo pwoblèm :
+                    - Gwo diferans ant lavil Pòtoprens ak tout lòt vil pwovens yo ;
+                    - Mank kouran, mank sal enfòmatik ak mank koneksyon entènèt nan lekòl yo ;
+                    - Pa gen ase pwofesè ki byen fòme nan zafè lojisyèl ak nouvo metòd ansèyman ;
+                    - Twòp aprann leson pa kè san elèv yo pa konprann ni pratike kijan pou rezoud pwoblèm lavi a.
+
+                    3. 4 poto mitan pou bonjan edikasyon teknolojik :
+                    Pou nou chanje sa tout bon vre, fòmasyon an dwe genyen :
+                    - Lespri lojik depi nan ti klas : aprann separe yon gwo pwoblèm an ti moso senp ;
+                    - Fè pratik toutbon : kite elèv yo manyen òdinatè, ekri kòd epi bati zouti k ap mache ;
+                    - Sèvi ak lang Kreyòl Ayisyen an : pou tout timoun konprann prensip yo byen nan lespri yo, san bliye Fransè ak Angle pou ouvri pòt sou mond lan ;
+                    - Zouti ki mache san kouran ni entènèt tout tan : adapte tout leson pou ti aparèy senp.
+
+                    4. Angajman AJ-TECH pou jèn yo :
+                    Pou AJ-TECH, fòme moun se pi gwo richès. Tout lojisyèl nan ekosistèm nan fèt pou aprann moun, ak bèl gid ki byen eksplike pou tout jèn Ayisyen ka aprann bati.
                 """.trimIndent(),
-                plannedStartPage = 345,
-                plannedEndPage = 348,
+                plannedStartPage = 115,
+                plannedEndPage = 116,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 78 : EDH : l'École Du Digital d'Haïti ====================
+            // ==================== CHAPITRE 78 : L'autodidaxie et l'apprentissage continu ====================
             BookChapter(
                 id = "ch_6_78",
                 chapterNumber = 78,
                 partId = "part_6",
-                titleFr = "Chapitre 78 — EDH : l'École Du Digital d'Haïti",
-                titleHt = "Chapit 78 — EDH : Lekòl Dijital Ayiti (École Du Digital d'Haïti)",
-                subtitleFr = "Projet d'académie d'excellence technologique, cursus intensifs et statut conceptuel",
-                subtitleHt = "Pwojè pou yon gwo lekòl metye teknoloji, gwo fòmasyon solid ak nivo konsepsyon li ye",
-                summaryFr = "Présentation de l'entité EDH (École Du Digital d'Haïti), son ambition de formation d'élite et son statut de concept.",
-                summaryHt = "Prezantasyon pwojè EDH la, misyon li pou fòme gwo espesyalis teknoloji ak estati konsèp li genyen jodi a.",
+                titleFr = "Chapitre 78 — L'autodidaxie et l'apprentissage continu",
+                titleHt = "Chapit 78 — Aprantisaj poukont ou ak fòmasyon kontinyèl",
+                subtitleFr = "Discipline personnelle, lecture de documentation et culture de la recherche autonome",
+                subtitleHt = "Disiplin pèsonèl, li dokiman ofisyèl ak fason pou chèche konesans poukont ou",
+                summaryFr = "Méthodologie rigoureuse de l'apprentissage en autodidacte en informatique : forger ses compétences par l'erreur, la documentation officielle et la pratique constante.",
+                summaryHt = "Bonjan metòd pou moun k ap aprann teknoloji poukont yo : aprann nan erè, li dokiman teknik epi pratike chak jou.",
                 contentFr = """
-                    1. Identité et statut de l'entité EDH :
-                    L'acronyme officiel EDH désigne l'« École Du Digital d'Haïti ». Il convient de maintenir strictement cette dénomination (sans préfixe « AJ- »). EDH est actuellement au statut de « CONCEPT » au sein de l'écosystème AJ-TECH. Aucun campus physique, corps professoral permanent ou cursus diplômant n'est encore opérationnel à ce stade.
-                    
-                    2. Mission fondamentale d'EDH :
-                    EDH a pour vocation de devenir un centre d'excellence formant les futurs leaders technologiques haïtiens dans les filières de pointe : génie logiciel, cybersécurité, architecture de bases de données, intelligence artificielle appliquée et gestion de projets numériques.
-                    
-                    3. Pédagogie par projets et immersion professionnelle :
-                    Le modèle pédagogique envisagé repose sur l'apprentissage par la pratique intensive (Project-Based Learning) :
-                    - Résolution de problèmes réels rencontrés par les institutions et entreprises haïtiennes ;
-                    - Développement d'applications de production dès la première année ;
-                    - Revues de code rigoureuses et travail en équipe agile.
-                    
-                    4. Critères d'excellence et accessibilité sociale :
-                    L'ambition future d'EDH est d'allier une sélection rigoureuse basée sur le mérite et le talent à des mécanismes de bourses d'études pour garantir qu'aucun jeune talentueux ne soit écarté par manque de moyens financiers.
+                    1. L'autodidaxie comme moteur d'excellence :
+                    Dans l'industrie technologique mondiale, une part prépondérante des meilleures avancées provient de passionnés ayant développé leurs compétences par auto-formation. En Haïti, où l'accès aux instituts spécialisés est restreint par des barrières financières et géographiques, l'autodidaxie est une force d'émancipation majeure.
+
+                    2. Les trois piliers de la méthode autodidacte rigoureuse :
+                    - L'art de lire la documentation officielle : Refuser la dépendance aux résumés superficiels et acquérir le réflexe de consulter directement les spécifications de compilateurs, les RFC et les documentations de référence (Kotlin, Android, Web APIs) ;
+                    - La valorisation de l'erreur comme instrument d'apprentissage : Analyser les messages du compilateur (Stack Traces) non comme des échecs, mais comme des indications précises sur l'état de la mémoire ou de la logique ;
+                    - Le développement par petits incréments reproductibles : Écrire du code pas à pas, tester chaque fonction isolément et vérifier les hypothèses avant d'ajouter de la complexité.
+
+                    3. L'apprentissage continu face à l'obsolescence technologique :
+                    L'informatique évolue à un rythme exponentiel. Un langage ou un framework appris aujourd'hui sera profondément transformé dans cinq ans. L'autodidacte n'apprend pas simplement une technologie donnée : il apprend à apprendre.
+
+                    4. Témoignage de la démarche AJ-TECH :
+                    La genèse d'AJ-TECH elle-même repose sur des milliers d'heures d'étude autodidacte nocturne, de lecture patiente de standards ouverts et d'expérimentations menées dans des conditions matérielles spartiates.
                 """.trimIndent(),
                 contentHt = """
-                    1. Non ofisyèl ak estati pwojè EDH la :
-                    Non ofisyèl EDH vle di « École Du Digital d'Haïti » (Lekòl Dijital Ayiti). Nou dwe toujou kenbe non sa a konsa san mete « AJ- » devan l. Pwojè EDH la nan nivo « KONSÈP » kounye a. Li poko gen yon gwo bilding lekòl ki louvri, ni pwofesè fiks, ni diplòm l ap bay jodi a (Tout bagay sa yo se : Pou defini / An kou konsepsyon).
-                    
-                    2. Pi gwo misyon EDH genyen :
-                    EDH fèt nan lide pou vin yon gwo sant fòmasyon kote pi bon jèn enjenyè ayisyen ap prepare nan gwo metye konplike : ekri gwo lojisyèl, sekirite enfòmatik, jere gwo baz done ak pwojè teknoloji.
-                    
-                    3. Aprann nan fè pratik tout bon :
-                    Fason pou anseye a chita sou fè gwo pwojè reyèl :
-                    - Rezoud pwoblèm tout bon vre biznis ak lopital genyen nan peyi a ;
-                    - Bati bonjan aplikasyon depi nan premye ane a ;
-                    - Verifye kòd ansanm epi travay an ekip menm jan ak nan gwo konpayi sou latè.
-                    
-                    4. Ede jèn ki gen talan men ki pa gen mwayen :
-                    Plan nou pou pita se chwazi jèn ki travay di ak tout kè yo, epi jwenn bous pou ede sa ki pa gen gwo lajan yo etidye san traka.
+                    1. Aprann poukont ou se pi gwo fòs :
+                    Nan tout mond teknoloji a, anpil nan pi bon devlopè yo se moun ki te aprann poukont yo grasa pasyon ak volonte. Ann Ayiti, kote li difisil pou tout moun jwenn gwo inivèsite, kapasite pou aprann poukont ou se pi gwo zam pou w avanse.
+
+                    2. 3 gwo règ pou aprann poukont ou kòrèkteman :
+                    - Li dokiman ofisyèl yo : Pa sèlman gade ti bout videyo kout sou YouTube, men pran abitid li liv ak dokiman orijinal kote tout règ lojisyèl yo ekri aklè ;
+                    - Aprann nan erè ou fè : Lè òdinatè a voye yon erè (Stack Trace), se pa yon echèk, se yon mesaj klè k ap di w ki kote nan memwa a oswa nan kalkil la ki gen yon pwoblèm ;
+                    - Avanse ti pa ti pa : Ekri kòd la moso pa moso, teste chak ti fonksyon pou asire w li mache anvan w mete plis bagay.
+
+                    3. Fòmasyon kontinyèl paske teknoloji a toujou ap chanje :
+                    Enfòmatik ap mache ak yon vitès san parèy. Sa w aprann jodi a ap chanje nan 5 ane k ap vini yo. Yon bon devlopè pa sèlman aprann yon sèl zouti : li aprann kijan pou l toujou aprann nouvo bagay fasil.
+
+                    4. Eksperyans fondasyon AJ-TECH :
+                    Tout ekosistèm AJ-TECH la fèt grasa plizyè milye èdtan etid poukont nou lannwit, lekti dokiman teknik ak tès kòd nan mitan tout kalite difikilte kouran ak mwayen.
                 """.trimIndent(),
-                plannedStartPage = 349,
-                plannedEndPage = 352,
+                plannedStartPage = 116,
+                plannedEndPage = 117,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 79 : Apprendre à programmer ====================
+            // ==================== CHAPITRE 79 : Former une nouvelle génération de développeurs haïtiens ====================
             BookChapter(
                 id = "ch_6_79",
                 chapterNumber = 79,
                 partId = "part_6",
-                titleFr = "Chapitre 79 — Apprendre à programmer",
-                titleHt = "Chapit 79 — Aprann pwograme",
-                subtitleFr = "Une compétence d'émancipation cognitive, logique algorithmique et réalisme professionnel",
-                subtitleHt = "Yon zouti pou louvri lespri, kalkil lojik ak verite sou travay nan teknoloji",
-                summaryFr = "Analyse de la programmation comme outil de résolution de problèmes et de création, avec lucidité sur le marché du travail.",
-                summaryHt = "Eksplikasyon sou fason aprann ekri kòd louvri lespri moun epi verite sou sa sa mande pou jwenn travay.",
+                titleFr = "Chapitre 79 — Former une nouvelle génération de développeurs haïtiens",
+                titleHt = "Chapit 79 — Fòme yon nouvo jenerasyon devlopè ayisyen",
+                subtitleFr = "Du consommateur passif au concepteur de systèmes souverains",
+                subtitleHt = "Soti nan moun k ap sèlman itilize lojisyèl rive nan moun k ap bati pwòp sistèm pa yo",
+                summaryFr = "Stratégie de formation intensive pour transformer la jeunesse haïtienne en créateurs de logiciels de classe mondiale, maîtrisant les architectures modernes.",
+                summaryHt = "Estrateji fòmasyon solid pou ede jèn Ayisyen yo vin gwo enjenyè lojisyèl ki konn bati gwo sistèm modèn pou peyi a ak lemonn.",
                 contentFr = """
-                    1. La programmation comme super-pouvoir cognitif :
-                    Apprendre à programmer ne consiste pas seulement à mémoriser la syntaxe d'un langage : c'est acquérir une discipline de pensée rigoureuse, apprendre à décomposer des problèmes complexes en étapes logiques élémentaires et transformer des idées abstraites en outils fonctionnels.
-                    
-                    2. Les opportunités ouvertes par le code :
-                    La maîtrise du développement informatique permet :
-                    - De créer ses propres outils et automatiser des tâches fastidieuses ;
-                    - De résoudre des problèmes concrets dans sa communauté (santé, agriculture, éducation) ;
-                    - De travailler à distance en tant que travailleur indépendant (freelance) ;
-                    - De fonder des entreprises innovantes exportatrices de logiciels.
-                    
-                    3. Lucidité et réalisme professionnel :
-                    Il est essentiel de dissiper une illusion tenace : apprendre les bases de la programmation ne garantit pas automatiquement un emploi bien rémunéré. Le marché exige un investissement continu, des centaines d'heures de pratique, la compréhension des architectures logicielles et une capacité constante d'adaptation aux évolutions technologiques.
+                    1. Le passage de l'usage passif à la création active :
+                    La jeunesse haïtienne consomme massivement les réseaux sociaux et les applications mobiles étrangères. L'enjeu historique est d'inverser cette polarité : transformer cette énergie consommatrice en capacité productive d'ingénierie logicielle.
+
+                    2. Les compétences fondamentales du développeur moderne :
+                    Pour rivaliser avec les standards internationaux, un développeur doit maîtriser :
+                    - La rigueur algorithmique et la complexité temporelle/spatiale (notations Big O) ;
+                    - La programmation fortement typée et orientée objet/fonctionnelle (Kotlin, TypeScript, Rust) ;
+                    - L'architecture logicielle propre (Clean Architecture, MVVM, flux unidirectionnels MVI) ;
+                    - La persistance locale sécurisée et la synchronisation distribuée (SQLite/Room, IndexedDB) ;
+                    - Les pratiques de test automatisé (tests unitaires, Robolectric, intégration continue).
+
+                    3. L'exigence de la qualité logicielle :
+                    Un code ne doit pas seulement 'fonctionner' : il doit être lisible, maintenable, testé, documenté et sobre en consommation d'énergie et de bande passante. C'est cette exigence qui fait la différence entre un bricolage éphémère et un produit industriel pérenne.
+
+                    4. Le rôle catalyseur d'AJ-TECH :
+                    À travers ses référentiels ouverts et ses composants modulaires, AJ-TECH propose un cadre pratique d'apprentissage permettant aux étudiants d'étudier du code réel de production.
                 """.trimIndent(),
                 contentHt = """
-                    1. Pwograme se yon zouti ki louvri lespri :
-                    Aprann ekri kòd se pa sèlman konnen kòmand yon langaj : se aprann reflechi ak lòd, separe gwo pwoblèm konplike an ti moso senp, epi transfòme yon senp lide nan yon zouti k ap mache tout bon.
-                    
-                    2. Sa kòd pèmèt ou fè :
-                    Lè w konn ekri lojisyèl, ou kapab :
-                    - Kreye pwòp zouti pa w pou fè travay ou pi vit ;
-                    - Rezoud pwoblèm nan zòn kote w rete a (lopital, agrikilti, lekòl) ;
-                    - Travay a distans sou entènèt pou moun lòt bò dlo ;
-                    - Kreye pwòp konpayi pa w pou vann lojisyèl.
-                    
-                    3. Verite aklè sou zafè travay :
-                    Nou dwe di sa nan laverite : aprann ti baz nan kòd pa vle di w ap jwenn yon gwo travay otomatikman. Sa mande pase plizyè santèn èdtan ap pratike chak jou, konprann jan gwo sistèm fèt, epi kontinye aprann toutan paske teknoloji a toujou ap chanje.
+                    1. Soti nan klike sou telefòn rive nan kreye pwòp zouti pa nou :
+                    Jèn Ayisyen yo pase anpil tan ap sèvi ak rezo sosyal ak aplikasyon lòt nasyon fè. Pi gwo defi jodi a se chanje sa : fè jèn nou yo vin moun ki konn kode, ki konn kreye epi ki konn bati lojisyèl.
+
+                    2. Sa yon bon devlopè modèn dwe metrize :
+                    Pou nivo nou ka egal ak tout lòt peyi sou latè, yon devlopè dwe konnen :
+                    - Lojik kalkil solid ak jan pou fè kòd la kouri rapid san gaspiye memwa ;
+                    - Langaj kòd ki pwoteje kont erè (Kotlin, TypeScript, Rust) ;
+                    - Bonjan estrikti lojisyèl (Clean Architecture, MVVM) kote chak pati nan kòd la fè yon sèl travay klè ;
+                    - Jan pou sere done sou aparèy la an sekirite (Room, SQLite, IndexedDB) ;
+                    - Fè tès sou machin pou verifye si kòd la pa gen fay anvan li rive nan men itilizatè yo.
+
+                    3. Egzijans pou kòd la gen bon kalite :
+                    Yon lojisyèl pa dwe sèlman mache : li dwe byen ekri, fasil pou lòt moun li, gen bon tès, epi li pa dwe manje twòp batri ni twòp megabay. Se sa k fè diferans ant yon ti travay k ap kraze demen ak yon gwo lojisyèl k ap dire 20 ane.
+
+                    4. Wòl AJ-TECH pou ede jèn yo :
+                    Gras ak dokiman ak kòd sous ouvè li yo, AJ-TECH bay tout jèn etidyan yon bonjan modèl pou yo wè kijan vrè lojisyèl pwofesyonèl fèt.
                 """.trimIndent(),
-                plannedStartPage = 353,
-                plannedEndPage = 356,
+                plannedStartPage = 117,
+                plannedEndPage = 118,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 80 : La formation professionnelle numérique ====================
+            // ==================== CHAPITRE 80 : Les compétences numériques essentielles ====================
             BookChapter(
                 id = "ch_6_80",
                 chapterNumber = 80,
                 partId = "part_6",
-                titleFr = "Chapitre 80 — La formation professionnelle numérique",
-                titleHt = "Chapit 80 — Fòmasyon pwofesyonèl nan metye nimerik",
-                subtitleFr = "Parcours courts, reconversions, adéquation avec le marché et standards industriels",
-                subtitleHt = "Fòmasyon kout, chanje metye, prepare pou sa konpayi bezwen ak bon estanda",
-                summaryFr = "Rôle des cursus professionnels pratiques et intensifs pour accélérer l'insertion économique des jeunes.",
-                summaryHt = "Enpòtans pou gen bon fòmasyon kout ak pratik pou ede jèn yo jwenn metye nan men yo rapid.",
+                titleFr = "Chapitre 80 — Les compétences numériques essentielles",
+                titleHt = "Chapit 80 — Konpetans nimerik ki esansyèl yo",
+                subtitleFr = "Socle technique, pensée critique, culture des données et hygiène de sécurité",
+                subtitleHt = "Konesans teknik de baz, lespri kritik, konprann done ak bon abitid sekirite",
+                summaryFr = "Cartographie des compétences indispensables pour naviguer, travailler et créer efficacement dans l'économie numérique contemporaine.",
+                summaryHt = "Lis tout konesans ak ladrès ki nesesè pou yon moun ka travay, pwoteje tèt li epi kreye nan mond teknoloji jodi a.",
                 contentFr = """
-                    1. Nécessité des filières courtes et professionnalisantes :
-                    Tous les jeunes ne peuvent pas suivre un cursus universitaire de cinq ans. La formation professionnelle numérique propose des parcours intensifs (bootcamps de 6 à 12 mois) axés sur des compétences immédiatement opérationnelles.
-                    
-                    2. Typologie des métiers techniques d'accès rapide :
-                    - Développeur web front-end et intégrateur d'interfaces ;
-                    - Testeur logiciel et analyste qualité (QA) ;
-                    - Administrateur de réseaux locaux et technicien support ;
-                    - Gestionnaire de communauté et créateur de contenus techniques.
-                    
-                    3. Alignement sur les standards de l'industrie :
-                    Pour être crédible sur le marché national et international, toute formation professionnelle doit enseigner les outils standards utilisés par les entreprises : systèmes de contrôle de versions (Git), environnements conteneurisés, méthodologies agiles (Scrum, Kanban) et communication technique professionnelle.
+                    1. La matrice des compétences du XXIe siècle :
+                    La simple maîtrise d'une suite bureautique ne suffit plus. L'économie contemporaine exige une pyramide de compétences articulée en plusieurs strates complémentaires :
+                    - Niveau 1 : Maîtrise des outils fondamentaux (systèmes d'exploitation, navigation avancée, gestion sécurisée des identifiants) ;
+                    - Niveau 2 : Hygiène de sécurité numérique (reconnaissance des menaces de phishing, authentification multi-facteurs, chiffrement des échanges) ;
+                    - Niveau 3 : Culture des données et esprit critique (capacité à évaluer la véracité d'une information, structuration de tableaux de données, compréhension des algorithmes de recommandation) ;
+                    - Niveau 4 : Automatisation et logique informatique (scripts élémentaires, utilisation raisonnée des API, intégration d'outils d'intelligence artificielle).
+
+                    2. Les compétences humaines transversales (Soft Skills) :
+                    Le savoir technique n'a de valeur que s'il s'accompagne de compétences relationnelles indispensables :
+                    - Communication technique claire et concise, à l'oral comme à l'écrit ;
+                    - Travail collaboratif asynchrone au sein d'équipes distribuées ;
+                    - Capacité d'adaptation face aux imprévus d'infrastructure ;
+                    - Rigueur éthique et respect de la vie privée des utilisateurs.
+
+                    3. Adapter les compétences au contexte haïtien :
+                    En Haïti, la résilience opérationnelle (savoir travailler hors-ligne, optimiser les transferts de données, sauvegarder systématiquement son travail) constitue une méta-compétence vitale.
                 """.trimIndent(),
                 contentHt = """
-                    1. Poukisa nou bezwen fòmasyon kout ki pratik :
-                    Se pa tout jèn ki gen mwayen oswa tan pou fè 5 ane nan inivèsite. Fòmasyon pwofesyonèl nimerik pèmèt moun fè 6 a 12 mwa fòmasyon entansif sou yon metye espesyal pou yo ka kòmanse travay rapid.
-                    
-                    2. Kalite metye moun ka aprann vit :
-                    - Moun ki monte bèl sitwèb ak ekran aplikasyon ;
-                    - Moun ki teste lojisyèl pou wè si pa gen erè ladan yo (QA) ;
-                    - Moun ki enstale rezo ak repare pwoblèm òdinatè ;
-                    - Moun ki jere paj ak kominikasyon sou rezo sosyo pou biznis.
-                    
-                    3. Aprann ak menm zouti gwo konpayi yo itilize :
-                    Pou lòt moun ka fè w konfyans, fòmasyon an dwe aprann ou zouti tout devlopè sou latè itilize : Git pou sere kòd, fason pou travay an ekip rapid epi kominike byen sou sa w ap fè.
+                    1. Nivo konesans yon moun bezwen nan 21yèm syèk la :
+                    Konnen tape yon lèt sou Word pa sifi ankò. Jodi a, yon sitwayen oswa yon travayè bezwen plizyè nivo konesans :
+                    - Nivo 1 : Metrize zouti debaz yo (sistèm òdinatè, navige byen sou entènèt, jere modpas an sekirite) ;
+                    - Nivo 2 : Bon abitid sekirite (rekonèt vye pyèj ak magouy sou entènèt, mete de nivo sekirite sou kont ou, pwoteje mesaj ou) ;
+                    - Nivo 3 : Konprann done ak lespri kritik (konnen si yon nouvèl se manti, klase enfòmasyon nan bèl tablo, konprann kijan rezo sosyal yo fonksyone) ;
+                    - Nivo 4 : Otomatizasyon (ekri ti kòd pou fè travay repetitif pi vit, konnen kijan aplikasyon pale youn ak lòt).
+
+                    2. Bèl kalite nan fason w travay ak lòt moun (Soft Skills) :
+                    Konesans teknik la pa itil anpil si w pa gen bon konpòtman :
+                    - Kominike byen klè san pale anpil, ni nan bouch ni nan ekri ;
+                    - Travay an ekip ak moun ki lwen sou entènèt ;
+                    - Konn adapte w lè gen pann kouran oswa entènèt bloke ;
+                    - Respekte prensip moral ak sekirite done moun k ap itilize zouti w yo.
+
+                    3. Konpetans espesyal pou reyalite Ayiti a :
+                    Ann Ayiti, konnen kijan pou travay san entènèt, kijan pou fè ti megabay ou pa fini vit, epi toujou sove travay ou sou plizyè aparèy, se yon gwo konpetans ki sove lavi pwofesyonèl ou.
                 """.trimIndent(),
-                plannedStartPage = 357,
-                plannedEndPage = 360,
+                plannedStartPage = 118,
+                plannedEndPage = 120,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 81 : L'autodidaxie et l'apprentissage par la pratique ====================
+            // ==================== CHAPITRE 81 : Apprendre à programmer avec des ressources limitées ====================
             BookChapter(
                 id = "ch_6_81",
                 chapterNumber = 81,
                 partId = "part_6",
-                titleFr = "Chapitre 81 — L'autodidaxie et l'apprentissage par la pratique",
-                titleHt = "Chapit 81 — Aprann poukont ou (Otodidak) ak fè pratik",
-                subtitleFr = "Lire la documentation, forger son expérience par l'erreur et persévérer sans relâche",
-                subtitleHt = "Li dokiman teknik, aprann nan erè ou fè epi pa janm dekouraje",
-                summaryFr = "Éloge et méthodologie de l'apprentissage autodidacte, clé de voûte de la progression technologique en contexte de ressources limitées.",
-                summaryHt = "Konsèy ak bon metòd pou moun k ap aprann poukont yo, ki se pi gwo fòs pou vanse lè w pa gen gwo mwayen.",
+                titleFr = "Chapitre 81 — Apprendre à programmer avec des ressources limitées",
+                titleHt = "Chapit 81 — Aprann pwograme ak ti resous",
+                subtitleFr = "Optimisation matérielle, environnements locaux, énergie solaire et résilience",
+                subtitleHt = "Sèvi byen ak ti materyèl, travay san entènèt, enèji solè ak kouraj pou pa abandone",
+                summaryFr = "Guide pratique et méthodologique pour apprendre le développement logiciel dans des conditions de coupures de courant, de connexions lentes et de matériel modeste.",
+                summaryHt = "Gid pratik sou fason pou aprann ekri kòd lè w pa gen gwo òdinatè, lè kouran koupe toutan epi lè kat entènèt la chè.",
                 contentFr = """
-                    1. L'autodidaxie comme moteur fondamental :
-                    Dans l'histoire de l'informatique, les plus grandes innovations ont souvent été conçues par des esprits autodidactes passionnés. En Haïti, où l'accès aux grandes écoles est restreint, la capacité à apprendre par soi-même constitue un atout d'une puissance inestimable.
-                    
-                    2. Les piliers de la méthode autodidacte :
-                    - La lecture assidue de la documentation officielle : Refuser la facilité des tutoriels superficiels et aller à la source des spécifications techniques ;
-                    - L'apprentissage par l'erreur (Trial & Error) : Considérer chaque message d'erreur du compilateur comme une leçon d'ingénierie et non comme un échec ;
-                    - La réalisation de projets personnels concrets : Construire des applications fonctionnelles du début à la fin plutôt que de consommer passivement des vidéos ;
-                    - La persévérance inébranlable face aux blocages techniques.
-                    
-                    3. L'intelligence artificielle comme tuteur personnel :
-                    Les outils d'IA contemporains offrent à l'autodidacte un tuteur disponible 24h/24 capable d'expliquer un concept obscur, de débugger un fragment de code ou de proposer des exercices adaptés.
+                    1. La réalité matérielle de l'apprenant haïtien :
+                    Contrairement aux étudiants des pays industrialisés qui disposent de connexions fibrées illimitées et de machines de dernière génération, l'étudiant haïtien doit composer avec des ordinateurs reconditionnés, une alimentation électrique intermittente et des forfaits de données mobiles coûteux.
+
+                    2. Stratégies d'optimisation de l'environnement de développement :
+                    - L'installation complète de documentation hors-ligne (outils type Zeal, DevDocs hors-ligne, man pages) ;
+                    - L'utilisation d'éditeurs de code légers (VS Code optimisé, micro, vim, geany) sur les machines à mémoire vive restreinte (2 à 4 Go de RAM) ;
+                    - La mise en cache agressive des dépendances et bibliothèques (Gradle offline mode, npm cache local, dépôts locaux partagés par clé USB) ;
+                    - L'optimisation énergétique : régler la luminosité de l'écran, couper les processus d'arrière-plan inutiles et recharger ses batteries sur de petits panneaux solaires ou onduleurs.
+
+                    3. La puissance de l'écriture sur papier et de la simulation mentale :
+                    Quand l'énergie vient à manquer, l'apprentissage ne s'arrête pas : écrire des algorithmes sur un cahier, simuler l'état des variables à la main et concevoir l'architecture avant de toucher au clavier forge une discipline d'ingénierie d'une rigueur exceptionnelle.
+
+                    4. L'ingénierie sous contrainte comme avantage compétitif :
+                    Développer sous contrainte oblige à concevoir des logiciels sobres, rapides et résistants. Un développeur formé dans ces conditions est naturellement immunisé contre le gaspillage de ressources et conçoit des systèmes universellement performants.
                 """.trimIndent(),
                 contentHt = """
-                    1. Aprann poukont ou se yon gwo fòs :
-                    Nan listwa teknoloji, anpil nan pi gwo bagay yo se moun ki te aprann poukont yo ki te kreye yo. An Ayiti, kote li pa fasil pou tout moun jwenn gwo inivèsite, kapasite pou aprann poukont ou se pi bèl kado ou ka bay tèt ou.
-                    
-                    2. Bonjan prensip pou aprann poukont ou :
-                    - Li dokiman ofisyèl yo : Pa sèlman gade ti videyo kout, men li liv ak dokiman kote tout règ teknik yo ekri ;
-                    - Aprann nan erè ou fè : Lè òdinatè a di kòd la pa bon, se pa yon echèk, se yon leson pou w konprann sa k te manke a ;
-                    - Kreye pwòp ti pwojè pa w : Bati yon ti aplikasyon soti nan kòmansman rive nan bout li olye w rete ap gade lòt moun k ap travay ;
-                    - Kenbe fèm san dekouraje lè yon kòd bloke w pandan plizyè jou.
-                    
-                    3. Sèvi ak Entèlijans Atifisyèl tankou yon mèt bò kote w :
-                    Zouti IA jodi a pèmèt ou gen yon pwofesè bò kote w tout lajounen ak tout lannwit pou eksplike w sa w pa konprann, ede w jwenn erè nan kòd la epi ba w bon egzèsis pou pratike.
+                    1. Reyalite yon jèn k ap aprann kode an Ayiti :
+                    Pandan jèn lòt bò dlo gen gwo òdinatè tou nèf ak entènèt gwo vitès san limit, yon etidyan ayisyen souvan gen yon ti òdinatè dezyèm men, kouran ki koupe chak moman epi megabay ki koute anpil kòb.
+
+                    2. Bonjan teknik pou travay ak ti mwayen :
+                    - Telechaje tout dokiman sou òdinatè a pou li yo san entènèt (zouti tankou DevDocs oswa liv PDF) ;
+                    - Sèvi ak ti pwogram lejè pou ekri kòd (VS Code ki pa lou, vim, geany) pou ti machin ki gen 2 a 4 GB RAM pa bloke ;
+                    - Sove tout bibliyotèk ak dosye sou kle USB pou pataje ak lòt zanmi san bezwen telechaje yo plizyè fwa ;
+                    - Byen jere batri ak kouran : bese limyè ekran an, fèmen tout pwogram ki pa itil, epi chaje aparèy yo sou ti panèl solè oswa envèsè.
+
+                    3. Fòs ekri kòd sou papye ak reflechi nan tèt :
+                    Lè pa gen kouran, ou pa bezwen kwaze bra w : ekri kalkil ak plan kòd la nan yon kaye, kalkile nan tèt ou kijan varyab yo ap chanje, epi prepare tout plan aplikasyon an anvan w menm limen òdinatè a. Sa bay lespri w yon gwo fòs lojik.
+
+                    4. Fòmasyon nan difikilte se yon gwo avantaj :
+                    Lè w aprann kode nan difikilte, ou pa janm fè kòd ki lou oswa k ap gaspiye resous. Yon devlopè ki fòme konsa konn kijan pou kreye lojisyèl ki rapid e ki ka mache sou nenpòt ti aparèy nan lemonn antye.
                 """.trimIndent(),
-                plannedStartPage = 361,
-                plannedEndPage = 364,
+                plannedStartPage = 120,
+                plannedEndPage = 121,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 82 : Intelligence artificielle et éducation ====================
+            // ==================== CHAPITRE 82 : L'intelligence artificielle comme outil d'apprentissage ====================
             BookChapter(
                 id = "ch_6_82",
                 chapterNumber = 82,
                 partId = "part_6",
-                titleFr = "Chapitre 82 — Intelligence artificielle et éducation",
-                titleHt = "Chapit 82 — Entèlijans atifisyèl ak edikasyon",
-                subtitleFr = "Potentiel pédagogique, esprit critique, risques de plagiat et supervision humaine",
-                subtitleHt = "Èd pou aprann, devlope lespri kritik, danje kopye san konprann ak kontwòl moun",
-                summaryFr = "Analyse équilibrée de l'apport de l'IA à l'apprentissage, des précautions éthiques et du nécessaire maintien de l'esprit critique.",
-                summaryHt = "Analiz sou kijan IA ka ede nan lekòl, danje si moun itilize l san reflechi ak enpòtans pou toujou verifye sa l di.",
+                titleFr = "Chapitre 82 — L'intelligence artificielle comme outil d'apprentissage",
+                titleHt = "Chapit 82 — Entèlijans atifisyèl kòm zouti pou aprann",
+                subtitleFr = "Tuteur personnalisé, reformulation bilingue, esprit critique et pièges de la dépendance",
+                subtitleHt = "Pwofesè pèsonèl, re-eksplike an kreyòl, lespri kritik ak danje pou pa vin parese",
+                summaryFr = "Analyse lucide de l'utilisation de l'IA générative comme accélérateur pédagogique individuel, avec les règles éthiques et cognitives pour éviter l'atrophie intellectuelle.",
+                summaryHt = "Gid klè sou fason pou itilize Entèlijans Atifisyèl tankou yon gid pou ede w aprann pi vit, san w pa kite l panse nan plas ou.",
                 contentFr = """
-                    1. Le potentiel éducatif transformateur de l'IA :
-                    L'Intelligence Artificielle générative permet d'individualiser l'apprentissage à une échelle inédite : reformulation d'un concept selon le niveau de l'étudiant, génération de quiz personnalisés, traduction instantanée de ressources techniques vers le Kreyòl Ayisyen.
-                    
-                    2. Les risques majeurs et dérives potentielles :
-                    - Dépendance intellectuelle et atrophie de la réflexion : Laisser l'IA penser ou coder à sa place sans comprendre les fondements détruit la capacité d'apprentissage ;
-                    - Hallucinations et fausses certitudes : Les modèles peuvent affirmer avec assurance des faits scientifiques ou historiques erronés ;
-                    - Plagiat et malhonnêteté académique : Soumettre du travail généré automatiquement sans mentionner la source.
-                    
-                    3. La règle d'or : Esprit critique et supervision humaine :
-                    L'IA doit être utilisée comme un miroir de réflexion et un accélérateur d'exploration, jamais comme une autorité suprême dispensant de l'effort intellectuel personnel.
+                    1. L'IA comme tuteur universel 24h/24 :
+                    L'avènement des modèles de langage avancés transforme radicalement l'apprentissage autonome. Pour un étudiant isolé en province, l'IA offre un interlocuteur pédagogique capable de décomposer une notion mathématique, d'expliquer une erreur de syntaxe ou de traduire des concepts complexes en Kreyòl Ayisyen.
+
+                    2. Les trois usages vertueux de l'IA pour l'apprenant :
+                    - L'explication socratique : Demander au modèle de poser des questions directrices plutôt que de donner la réponse brute ;
+                    - La génération d'exercices progressifs : Créer des problèmes d'algorithmique adaptés exactement au niveau actuel de l'étudiant ;
+                    - La revue critique de code : Soumettre son propre code pour obtenir des suggestions d'optimisation, de sécurité et de conformité aux standards.
+
+                    3. Les trois pièges mortels pour la progression cognitive :
+                    - Le copier-coller aveugle : Insérer du code généré sans en comprendre chaque ligne détruit la capacité d'apprentissage ;
+                    - L'illusion de compétence : Croire que l'on sait coder simplement parce que l'IA a produit un script fonctionnel ;
+                    - La passivité intellectuelle face aux erreurs : Accepter des explications inexactes (hallucinations) sans les vérifier dans la documentation officielle.
+
+                    4. La doctrine AJ-TECH :
+                    L'IA est un amplificateur de l'intelligence humaine, jamais un substitut à l'effort personnel. La maîtrise réelle reste celle qui réside dans l'esprit du concepteur.
                 """.trimIndent(),
                 contentHt = """
-                    1. Kijan IA ka chanje fason nou aprann :
-                    Entèlijans Atifisyèl pèmèt chak elèv aprann nan nivo pa l : li ka re-eksplike yon leson yon lòt fason si w pa t konprann, prepare ti tès pou w pratike, epi tradui gwo dokiman teknik an Kreyòl Ayisyen fasil.
-                    
-                    2. Gwo danje ak move fason pou itilize l :
-                    - Kite IA panse nan plas ou : Si w kite l ekri tout devwa ak kòd pou ou san w pa konprann, ou pap janm vin gen konpetans nan tèt ou ;
-                    - Erè ak manti IA ka fè (hallucinations) : Zouti sa yo ka di bagay ki pa vre ak anpil asirans, kidonk fòk ou toujou verifye ;
-                    - Kopye san travay (plagiat) : Pran sa IA ekri pou di se ou ki fè l se yon zak malonèt ki pa ede w grandi.
-                    
-                    3. Règ an lò : Toujou reflechi ak pwòp tèt ou :
-                    IA se yon zouti pou ede w chèche epi konprann pi vit, men li pa dwe janm ranplase pwòp lespri ak bon konprann pa w.
+                    1. IA tankou yon pwofesè ki toujou disponib :
+                    Nouvo zouti Entèlijans Atifisyèl yo chanje tout fason moun aprann. Pou yon jèn ki poukont li nan yon zòn andeyò, IA a ka sèvi kòm yon pwofesè ki la toutan pou re-eksplike yon leson ki difisil, ede jwenn yon erè nan kòd oswa tradui gwo liv teknik an Kreyòl Ayisyen.
+
+                    2. 3 bon fason pou sèvi ak IA pou aprann :
+                    - Mande l poze w kesyon : Olye w mande l ba w repons devwa a tout kuit, mande l poze w kesyon pou ede w jwenn repons lan poukont ou ;
+                    - Fè l prepare bon egzèsis pou ou : Mande l kreye ti pwoblèm pratik ki nan nivo pa w pou w ka antrene ;
+                    - Fè l verifye kòd ou ekri : Montre l kòd ou fin fè a pou l di w si gen fason pou fè l pi rapid, pi pwòp epi pi an sekirite.
+
+                    3. 3 gwo danje ki ka kraze lespri w :
+                    - Kopye kole san konprann : Pran kòd IA ba w mete nan pwojè w san w pa konprann chak liy ap anpeche w janm vin yon bon enjenyè ;
+                    - Pran pòz ou konnen pandan se zouti a ki fè tout bagay : Kwè ou konn kode paske IA a ba w yon solisyon se yon gwo manti w ap fè tèt ou ;
+                    - Kwè tout sa l di san verifye : Zouti sa yo konn fè erè epi di manti ak anpil asirans (hallucinations), kidonk ou dwe toujou verifye nan bon liv.
+
+                    4. Prensip AJ-TECH sou IA :
+                    Entèlijans Atifisyèl la pou ede entèlijans moun grandi, li pa la pou ranplase travay ak efò lespri pa w. Vrè konesans lan se sa ki rete nan tèt ou.
                 """.trimIndent(),
-                plannedStartPage = 365,
-                plannedEndPage = 368,
+                plannedStartPage = 121,
+                plannedEndPage = 122,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 83 : La jeunesse haïtienne et le numérique ====================
+            // ==================== CHAPITRE 83 : AJ-EDU et les plateformes éducatives numériques ====================
             BookChapter(
                 id = "ch_6_83",
                 chapterNumber = 83,
                 partId = "part_6",
-                titleFr = "Chapitre 83 — La jeunesse haïtienne et le numérique",
-                titleHt = "Chapit 83 — Jèn Ayisyen yo ak zouti nimerik",
-                subtitleFr = "Courage, talent, créativité et foi inébranlable dans le travail acharné",
-                subtitleHt = "Kouraj, talan, lespri kreyatif ak bonjan konviksyon nan travay di",
-                summaryFr = "Hommage et appel vibrant à la jeunesse haïtienne pour embrasser les métiers du savoir et de la technologie.",
-                summaryHt = "Yon bèl mesaj ankourajman pou tout jèn Ayisyen pou yo kwè nan tèt yo epi travay di pou fè peyi a vanse.",
+                titleFr = "Chapitre 83 — AJ-EDU et les plateformes éducatives numériques",
+                titleHt = "Chapit 83 — AJ-EDU ak platfòm edikasyon nimerik yo",
+                subtitleFr = "Pôle éducatif unifié, architecture hors-ligne et statut de conception",
+                subtitleHt = "Poto fòmasyon nasyonal, zouti ki mache san entènèt ak nivo konsepsyon li ye",
+                summaryFr = "Présentation du pôle éducatif AJ-EDU, sa vocation d'infrastructure pédagogique numérique et son statut transparent de concept au sein de l'écosystème.",
+                summaryHt = "Prezantasyon poto edikasyon AJ-EDU, sa li vle pote pou fòmasyon jèn yo ak verite sou nivo konsepsyon li ye jodi a.",
                 contentFr = """
-                    1. Un potentiel exceptionnel forgé dans l'adversité :
-                    La jeunesse haïtienne possède une énergie, une ingéniosité et une créativité hors du commun. Face aux épreuves quotidiennes les plus sévères, nos jeunes font preuve d'une soif d'apprendre et d'une détermination sans faille.
-                    
-                    2. Le message fondateur d'AJ-TECH :
-                    « Nous sommes forts, nous avons beaucoup de capacités. Continuons de lutter pour arriver au sommet. Rien n'est facile sans le travail. Merci aux jeunes Haïtiens. »
-                    Ce principe n'est pas un slogan publicitaire, mais le rappel constant que le destin technologique d'une nation repose sur la discipline, l'effort silencieux et le refus de la résignation.
-                    
-                    3. Transformer la frustration en force bâtisseuse :
-                    Plutôt que de céder au découragement face aux difficultés ambiantes, la jeunesse est appelée à s'emparer des claviers, des lignes de code et des outils numériques pour devenir les architectes de la reconstruction nationale.
+                    1. Identité et mission d'AJ-EDU :
+                    Au sein de l'architecture générale d'AJ-TECH, AJ-EDU constitue le pôle fédérateur des initiatives éducatives numériques. Sa mission est de concevoir des environnements d'apprentissage ouverts, interactifs et adaptés aux réalités technologiques et linguistiques d'Haïti.
+
+                    2. Transparence absolue sur le statut d'AJ-EDU :
+                    Conformément aux principes de rigueur d'AJ-TECH, le pôle AJ-EDU est officiellement classé sous le statut de « CONCEPT / EN DÉVELOPPEMENT INITIAL ».
+                    - Aucun cours commercialisé n'est déployé à ce jour ;
+                    - Aucun partenariat ministériel ou universitaire n'est revendiqué ;
+                    - Aucun effectif d'étudiants n'est fictivement affiché ;
+                    - Les modules décrits correspondent aux spécifications d'ingénierie et aux prototypes en cours d'élaboration.
+
+                    3. Architecture technique des plateformes envisagées :
+                    Les outils développés sous l'égide d'AJ-EDU reposent sur les standards :
+                    - Architecture Offline-First intégrale (PWA avec stockage local IndexedDB/Cache Storage) ;
+                    - Distribution de paquets de cours compressés synchronisables en point à point ou via clés USB ;
+                    - Moteur d'évaluation d'exercices exécuté côté client sans dépendance à un serveur distant ;
+                    - Interface entièrement bilingue Kreyòl Ayisyen / Français.
+
+                    4. Complémentarité avec les entités de l'écosystème :
+                    AJ-EDU s'articule avec AJ-Learn (mini-cours interactifs) et AJ-MathQuest (logique mathématique ludique) pour offrir un continuum d'apprentissage de l'enfance à l'âge adulte.
                 """.trimIndent(),
                 contentHt = """
-                    1. Yon gwo fòs ki grandi nan mitan difikilte :
-                    Jèn Ayisyen yo gen anpil enèji, anpil entèlijans ak anpil kreyativite nan men yo. Menm lè lavi a difisil chak jou, jèn nou yo toujou vle aprann epi yo pa janm pè goumen pou lavi miyò.
-                    
-                    2. Mesaj debaz AJ-TECH pou tout jèn :
-                    « Nou fò, nou gen anpil kapasite. Ann kontinye goumen pou nou rive nan somè a. Anyen pa fasil san travay. Mèsi ak jèn Ayisyen yo. »
-                    Pawòl sa a se pa pawòl piblisite, se yon rapèl pou tout moun konnen lavni peyi a chita sou disiplin, sou travay di chak jou san fè bri epi sou refize bese bra.
-                    
-                    3. Transfòme difikilte an fòs pou bati :
-                    Olye nou dekouraje devan sitiyasyon an, tout jèn yo dwe pran klavye yo, ekri bon kòd epi sèvi ak teknoloji pou bati yon nouvo peyi kote tout moun ka viv byen.
+                    1. Misyon ak vizyon AJ-EDU :
+                    Nan tout gwo plan AJ-TECH la, AJ-EDU se branch ki rasanble tout zouti edikasyon nimerik yo. Misyon l se kreye bèl espas pou moun aprann sou òdinatè ak telefòn, nan bonjan lang Kreyòl ak Fransè, san bezwen gwo mwayen.
+
+                    2. Verite total sou nivo pwojè AJ-EDU ye jodi a :
+                    Dapre prensip transparans AJ-TECH toujou defann, AJ-EDU anrejistre ofisyèlman nan nivo « KONSÈP / KÒMANSMAN DEVLOPMAN ».
+                    - Nou pa gen okenn kou n ap vann kounye a ;
+                    - Nou pa gen okenn kontra ofisyèl ak leta oswa ak inivèsite jodi a ;
+                    - Nou pa envante okenn fo chif sou kantite elèv ;
+                    - Tout sa ki ekri la a se plan teknik ak ti vèsyon tès n ap prepare.
+
+                    3. Kijan zouti sa yo ap bati sou plan teknik :
+                    Platfòm AJ-EDU yo ap fèt sou prensip solid :
+                    - Mache 100 % san entènèt (PWA ak done ki sove dirèkteman nan memwa aparèy la) ;
+                    - Leson ki byen sere an ti dosye lejè moun ka pataje sou kle USB oswa Bluetooth ;
+                    - Tès ak koreksyon egzèsis ki fèt dirèkteman sou telefòn lan san bezwen voye anyen sou sèvè lwen ;
+                    - Tout ekran ak leson yo disponib ni an Kreyòl Ayisyen ni an Fransè.
+
+                    4. Jan l ap travay ak lòt pwojè yo :
+                    AJ-EDU ap mache men nan men ak AJ-Learn (ti leson kout) ak AJ-MathQuest (jwèt pou aprann matematik ak lojik) pou ede tout moun grandi nan konesans depi yo piti.
                 """.trimIndent(),
-                plannedStartPage = 369,
-                plannedEndPage = 372,
+                plannedStartPage = 123,
+                plannedEndPage = 124,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 84 : La diaspora et le transfert de compétences ====================
+            // ==================== CHAPITRE 84 : EDUKA et la transformation de l'éducation ====================
             BookChapter(
                 id = "ch_6_84",
                 chapterNumber = 84,
                 partId = "part_6",
-                titleFr = "Chapitre 84 — La diaspora et le transfert de compétences",
-                titleHt = "Chapit 84 — Dyaspora a ak pataje konesans (Transfert de compétences)",
-                subtitleFr = "Mentorat à distance, revues de projets, ponts académiques et réseaux internationaux",
-                subtitleHt = "Gide jèn yo a distans, verifye pwojè, bati pon ak inivèsite ak gwo rezo nan mond lan",
-                summaryFr = "Mécanismes de collaboration entre experts haïtiens de l'étranger et étudiants locaux pour élever le niveau d'ingénierie.",
-                summaryHt = "Fason ayisyen k ap travay nan gwo konpayi deyò ka ede jèn nan peyi a aprann pi byen epi fè bon kòd.",
+                titleFr = "Chapitre 84 — EDUKA et la transformation de l'éducation",
+                titleHt = "Chapit 84 — EDUKA ak transfòmasyon edikasyon",
+                subtitleFr = "Plateforme d'apprentissage modulaire, soutien scolaire et statut officiel",
+                subtitleHt = "Platfòm leson pa modil, èd pou elèv lekòl ak estati ofisyèl li genyen",
+                summaryFr = "Spécifications de l'entité EDUKA : plateforme d'apprentissage scolaire modulaire adaptée aux écoles haïtiennes, sous son statut strict de concept.",
+                summaryHt = "Detay sou pwojè EDUKA : yon zouti pou ede elèv lekòl konprann leson yo pi byen, anba estati konsèp li genyen toutbon.",
                 contentFr = """
-                    1. La diaspora comme vivier mondial de compétences :
-                    Des milliers d'ingénieurs, universitaires et professionnels haïtiens occupent des postes stratégiques dans les pôles technologiques aux États-Unis, au Canada, en France et dans la Caraïbe.
-                    
-                    2. Formes concrètes de transmission de savoirs envisagées :
-                    - Séances de mentorat technique régulières en visioconférence pour accompagner les débutants ;
-                    - Revues de code (Code Reviews) sur les projets open source pour transmettre les bonnes pratiques de production ;
-                    - Animation d'ateliers thématiques spécialisés (sécurité, cloud, architectures réactives) ;
-                    - Connexion des talents locaux avec des opportunités professionnelles internationales.
-                    
-                    3. Transparence sur les partenariats :
-                    Ces initiatives constituent des objectifs de développement communautaire et d'alliances futures. Aucun accord formel ou programme institutionnel permanent n'est actuellement déployé.
+                    1. Dénomination officielle et vocation d'EDUKA :
+                    L'entité EDUKA porte son nom officiel sans modification. Elle a pour vocation de devenir un système d'apprentissage scolaire interactif couvrant les matières fondamentales (mathématiques, sciences, langues, technologie) adaptées aux programmes pédagogiques haïtiens.
+
+                    2. Statut officiel de l'entité :
+                    EDUKA est au statut « CONCEPT / PROTOTYPE EN CONCEPTION ». Elle ne constitue pas actuellement une plateforme déployée dans les établissements scolaires ni un service public officiel.
+
+                    3. Architecture pédagogique modulaire :
+                    Le modèle fonctionnel d'EDUKA repose sur :
+                    - Des micro-leçons de 5 à 10 minutes combinant texte explicatif, schémas vectoriels et exemples contextualisés à la réalité haïtienne ;
+                    - Des séries d'exercices autocorrectifs permettant à l'élève d'identifier ses lacunes sans jugement ;
+                    - Un tableau de bord d'auto-évaluation hors-ligne permettant de mesurer sa progression au fil des semaines ;
+                    - Des fiches de révision téléchargeables et imprimables pour les zones sans écran.
+
+                    4. La vision d'un partenariat avec les éducateurs :
+                    À l'avenir, EDUKA prévoit d'intégrer des contributions directes d'enseignants, de pédagogues et de linguistes haïtiens afin de garantir la rigueur des contenus et leur totale adéquation culturelle et académique.
                 """.trimIndent(),
                 contentHt = """
-                    1. Dyaspora a chaje ak gwo espesyalis :
-                    Gen plizyè milye enjenyè, pwofesè inivèsite ak ekspè ayisyen k ap travay nan pi gwo konpayi teknoloji nan peyi Etazini, Kanada, Lafrans ak nan Karayib la.
-                    
-                    2. Fason yo ka ede jèn yo pi devan :
-                    - Fè ti sesyon konsèy sou entènèt pou gide jèn k ap kòmanse yo ;
-                    - Gade epi verifye kòd jèn yo ekri pou moutre yo jan gwo konpayi travay ;
-                    - Fè bèl atelye espesyal sou sekirite, cloud ak gwo sistèm lojisyèl ;
-                    - Ede bon jèn ki konn travay jwenn bon opòtinite travay sou entènèt.
-                    
-                    3. Verite sou patenarya sa yo :
-                    Plan sa yo se relasyon ak kolaborasyon n ap chache bati ti pa ti pa. Nou pa gen okenn gwo pwogram ofisyèl ki deja siyen jodi a (Sa se : Pou defini / An kou konsepsyon).
+                    1. Non ofisyèl ak misyon EDUKA :
+                    Pwojè EDUKA kenbe non ofisyèl sa a san chanjman. Li fèt pou l vin yon gwo zouti edikasyon ki gen leson sou tout matyè enpòtan (matematik, syans, lang, teknoloji) ki prepare espesyalman pou elèv lekòl ann Ayiti.
+
+                    2. Nivo pwojè a ye jodi a :
+                    EDUKA nan nivo « KONSÈP / PROTOTIP AN KONSEPSYON ». Li poko yon zouti ki enstale nan lekòl yo jodi a ni li poko yon sèvis leta ofisyèl (Tout sa se bagay n ap prepare ti pa ti pa).
+
+                    3. Fason leson yo prepare an ti moso (modilè) :
+                    Plan teknik EDUKA chita sou :
+                    - Ti leson kout 5 a 10 minit ki gen tèks senp, bèl desen ak egzanp sou reyalite lavi an Ayiti ;
+                    - Egzèsis ki korije tèt yo otomatikman pou elèv la ka wè kote l te fè erè san pèsonn pa pase l nan betiz ;
+                    - Yon ti espas sou telefòn lan ki montre l kijan l ap vanse chak semèn menm san entènèt ;
+                    - Ti fich rezime leson moun ka enprime sou papye pou zòn ki pa gen òdinatè.
+
+                    4. Travay ak pwofesè yo pi devan :
+                    Lè pwojè a va fin pare, nou ta renmen travay dirèkteman ak pwofesè lekòl ak moun ki konn pedagoji an Ayiti pou asire tout leson yo gen bon kalite kòrèk.
                 """.trimIndent(),
-                plannedStartPage = 373,
-                plannedEndPage = 376,
+                plannedStartPage = 124,
+                plannedEndPage = 125,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 85 : Former les créateurs de demain ====================
+            // ==================== CHAPITRE 85 : EDH et la formation technologique en Haïti ====================
             BookChapter(
                 id = "ch_6_85",
                 chapterNumber = 85,
                 partId = "part_6",
-                titleFr = "Chapitre 85 — Former les créateurs de demain",
-                titleHt = "Chapit 85 — Fòme moun ki pral kreye demen",
-                subtitleFr = "De la consommation d'applications à la conception de systèmes souverains",
-                subtitleHt = "Soti nan moun k ap sèlman itilize lojisyèl lòt moun rive nan bati pwòp sistèm pa nou",
-                summaryFr = "Transition éducative vers la formation de concepteurs, d'architectes et d'inventeurs capables de bâtir l'autonomie nationale.",
-                summaryHt = "Fason pou chanje edikasyon pou n pa sèlman fòme moun k ap klike sou telefòn, men fòme moun ki konn bati teknoloji.",
+                titleFr = "Chapitre 85 — EDH et la formation technologique en Haïti",
+                titleHt = "Chapit 85 — EDH ak fòmasyon teknolojik ann Ayiti",
+                subtitleFr = "L'École Du Digital d'Haïti : projet d'académie d'élite et transparence",
+                subtitleHt = "Lekòl Dijital Ayiti (EDH) : pwojè pou yon gwo akademi fòmasyon ak transparans",
+                summaryFr = "Présentation de l'entité EDH (École Du Digital d'Haïti) : ambition de formation d'excellence en ingénierie logicielle et statut strict de concept.",
+                summaryHt = "Prezantasyon pwojè EDH (École Du Digital d'Haïti) : vizyon pou fòme gwo espesyalis lojisyèl ak nivo konsèp li genyen toutbon jodi a.",
                 contentFr = """
-                    1. Dépasser la simple alphabétisation numérique :
-                    Savoir utiliser un traitement de texte ou naviguer sur les réseaux sociaux ne constitue pas une compétence d'ingénierie. L'ambition éducative d'AJ-TECH est de former des créateurs de systèmes et non de simples utilisateurs finaux.
-                    
-                    2. Les compétences clés du bâtisseur logiciel :
-                    - Compréhension intime des structures de données et des algorithmes fondamentaux ;
-                    - Maîtrise des protocoles de communication réseau et des architectures distribuées ;
-                    - Sensibilité au design centré sur l'utilisateur (UI/UX) et à l'accessibilité universelle ;
-                    - Culture de la sécurité dès la conception (Security by Design).
-                    
-                    3. Bâtir pour durer et servir la société :
-                    Former des créateurs implique de leur inculquer le sens de la responsabilité sociale : concevoir des logiciels utiles, éthiques et pérennes au service du bien commun.
+                    1. Dénomination officielle et distinction :
+                    L'entité EDH désigne expressément l'« École Du Digital d'Haïti ». Cette dénomination officielle est strictement maintenue (sans préfixe « AJ- »). Elle ne doit pas être confondue avec des entreprises publiques d'énergie.
+
+                    2. Statut officiel et transparence institutionnelle :
+                    EDH est officiellement classée au statut de « CONCEPT ».
+                    - Aucun campus physique n'est ouvert à ce jour ;
+                    - Aucun corps enseignant salarié permanent n'est constitué ;
+                    - Aucun diplôme d'État ou accréditation universitaire n'est actuellement délivré ;
+                    - Les cursus présentés constituent la feuille de route pédagogique de long terme.
+
+                    3. Vocation et filières d'excellence envisagées :
+                    EDH a pour ambition de former les cadres techniques de haut niveau nécessaires à la souveraineté numérique du pays :
+                    - Ingénierie des systèmes distribués et cloud souverain ;
+                    - Cybersécurité défensive et audit de vulnérabilités ;
+                    - Architecture de bases de données et persistance locale résiliente ;
+                    - Développement d'applications sécurisées et intelligence artificielle appliquée.
+
+                    4. Pédagogie par la pratique intensive :
+                    Le modèle d'EDH repose sur l'immersion par projets réels : les étudiants ne passent pas leurs années à réciter des théories abstraites, mais à concevoir, tester et déployer des applications utiles à la collectivité haïtienne.
                 """.trimIndent(),
                 contentHt = """
-                    1. Depase senp nivo itilize telefòn :
-                    Konnen kijan pou tape yon lèt oswa gade videyo sou rezo sosyal se pa sa ki fè w enjenyè. Objektif nou se fòme jèn ki konn bati pwòp sistèm pa yo, pa sèlman moun k ap sèvi ak sa lòt nasyon fè.
-                    
-                    2. Sa yon bon moun k ap bati dwe konnen :
-                    - Byen konprann kijan òdinatè klase epi trete done yo ;
-                    - Konnen kijan rezo ak entènèt kominike ant aparèy yo ;
-                    - Konn desine bèl ekran ki fasil pou tout moun itilize san traka ;
-                    - Pwoteje kòd la depi premye jou pou pèsonn pa ka pirate l.
-                    
-                    3. Bati pou sèvi pèp la tout bon :
-                    Fòme jèn yo pou yo gen konsyans : kreye lojisyèl ki itil peyi a, ki respekte prensip moral epi ki la pou ede tout moun viv pi byen.
+                    1. Non ofisyèl pwojè a :
+                    Non ofisyèl EDH vle di « École Du Digital d'Haïti » (Lekòl Dijital Ayiti). Nou kenbe non sa a egzakteman konsa san mete « AJ- » devan l, epi li pa gen anyen pou wè ak konpayi kouran leta a.
+
+                    2. Nivo pwojè a ye jodi a ak verite klè :
+                    EDH anrejistre ofisyèlman nan nivo « KONSÈP ».
+                    - Li poko gen yon gwo bilding lekòl ki louvri jodi a ;
+                    - Li poko gen pwofesè sou kontra regilye kounye a ;
+                    - Li poko ap bay okenn diplòm leta oswa diplòm inivèsite kounye a ;
+                    - Tout pwogram leson ki prezante yo se plan travay pou pi devan.
+
+                    3. Gwo metye EDH vle anseye pi devan :
+                    Lekòl sa a fèt nan lide pou prepare jèn Ayisyen nan pi gwo metye teknoloji ki difisil :
+                    - Enjenyè k ap bati gwo sistèm sèvè ak nwaj nasyonal (Cloud) ;
+                    - Espesyalis k ap pwoteje sistèm kont pirate (Cybersécurité) ;
+                    - Moun k ap kreye gwo baz done solid ki pa ka pèdi ;
+                    - Moun k ap devlope lojisyèl sekirize ak zouti Entèlijans Atifisyèl.
+
+                    4. Aprann nan fè gwo pwojè toutbon :
+                    Prensip lekòl EDH la se pa chita ap repete bèl teyori sèlman, men se mete men nan kòd la pou bati vrè aplikasyon ki rezoud pwoblèm toutbon pou sosyete ayisyen an.
                 """.trimIndent(),
-                plannedStartPage = 377,
-                plannedEndPage = 380,
+                plannedStartPage = 126,
+                plannedEndPage = 127,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 86 : Inclusion numérique et égalité des chances ====================
+            // ==================== CHAPITRE 86 : Former au-delà du code ====================
             BookChapter(
                 id = "ch_6_86",
                 chapterNumber = 86,
                 partId = "part_6",
-                titleFr = "Chapitre 86 — Inclusion numérique et égalité des chances",
-                titleHt = "Chapit 86 — Tout moun jwenn chans (Enklizyon nimerik)",
-                subtitleFr = "Égalité femmes-hommes, inclusion des provinces et accessibilité pour les personnes en situation de handicap",
-                subtitleHt = "Chans pou medam yo, opòtinite pou moun nan pwovens ak zouti pou moun ki gen andikap",
-                summaryFr = "Principes d'équité territoriale, de parité et d'accessibilité universelle dans l'accès aux compétences technologiques.",
-                summaryHt = "Prensip pou pèmèt tout moun, fanm kou gason, moun lavil kou moun andeyò ak moun ki enfim jwenn menm chans nan teknoloji.",
+                titleFr = "Chapitre 86 — Former au-delà du code",
+                titleHt = "Chapit 86 — Fòme moun pi lwen pase kòd",
+                subtitleFr = "Éthique, pensée critique, design d'expérience utilisateur et culture produit",
+                subtitleHt = "Prensip moral, lespri kritik, bèl konsepsyon pou itilizatè ak lespri bati bon pwodui",
+                summaryFr = "L'ingénierie logicielle ne se limite pas à la syntaxe : importance de l'éthique, de la psychologie utilisateur (UX), du droit numérique et de la responsabilité civique.",
+                summaryHt = "Fè lojisyèl pa sèlman ekri kòd : enpòtans prensip moral, konprann sa itilizatè a bezwen (UX), respekte lwa ak responsablite anvè sosyete a.",
                 contentFr = """
-                    1. La technologie comme vecteur d'égalité ou de creusement des inégalités :
-                    Si elle n'est pas guidée par des principes d'équité stricts, la révolution numérique risque d'accentuer les disparités existantes entre la capitale et les départements ruraux, ou entre les genres.
-                    
-                    2. L'accès des femmes aux carrières technologiques :
-                    L'écosystème promeut activement la participation des femmes dans le développement logiciel, la recherche et l'entrepreneuriat à travers des modèles inspirants et des environnements d'apprentissage bienveillants et sécurisés.
-                    
-                    3. Décentralisation territoriale :
-                    Le génie et le talent ne s'arrêtent pas aux frontières de Port-au-Prince. Les outils d'AJ-TECH sont conçus pour être utilisables et déployables avec la même efficacité à Fort-Liberté, Jérémie, Hinche ou Port-de-Paix.
-                    
-                    4. Accessibilité pour les personnes en situation de handicap :
-                    Intégration systématique des standards d'accessibilité (lecteurs d'écran TalkBack, contrastes renforcés, cibles tactiles larges) dans toutes les interfaces éducatives.
+                    1. Le code comme simple moyen, le produit comme finalité :
+                    Un développeur qui ne maîtrise que la syntaxe d'un langage reste un exécutant technique. Un véritable bâtisseur d'écosystème comprend pourquoi il écrit chaque ligne de code, pour qui il la conçoit et quel impact social elle produit.
+
+                    2. Les quatre piliers de la formation intégrale :
+                    - L'éthique et la protection des libertés fondamentales : Refuser de concevoir des mécanismes de manipulation psychologique (Dark Patterns), respecter la confidentialité des données personnelles et protéger l'autonomie des utilisateurs ;
+                    - Le Design d'expérience utilisateur (UI/UX) : Concevoir des interfaces intuitives, esthétiques et accessibles aux personnes peu familiarisées avec le numérique ou en situation d'illettrisme fonctionnel ;
+                    - La culture produit et la viabilité économique : Évaluer la valeur ajoutée réelle d'une fonctionnalité avant de la développer, mesurer son coût d'exploitation et garantir sa durabilité ;
+                    - Le droit du numérique et la propriété intellectuelle : Comprendre les licences open source (MIT, Apache, GPL), respecter le droit d'auteur et naviguer dans les cadres réglementaires.
+
+                    3. L'ingénieur comme citoyen éclairé :
+                    En Haïti plus qu'ailleurs, les professionnels de la technologie doivent porter des valeurs d'intégrité, de patriotisme économique et de solidarité pour mettre leurs compétences au service du bien commun.
                 """.trimIndent(),
                 contentHt = """
-                    1. Teknoloji dwe bay tout moun chans :
-                    Si nou pa veye byen, teknoloji a ka fè moun ki deja gen mwayen vin pi rich epi kite lòt moun dèyè. Nou dwe asire tout moun jwenn menm opòtinite.
-                    
-                    2. Ankouraje medam yo nan metye teknoloji :
-                    Nou vle wè anpil tifi ak medam k ap ekri kòd, k ap dirije pwojè epi k ap kreye bèl konpayi teknoloji nan peyi a.
-                    
-                    3. Bay tout pwovens yo menm valè :
-                    Talan ak entèlijans pa rete nan Pòtoprens sèlman. Zouti AJ-TECH yo fèt pou nenpòt jèn nan Fòlibète, Jeremi, Ench oswa Pòdpè ka itilize yo menm jan san difikilte.
-                    
-                    4. Fasilite pou moun ki gen andikap :
-                    Tout zouti edikasyon nou yo dwe respekte règleman pou moun ki pa wè byen oswa ki enfim ka itilize yo gras ak zouti ki li tèks yo pou yo.
+                    1. Kòd se sèlman yon zouti, se sèvi moun ki pi enpòtan :
+                    Yon moun ki sèlman konn ekri kòd se yon senp egzekitan. Yon vrè enjenyè ki vle chanje peyi l dwe konprann poukisa l ap ekri chak liy, pou ki moun l ap fè l, epi ki bon bagay sa pral pote nan lavi moun yo.
+
+                    2. 4 gwo branch konesans pou konplete kòd la :
+                    - Prensip moral ak pwoteksyon libète moun : Refize kreye pyèj nan lojisyèl pou twonpe itilizatè, pwoteje sekrè ak vi prive moun, epi pa janm vann done moun ;
+                    - Bèl desen fasil pou itilize (UI/UX) : Fè ekran ki klè, ki bèl e ki tèlman senp pou nenpòt moun, menm sa ki pa konn li byen, ka sèvi ak yo fasil ;
+                    - Lespri bati bon pwodui ki ka dire : Gade si sa w ap devlope a itil toutbon anvan w pèdi tan kode l, kalkile sa l ap koute epi asire l ka viv lontan ;
+                    - Lwa sou teknoloji ak pwopriyete entèlektyèl : Konprann règ lisans lojisyèl ouvè yo (MIT, Apache), respekte travay lòt moun epi mache dwat devan lwa.
+
+                    3. Enjenyè a dwe yon bon sitwayen modèl :
+                    Ann Ayiti plis toujou, moun k ap travay nan teknoloji dwe gen prensip onètete, renmen peyi yo, epi sèvi ak entèlijans yo pou ede tout sosyete a vanse.
                 """.trimIndent(),
-                plannedStartPage = 381,
-                plannedEndPage = 384,
+                plannedStartPage = 127,
+                plannedEndPage = 128,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 87 : Langues, culture et technologie ====================
+            // ==================== CHAPITRE 87 : Certification, portfolio et employabilité ====================
             BookChapter(
                 id = "ch_6_87",
                 chapterNumber = 87,
                 partId = "part_6",
-                titleFr = "Chapitre 87 — Langues, culture et technologie",
-                titleHt = "Chapit 87 — Lang, kilti ak teknoloji",
-                subtitleFr = "Kreyòl Ayisyen, Français, Anglais : le trilinguisme stratégique dans l'apprentissage technologique",
-                subtitleHt = "Kreyòl Ayisyen, Fransè, Angle : twa lang pou louvri tout pòt nan teknoloji",
-                summaryFr = "Analyse du rôle des langues dans la transmission du savoir technique et plaidoyer pour un Kreyòl technologique rigoureux.",
-                summaryHt = "Analiz sou wòl lang yo nan aprann enfòmatik ak jan lang Kreyòl Ayisyen an dwe sèvi kòm bon zouti konesans.",
+                titleFr = "Chapitre 87 — Certification, portfolio et employabilité",
+                titleHt = "Chapit 87 — Sètifikasyon, pòtfolyo ak kapasite pou jwenn travay",
+                subtitleFr = "La preuve par le code : dépôts publics, projets déployés et insertion professionnelle",
+                subtitleHt = "Prèv pa kòd ou ekri : pwojè sou Git, aplikasyon k ap mache ak jwenn bon travay",
+                summaryFr = "Stratégies pour valoriser ses compétences sur le marché de l'emploi : pourquoi un portfolio de projets fonctionnels surpasse un diplôme théorique sans pratique.",
+                summaryHt = "Fason pou montre sa w konn fè pou jwenn travay fasil : poukisa bèl pwojè ki deja ap mache pi fò pase yon senp papye diplòm san pratik.",
                 contentFr = """
-                    1. Le Kreyòl Ayisyen comme langue de transmission universelle :
-                    Le Kreyòl Ayisyen est la langue partagée par 100 % de la population nationale. Une technologie qui exclut le créole exclut de facto la majorité des citoyens. AJ-TECH intègre le créole comme langue première dans toutes ses entités, ses interfaces et sa documentation.
-                    
-                    2. Le Français comme langue institutionnelle et juridique :
-                    Le Français demeure un pont précieux vers le monde francophone international, la recherche universitaire et les échanges institutionnels officiels.
-                    
-                    3. L'Anglais comme langue globale de l'ingénierie :
-                    L'Anglais est la lingua franca mondiale de l'informatique : toute la documentation officielle, les spécifications de compilateurs et les bibliothèques open source sont rédigées en anglais. La maîtrise de l'anglais technique est donc indispensable pour l'autonomie des développeurs.
-                    
-                    4. Le trilinguisme pragmatique :
-                    Comprendre le concept en Kreyòl pour une clarté mentale absolue, l'articuler en Français pour les échanges régionaux, et le coder en Anglais pour les standards industriels mondiaux.
+                    1. Le paradigme de la preuve par la pratique :
+                    Dans le secteur technologique moderne, les recruteurs et donneurs d'ordre internationaux n'accordent qu'une importance secondaire aux titres académiques non vérifiables. Ce qui compte de manière décisive, c'est la preuve tangible de la compétence : le code écrit, testé et déployé.
+
+                    2. Les trois composantes d'un portfolio professionnel solide :
+                    - Des dépôts GitHub/GitLab publics et soignés : Un historique de commits clair, des README détaillés en plusieurs langues, des diagrammes d'architecture et des tests automatisés démontrant la rigueur du développeur ;
+                    - Des applications fonctionnelles déployées en production : Des liens directs vers des PWA ou APK testables immédiatement par les recruteurs ;
+                    - Des articles techniques ou contributions open source : Démontrer sa capacité à expliquer un problème technique complexe et à collaborer avec la communauté mondiale.
+
+                    3. Les opportunités d'insertion professionnelle pour les talents haïtiens :
+                    - Le télétravail international (Remote Work) : Exporter des services d'ingénierie vers des entreprises étrangères tout en vivant en Haïti et en injectant des devises dans l'économie locale ;
+                    - Le freelancing spécialisé : Proposer des expertises pointues (interfaces mobiles Jetpack Compose, sécurité, optimisation offline) sur les plateformes professionnelles ;
+                    - L'entrepreneuriat de service : Accompagner la numérisation des commerces, cliniques et écoles locales.
+
+                    4. La transparence d'AJ-TECH :
+                    AJ-TECH ne délivre pas de certifications mercantiles illusoires. L'écosystème préconise la maîtrise authentique démontrée par des réalisations concrètes et vérifiables par tous.
                 """.trimIndent(),
                 contentHt = """
-                    1. Kreyòl Ayisyen se lang tout moun nan peyi a :
-                    Kreyòl Ayisyen se sèl lang tout 100 % popilasyon an pale ak konprann. Nenpòt teknoloji ki pa pale kreyòl ap mete pifò pèp la deyò. Se poutèt sa AJ-TECH mete Kreyòl Ayisyen an premye nan tout aplikasyon ak liv li yo.
-                    
-                    2. Fransè pou lwa ak relasyon ofisyèl :
-                    Lang fransè a enpòtan pou nou pale ak lòt peyi frankofòn, pou dokiman legal ak inivèsite.
-                    
-                    3. Angle kòm lang entènasyonal enfòmatik :
-                    Lang angle se lang tout devlopè sou latè itilize : tout dokiman lojisyèl ak zouti kòd ekri an angle. Yon bon devlopè dwe konn li angle teknik pou l pa bloke.
-                    
-                    4. Fòs nan pale 3 lang sa yo ansanm :
-                    Konprann leson an byen klè nan lang Kreyòl manman nou, kapab eksplike l an Fransè, epi ekri kòd la an Angle pou l mache sou tout estanda entènasyonal yo.
+                    1. Montre sa w konn fè toutbon vre :
+                    Nan mond teknoloji a jodi a, gwo konpayi k ap anplwaye moun pa sèlman gade bèl papye diplòm. Sa ki pi enpòtan pou yo, se wè prèv toutbon sou sa w konn fè : kòd ou deja ekri, teste epi ki deja ap fonksyone.
+
+                    2. 3 bagay yon bon dosye travay (portfolio) dwe genyen :
+                    - Paj Git (GitHub/GitLab) ki byen pwòp : Kòd ki byen estriktire, bon ti liv esplikasyon (README) an plizyè lang, ak tès ki montre ou travay ak anpil swen ;
+                    - Aplikasyon k ap fonksyone toutbon sou entènèt : Lyen kote moun ka klike pou teste aplikasyon w lan dirèkteman sou telefòn yo ;
+                    - Ti atik teknik oswa èd ou bay nan pwojè ouvè : Sa montre ou konn kominike byen epi ou ka travay ak lòt devlopè nan lemonn antye.
+
+                    3. Bèl opòtinite travay pou jèn Ayisyen :
+                    - Travay a distans sou entènèt (Remote Work) : Travay pou konpayi lòt bò dlo pandan w rete nan peyi w, sa k pèmèt bon lajan rantre nan ekonomi nasyonal la ;
+                    - Travay kòm endepandan (Freelance) : Vann sèvis espesyal ou (fè bèl aplikasyon mobil Jetpack Compose, sekirite) bay moun ki bezwen sa ;
+                    - Kreye pwòp ti biznis sèvis ou : Ede ti boutik, doktè ak lekòl nan zòn pa w modènize fason y ap travay.
+
+                    4. Pozisyon klè AJ-TECH :
+                    AJ-TECH pa la pou vann fo diplòm oswa papye ki pa gen anyen dèyè yo. Nou kwè nan vrè konpetans ki chita sou bèl travay ou fè ak men w ke nenpòt moun ka verifye.
                 """.trimIndent(),
-                plannedStartPage = 385,
-                plannedEndPage = 387,
+                plannedStartPage = 128,
+                plannedEndPage = 130,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 88 : Créer une génération de développeurs haïtiens ====================
+            // ==================== CHAPITRE 88 : La transmission des connaissances ====================
             BookChapter(
                 id = "ch_6_88",
                 chapterNumber = 88,
                 partId = "part_6",
-                titleFr = "Chapitre 88 — Créer une génération de développeurs haïtiens",
-                titleHt = "Chapit 88 — Kreye yon gwo jenerasyon devlopè ayisyen",
-                subtitleFr = "Parcours d'apprentissage progressif : du débutant absolu à l'architecte logiciel chevronné",
-                subtitleHt = "Chemen aprann etap pa etap : soti nan moun ki fenk kòmanse rive nan gwo enjenyè",
-                summaryFr = "Feuille de route pédagogique détaillée pour guider un apprenant depuis ses premières lignes de code jusqu'au niveau d'ingénieur confirmé.",
-                summaryHt = "Gid detaye pou mennen yon elèv soti nan premye ti liy kòd li ekri rive nan nivo yon gwo espesyalis.",
+                titleFr = "Chapitre 88 — La transmission des connaissances",
+                titleHt = "Chapit 88 — Transmisyon konesans",
+                subtitleFr = "Mentorat, pair-programmation, culture du partage et documentation ouverte",
+                subtitleHt = "Gide lòt moun, kode de pa de, pataje konesans ak dokiman ouvè pou tout moun",
+                summaryFr = "Pourquoi la transmission généreuse du savoir est le seul moyen de démultiplier les compétences et de pérenniser un écosystème technologique national.",
+                summaryHt = "Poukisa pataje sa w konnen san sere konesans se sèl fason pou fè yon jenerasyon grandi epi asire lavni teknoloji nan peyi a.",
                 contentFr = """
-                    1. Les 7 étapes du parcours de montée en compétences :
-                    
-                    - Étape 1 : Débutant & Pensée logique : Algorithmique fondamentale, variables, boucles, conditions et raisonnement déductif.
-                    - Étape 2 : Fondamentaux du code : Maîtrise d'un premier langage structuré (Kotlin, Python ou JavaScript), typage strict et programmation orientée objet.
-                    - Étape 3 : Pratique intensive & Git : Gestion de versions avec Git, écriture de tests unitaires et manipulation de structures de données.
-                    - Étape 4 : Projets complets & Architecture : Conception d'applications de bout en bout avec séparation des couches (MVVM, Clean Architecture) et persistance locale.
-                    - Étape 5 : Spécialisation technique : Approfondissement en développement mobile (Jetpack Compose), backend sécurisé, cloud distribué ou intelligence artificielle.
-                    - Étape 6 : Professionnalisation : Travail collaboratif en équipe agile, revue de code par les pairs, intégration continue (CI/CD) et optimisation de performance.
-                    - Étape 7 : Entrepreneuriat & Leadership : Création de ses propres produits logiciels, audit de sécurité et transmission des connaissances aux nouvelles promotions.
+                    1. Le savoir non partagé s'éteint :
+                    Dans de nombreuses cultures techniques émergentes, la tentation existe de garder jalousement ses connaissances comme un privilège individuel. AJ-TECH combat vigoureusement cette attitude stérile : la véritable puissance d'une communauté réside dans sa capacité à transmettre vite et bien à ceux qui suivent.
+
+                    2. Les mécanismes concrets de transmission communautaire :
+                    - Le mentorat individuel : Chaque développeur ayant atteint un niveau intermédiaire ou avancé s'engage moralement à guider au moins deux débutants dans leur apprentissage ;
+                    - La programmation en binôme (Pair Programming) : Travailler à deux sur un même problème pour transmettre en direct les réflexes d'ingénierie, les raccourcis de débogage et la méthode d'analyse ;
+                    - La rédaction de documentation en Kreyòl Ayisyen : Documenter les algorithmes et les architectures dans la langue maternelle pour briser les barrières de la compréhension ;
+                    - L'animation d'ateliers techniques ouverts : Organiser des sessions pratiques d'échange de compétences au sein des universités, centres communautaires et espaces associatifs.
+
+                    3. L'effet multiplicateur du capital humain :
+                    Si un ingénieur forme dix développeurs, et que chacun d'eux en forme dix à son tour, une communauté de dix mille bâtisseurs peut émerger en moins d'une décennie. C'est sur cette dynamique exponentielle que repose la vision AJ-TECH 2026–2035.
                 """.trimIndent(),
                 contentHt = """
-                    1. 7 gwo etap pou vin yon bon devlopè :
-                    
-                    - Etap 1 : Moun ki fenk kòmanse ak lespri lojik : Aprann kijan pou bay òdinatè lòd, kalkil debaz ak kondisyon senp.
-                    - Etap 2 : Premye langaj kòd : Byen metrize yon bon langaj solid (Kotlin, Python oswa JavaScript) ak kijan pou estriktire done yo.
-                    - Etap 3 : Pratik ak Git : Aprann sere kòd sou Git, fè tès sou machin pou verifye si kòd la pa gen erè.
-                    - Etap 4 : Bati gwo pwojè nèt : Kreye yon aplikasyon soti nan kòmansman rive nan bout li ak bon separasyon nan kòd la (MVVM).
-                    - Etap 5 : Chwazi yon domèn espesyal : Vin ekspè nan aplikasyon mobil (Jetpack Compose), nan gwo sèvè sekirite oswa nan Entèlijans Atifisyèl.
-                    - Etap 6 : Travay tankou yon pwofesyonèl : Travay an ekip, verifye kòd lòt moun, fè kòd la kouri rapid san ralanti telefòn.
-                    - Etap 7 : Kreye biznis ak gide lòt moun : Bati pwòp lojisyèl pa w pou vann, verifye sekirite epi anseye lòt jèn k ap monte yo.
+                    1. Konesans ou sere nan ti bwat se konesans ki mouri :
+                    Twò souvan, gen moun ki panse si yo kache sa yo konnen y ap vin pi enpòtan. AJ-TECH kwè egzakteman lekontrè : pi gwo fòs yon kominote se lè moun ki konnen yo prese montre moun k ap monte yo pou tout moun ka grandi ansanm.
+
+                    2. Bonjan fason pou transmèt konesans :
+                    - Gide jèn k ap kòmanse (Mentorat) : Chak devlopè ki deja gen yon ti eksperyans dwe pran angajman pou l ede omwen de lòt jèn k ap kòmanse ;
+                    - Kode de pa de (Pair Programming) : Chita de moun sou menm òdinatè pou rezoud yon pwoblèm, sa pèmèt youn aprann ti sekrè ak bon abitid lòt la rapid ;
+                    - Ekri dokiman teknik an Kreyòl Ayisyen : Eksplike kòd ak sistèm yo nan lang manman nou pou tout moun ka konprann fasil san baryè langaj ;
+                    - Fè bèl ti atelye pratik : Fè ti rankont nan lekòl, inivèsite ak sant kominotè pou pataje eksperyans sou fason pou devlope lojisyèl.
+
+                    3. Fòs yon konesans k ap miltipliye :
+                    Si yon sèl enjenyè fòme 10 jèn, epi chak jèn sa yo fòme 10 lòt jèn, nou ka gen plis pase 10 000 bon enjenyè nan mwens pase 10 lane. Se sou gwo fòs sa a vizyon AJ-TECH 2026–2035 lan chita.
                 """.trimIndent(),
-                plannedStartPage = 388,
-                plannedEndPage = 390,
+                plannedStartPage = 130,
+                plannedEndPage = 131,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 89 : Éducation, innovation et entrepreneuriat ====================
+            // ==================== CHAPITRE 89 : Former pour entreprendre et innover ====================
             BookChapter(
                 id = "ch_6_89",
                 chapterNumber = 89,
                 partId = "part_6",
-                titleFr = "Chapitre 89 — Éducation, innovation et entrepreneuriat",
-                titleHt = "Chapit 89 — Edikasyon, inovasyon ak antreprenarya",
-                subtitleFr = "Transformer les compétences acquises en solutions concrètes, startups et emplois durables",
-                subtitleHt = "Transfòme sa w aprann an bon zouti itil, kreye konpayi ak bon travay dirab",
-                summaryFr = "Passerelle entre la formation technique et l'action économique : comment l'éducation nourrit l'écosystème d'innovation.",
-                summaryHt = "Fason sa jèn yo aprann nan lekòl dwe sèvi pou kreye nouvo biznis ak sèvis ki itil sosyete a.",
+                titleFr = "Chapitre 89 — Former pour entreprendre et innover",
+                titleHt = "Chapit 89 — Fòme moun pou antreprann ak inove",
+                subtitleFr = "Passerelle entre compétences techniques, création d'entreprises et impact local",
+                subtitleHt = "Pon ant konesans teknik, kreye pwòp biznis ak chanje lavi nan zòn kote w rete a",
+                summaryFr = "Comment orienter l'apprentissage technologique vers la création de valeur entrepreneuriale et l'innovation appliquée aux défis concrets de la société haïtienne.",
+                summaryHt = "Kijan pou fè sa jèn yo aprann nan kòd sèvi pou kreye nouvo antrepriz, kreye travay epi rezoud gwo pwoblèm peyi a.",
                 contentFr = """
-                    1. Le savoir comme matière première économique :
-                    L'éducation n'est pas une fin en soi : sa valeur suprême réside dans sa capacité à être transformée en action concrète, en innovations utiles et en valeur économique pour le pays.
-                    
-                    2. Les débouchés de la formation numérique :
-                    - Création de logiciels utiles répondant aux besoins locaux (santé, gestion foncière, éducation) ;
-                    - Travail indépendant (freelancing) exportant des services à haute valeur ajoutée sans fuite des cerveaux ;
-                    - Lancement de startups technologiques viables fondées sur le modèle du bootstrapping ;
-                    - Modernisation des PME et des institutions publiques grâce à l'intégration de solutions sur mesure.
-                    
-                    3. Le cercle vertueux du savoir :
-                    Chaque développeur formé qui réussit à fonder une entreprise ou à trouver un emploi de haut niveau devient un mentor, un employeur et un modèle pour les générations suivantes.
+                    1. La formation technique comme tremplin entrepreneurial :
+                    Apprendre à programmer ne doit pas avoir pour seul horizon la recherche d'un emploi salarié. En Haïti, où le tissu industriel est encore embryonnaire, les développeurs doivent être formés à devenir les créateurs de leurs propres entreprises technologiques.
+
+                    2. Les dimensions de la formation à l'entrepreneuriat technologique :
+                    - L'identification des problèmes réels à haute valeur : Détecter les inefficacités quotidiennes (transport, traçabilité agricole, encaissement, gestion de dossiers médicaux) et concevoir des solutions logicielles adaptées ;
+                    - Le bootstrapping rigoureux : Lancer son produit avec des capitaux minimes en misant sur l'efficacité du code, la sobriété des infrastructures et la génération précoce de revenus réels ;
+                    - L'art de la relation client : Écouter les retours utilisateurs, adapter continuellement le produit et bâtir une relation de confiance durable ;
+                    - La gestion financière saine : Séparer strictement les finances personnelles de celles de l'entreprise, réinvestir les bénéfices et maintenir une trésorerie prudente.
+
+                    3. L'innovation frugale (Jugaad) :
+                    Innover en Haïti ne signifie pas copier aveuglément la Silicon Valley, mais inventer des modèles inédits fonctionnant avec peu d'énergie, peu de bande passante et un coût d'accès dérisoire pour la population.
+
+                    4. L'articulation avec AJ-Biz et AJ-Fondation :
+                    AJ-Biz apporte le cadre méthodologique pour l'accompagnement des structures commerciales naissantes, tandis qu'AJ-Fondation œuvre pour l'inclusion des publics défavorisés, garantissant un développement économique équilibré et solidaire.
                 """.trimIndent(),
                 contentHt = """
-                    1. Konesans se pi gwo materyo pou kreye richès :
-                    Aprann pa sifi poukont li : pi gwo valè konesans se lè w transfòme sa w konnen an zouti pratik ki rezoud pwoblèm tout bon nan peyi a.
-                    
-                    2. Sa jèn ki byen fòme yo ka fè :
-                    - Kreye bon lojisyèl pou ede lopital, lekòl ak jere tè nan peyi a ;
-                    - Travay sou entènèt pou konpayi etranje pou fè bèl lajan rantre nan peyi a ;
-                    - Kreye pwòp ti konpayi pa yo san fè dèt ;
-                    - Ede ti biznis ak biwo leta modènize fason y ap travay.
-                    
-                    3. Yon chenn konesans k ap grandi toutan :
-                    Chak jèn ki reyisi nan teknoloji vin tounen yon modèl ak yon gid pou anseye epi bay lòt jèn k ap monte yo travay.
+                    1. Aprann kòd pou ka kreye pwòp antrepriz pa w :
+                    Objektif aprann ekri lojisyèl pa dwe sèlman pou tann lòt moun ba w travay. Ann Ayiti, kote pa gen anpil gwo izin, devlopè yo dwe aprann kijan pou yo fonde pwòp konpayi pa yo pou kreye travay pou lòt moun.
+
+                    2. Sa yon jèn dwe aprann pou l vin yon bon antreprenè nan teknoloji :
+                    - Chèche rezoud vrè pwoblèm ki bay moun traka : Gade difikilte nan transpò, agrikilti, lopital oswa komès epi bati bon ti lojisyèl pou ranje sa ;
+                    - Bati ak ti mwayen (Bootstrapping) : Kòmanse biznis la ak ti kòb nan men w, fè kòd la mache byen san depanse gwo lajan nan sèvè chè ;
+                    - Koute kliyan yo ak anpil atansyon : Tande sa moun ki itilize aplikasyon an ap di pou amelyore l chak jou epi kenbe konfyans yo ;
+                    - Byen jere lajan biznis la : Pa janm melanje kòb pèsonèl ou ak kòb konpayi an, epi toujou mete kòb sou kote pou fè pwojè a grandi.
+
+                    3. Fè bèl inovasyon ak ti resous (Inovasyon Frijal) :
+                    Inove an Ayiti se pa kopye sa k ap fèt nan gwo peyi rich, men se envante solisyon espesyal ki mache ak ti kouran, ti entènèt epi ki pa koute chè pou pèp la.
+
+                    4. Wòl AJ-Biz ak AJ-Fondation :
+                    AJ-Biz bay bon konsèy pou ede ti biznis teknoloji yo grandi, pandan AJ-Fondation ap travay pou ede moun ki nan zòn ki pi pòv yo jwenn chans aprann, pou tout moun ka vanse ansanm.
                 """.trimIndent(),
-                plannedStartPage = 391,
-                plannedEndPage = 393,
+                plannedStartPage = 131,
+                plannedEndPage = 132,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             ),
 
-            // ==================== CHAPITRE 90 : La stratégie éducative 2026–2035 ====================
+            // ==================== CHAPITRE 90 : Le capital humain haïtien face au monde ====================
             BookChapter(
                 id = "ch_6_90",
                 chapterNumber = 90,
                 partId = "part_6",
-                titleFr = "Chapitre 90 — La stratégie éducative 2026–2035",
-                titleHt = "Chapit 90 — Plan estrateji edikasyon 2026–2035",
-                subtitleFr = "Jalons décennaux : structuration des cours, prototypage d'EDUKA, montée en puissance et rayonnement",
-                subtitleHt = "Gwo etap sou 10 lane : prepare leson, teste EDUKA, elaji lekòl yo epi fè non Ayiti briye",
-                summaryFr = "Feuille de route décennale pour la construction progressive de l'infrastructure éducative et humaine d'AJ-TECH.",
-                summaryHt = "Plan travay sou 10 lane pou devlope zouti edikasyon ak fòmasyon jèn yo etap pa etap.",
+                titleFr = "Chapitre 90 — Le capital humain haïtien face au monde",
+                titleHt = "Chapit 90 — Kapital imen ayisyen an devan mond lan",
+                subtitleFr = "Compétitivité internationale, dignité, diaspora et rayonnement global",
+                subtitleHt = "Konpetans sou plan entènasyonal, diyite, dyaspora ak fè peyi a briye toupatou",
+                summaryFr = "Positionnement des talents haïtiens sur l'échiquier technologique mondial : valorisation du génie national, liens avec la diaspora et affirmation de notre dignité.",
+                summaryHt = "Pozisyon jèn Ayisyen nan mitan gwo espesyalis teknoloji nan mond lan : montre fòs entèlijans nou, travay ak dyaspora a epi leve diyite nasyon an.",
                 contentFr = """
-                    1. Nature prospective des jalons :
-                    Les étapes ci-dessous constituent des objectifs d'ingénierie et de développement pédagogique non contractuels.
-                    
-                    2. Les quatre phases du plan éducatif 2026–2035 :
-                    
-                    - Phase 1 (2026–2027) — Fondations & Contenus de référence :
-                      - Rédaction et structuration des modules de base en Kreyòl Ayisyen et Français ;
-                      - Prototypage de l'application éducative EDUKA en mode hors-ligne ;
-                      - Formalisation des référentiels de compétences pour EDH.
-                    
-                    - Phase 2 (2028–2030) — Développement des outils & Tests pilotes :
-                      - Expérimentation pilote d'EDUKA auprès de groupes d'apprenants volontaires ;
-                      - Premiers ateliers techniques communautaires sous l'égide d'AJ-Dev ;
-                      - Établissement des premiers contacts avec des enseignants de la diaspora.
-                    
-                    - Phase 3 (2031–2033) — Expansion & Partenariats potentiels :
-                      - Déploiement élargi d'EDUKA dans des centres communautaires et bibliothèques ;
-                      - Structuration des premiers cursus spécialisés d'EDH ;
-                      - Intégration de modules d'intelligence artificielle pédagogique personnalisée.
-                    
-                    - Phase 4 (2034–2035) — Rayonnement & Autonomie nationale :
-                      - Consolidation d'un réseau de milliers de développeurs et créateurs formés ;
-                      - Reconnaissance régionale de l'excellence de la formation technologique haïtienne ;
-                      - Contribution majeure à la souveraineté intellectuelle et industrielle d'Haïti.
-                    
-                    3. Conclusion de la Partie VI :
-                    La véritable richesse d'une nation ne gît ni dans ses sous-sols ni dans ses discours, mais dans la vigueur intellectuelle, le savoir-faire technique et la dignité de sa jeunesse laborieuse.
+                    1. La fin du complexe d'infériorité technologique :
+                    L'histoire a trop souvent confiné Haïti au rôle de récepteur passif d'aide humanitaire ou de consommateur de technologies étrangères. La jeunesse haïtienne possède le même potentiel cognitif, la même inventivité et la même rigueur que la jeunesse de n'importe quel continent.
+
+                    2. Les atouts distinctifs du profil haïtien dans la tech mondiale :
+                    - La résilience hors norme : Habitué à résoudre des pannes d'infrastructure complexes, le développeur haïtien ne panique jamais devant l'imprévu technique ;
+                    - Le multilinguisme naturel : La maîtrise conjointe du Kreyòl Ayisyen, du Français et de l'Anglais technique constitue un atout de communication international majeur ;
+                    - La créativité sous contrainte : Une capacité exceptionnelle à optimiser les ressources et à imaginer des architectures légères et élégantes ;
+                    - Le sens profond de la solidarité communautaire.
+
+                    3. L'alliance stratégique avec la diaspora haïtienne :
+                    La diaspora technologique haïtienne — présente dans les plus grands centres d'ingénierie en Amérique du Nord et en Europe — constitue un pont inestimable : mentorat, retours d'expérience sur les standards de production, co-création de projets et opportunités de sous-traitance à haute valeur ajoutée.
+
+                    4. La devise d'AJ-TECH comme boussole :
+                    « L'innovation haïtienne au service du monde ». Cette devise n'est pas un voeu pieux : elle est l'affirmation résolue que les solutions logicielles conçues à Port-au-Prince ont vocation à être exportées et reconnues sur tous les continents.
                 """.trimIndent(),
                 contentHt = """
-                    1. Kisa plan edikasyon sa a vle di :
-                    Dat ak etap sa yo se yon gid travay ak yon vizyon estratejik, se pa yon pwomès ki fèt deja.
-                    
-                    2. Kat gwo faz nan plan edikasyon 2026–2035 lan :
-                    
-                    - Faz 1 (2026–2027) — Bati baz yo ak prepare leson :
-                      - Ekri epi byen estriktire premye leson yo an Kreyòl Ayisyen ak an Fransè ;
-                      - Bati premye vèsyon tès EDUKA ki mache san entènèt ;
-                      - Prepare tout sa lekòl EDH la pral anseye.
-                    
-                    - Faz 2 (2028–2030) — Bati zouti ak fè premye tès :
-                      - Fè tès sou EDUKA ak elèv k ap ede nou verifye kijan l ap mache ;
-                      - Fè premye ti atelye pratik pou aprann ekri kòd ak AJ-Dev ;
-                      - Kòmanse pale ak pwofesè nan dyaspora a pou yo pote konesans yo.
-                    
-                    - Faz 3 (2031–2033) — Elaji epi jwenn patenarya :
-                      - Mete EDUKA nan plis bibliyotèk ak sant jèn nan tout peyi a ;
-                      - Kòmanse premye gwo klas espesyal pou lekòl EDH ;
-                      - Mete zouti Entèlijans Atifisyèl pou ede chak elèv aprann nan nivo pa l.
-                    
-                    - Faz 4 (2034–2035) — Fòme gwo espesyalis epi fè peyi a briye :
-                      - Genyen plizyè milye bon devlopè ak enjenyè ki byen fòme nan peyi a ;
-                      - Tout lòt peyi nan Karayib la rekonèt bon jan kalite jèn ayisyen nan teknoloji ;
-                      - Ede Ayiti vin yon peyi ki mèt tèt li nan zafè syans ak lojisyèl.
-                    
-                    3. Konklizyon Pati VI la :
-                    Pi gwo richès yon peyi se pa sa ki anba tè a oswa gwo bèl diskou, men se nan entèlijans, nan konpetans ak nan kouraj tout jèn k ap travay di pou peyi yo.
+                    1. Nou pa enferyè ak okenn nasyon sou latè :
+                    Twòp moun te vle fè konprann Ayiti la sèlman pou resevwa èd oswa pou konsome sa lòt moun fè. Jèn Ayisyen yo gen menm entèlijans, menm kapasite nan sèvo yo ak menm talan ak nenpòt jèn nan nenpòt gwo peyi sou latè.
+
+                    2. Pi gwo fòs yon devlopè ayisyen genyen :
+                    - Gwo kouraj devan difikilte : Paske li abitye rezoud gwo pwoblèm kouran ak rezo, yon enjenyè ayisyen pa janm pèdi tèt li lè yon gwo sistèm bloke ;
+                    - Konnen plizyè lang : Pale Kreyòl Ayisyen, Fransè ak Angle teknik se yon gwo avantaj pou kominike ak tout mond lan ;
+                    - Kreyativite nan ti mwayen : Yon gwo talan pou fè lojisyèl ki pa lou epi ki kouri rapid san gaspiye resous ;
+                    - Bonjan lespri solidarite ak renmen ede lòt moun.
+
+                    3. Travay ansanm ak frè ak sè nou yo nan dyaspora a :
+                    Ayisyen k ap travay nan gwo konpayi teknoloji lòt bò dlo se yon gwo richès : yo ka bay konsèy, pataje eksperyans sou fason gwo pwojè fèt, epi ede jèn nan peyi a jwenn bèl kontra travay.
+
+                    4. Deviz AJ-TECH la kòm gid nou :
+                    « Inovasyon ayisyen nan sèvis lemonn ». Pawòl sa a se yon angajman fèm pou tout moun konnen lojisyèl nou ekri nan Pòtoprens gen bon jan kalite pou yo sèvi moun nan tout kwen sou latè.
                 """.trimIndent(),
-                plannedStartPage = 394,
-                plannedEndPage = 395,
+                plannedStartPage = 132,
+                plannedEndPage = 133,
+                estimatedReadMinutes = 5,
+                status = BookContentStatus.IN_PROGRESS
+            ),
+
+            // ==================== CHAPITRE 91 : Une stratégie éducative AJ-TECH pour 2026–2035 ====================
+            BookChapter(
+                id = "ch_6_91",
+                chapterNumber = 91,
+                partId = "part_6",
+                titleFr = "Chapitre 91 — Une stratégie éducative AJ-TECH pour 2026–2035",
+                titleHt = "Chapit 91 — Yon estrateji edikasyon AJ-TECH pou 2026–2035",
+                subtitleFr = "Jalons décennaux, structuration des cursus, montée en puissance et impact national",
+                subtitleHt = "Gwo etap sou 10 lane, prepare bon pwogram leson, ogmante fòs nou ak chanje peyi a",
+                summaryFr = "Feuille de route stratégique 2026–2035 pour l'éducation, les compétences et le capital humain au sein de l'écosystème AJ-TECH.",
+                summaryHt = "Plan estratejik 2026–2035 sou fason pou devlope edikasyon, konpetans ak kapital imen nan tout ekosistèm AJ-TECH la.",
+                contentFr = """
+                    1. Nature prospective et rigueur de la feuille de route :
+                    Les jalons présentés ci-dessous définissent les objectifs de recherche, de conception pédagogique et de développement logiciel planifiés pour la décennie 2026–2035. Ils constituent une vision directrice cohérente et non des réalisations passées.
+
+                    2. Les quatre phases décennales de la stratégie éducative :
+
+                    - Phase 1 (2026–2027) — Fondations méthodologiques & Contenus de référence :
+                      - Structuration des référentiels de compétences pour les 7 étapes du parcours développeur ;
+                      - Rédaction des cours fondamentaux bilingues (Kreyòl Ayisyen / Français) sur les bases de l'algorithmique et de la programmation moderne ;
+                      - Développement des premiers prototypes d'EDUKA et d'AJ-Learn en architecture 100 % hors-ligne ;
+                      - Spécification des modules d'auto-formation pour les jeunes des provinces.
+
+                    - Phase 2 (2028–2030) — Expérimentation, outillage & Mentorat communautaire :
+                      - Tests pilotes des applications éducatives auprès de groupes d'apprenants volontaires ;
+                      - Mise en place des premiers réseaux d'échange de code et de mentorat technique avec la diaspora ;
+                      - Consolidation des modules de spécialisation (Jetpack Compose, sécurité applicative, bases de données locales résilientes) ;
+                      - Déploiement de kits d'apprentissage hors-ligne sur supports physiques (clés USB, cartes SD).
+
+                    - Phase 3 (2031–2033) — Structuration d'EDH & Expansion territoriale :
+                      - Formalisation des cursus intensifs de haut niveau sous la bannière d'EDH (École Du Digital d'Haïti) ;
+                      - Intégration de modules d'intelligence artificielle pédagogique personnalisée s'exécutant sur terminal local ;
+                      - Alliances éducatives avec des centres communautaires, des bibliothèques et des collectifs d'enseignants ;
+                      - Émergence des premières promotions de développeurs haïtiens exportant leurs services à l'échelle internationale.
+
+                    - Phase 4 (2034–2035) — Maturité, souveraineté cognitive & Rayonnement :
+                      - Consolidation d'un réseau national de dizaines de milliers de créateurs technologiques formés et actifs ;
+                      - Autonomie complète du pays dans la maintenance, l'évolution et la sécurité de ses systèmes informatiques vitaux ;
+                      - Rayonnement de l'ingénierie logicielle haïtienne comme modèle d'excellence et de frugalité dans toute la Caraïbe et en Afrique francophone.
+
+                    3. Conclusion de la Partie VI :
+                    La plus grande ressource d'Haïti ne réside pas dans l'assistance extérieure, mais dans l'intelligence, la discipline et la dignité de ses enfants. En outillant la jeunesse par le savoir technique et la rigueur morale, nous forgeons les bâtisseurs invincibles du pays de demain.
+                """.trimIndent(),
+                contentHt = """
+                    1. Kisa plan estrateji sa a ye toutbon :
+                    Gwo dat ak etap ki ekri anba a se yon gid travay, yon vizyon estratejik klè sou sa nou vle bati pou peryòd 2026–2035 lan. Se pa yon bagay ki deja fini, se plan n ap travay di sou li chak jou.
+
+                    2. 4 gwo faz nan plan edikasyon 2026–2035 lan :
+
+                    - Faz 1 (2026–2027) — Mete baz yo ak prepare bon leson :
+                      - Byen prepare tout 7 etap pou fòme yon bon devlopè soti nan zewo ;
+                      - Ekri tout premye leson debaz yo an Kreyòl Ayisyen ak an Fransè sou lojik kòd ak bon prensip enfòmatik ;
+                      - Bati premye ti vèsyon tès EDUKA ak AJ-Learn ki mache 100 % san entènèt ;
+                      - Prepare bèl gid pou ede jèn nan tout vil pwovens yo aprann poukont yo.
+
+                    - Faz 2 (2028–2030) — Fè tès sou zouti yo ak kreye rezo gidaj :
+                      - Fè tès sou aplikasyon edikasyon yo ak jèn ki vle ede nou verifye kijan yo mache ;
+                      - Kòmanse mete jèn nan peyi a an kontak ak espesyalis nan dyaspora a pou yo gide yo nan ekri bon kòd ;
+                      - Ranfòse leson sou gwo metye espesyal (aplikasyon mobil Jetpack Compose, sekirite, baz done) ;
+                      - Pataje leson yo sou kle USB ak kat memwa pou moun ki pa gen entènèt ka jwenn yo fasil.
+
+                    - Faz 3 (2031–2033) — Prepare lekòl EDH epi elaji nan tout peyi a :
+                      - Byen estriktire gwo fòmasyon espesyal pou lekòl EDH (École Du Digital d'Haïti) ;
+                      - Mete zouti Entèlijans Atifisyèl sou telefòn pou ede chak elèv aprann nan nivo pa l ;
+                      - Travay ansanm ak sant jèn, bibliyotèk ak asosyasyon pwofesè nan tout peyi a ;
+                      - Wè premye gwo gwoup jèn Ayisyen k ap travay sou entènèt pou konpayi nan lemonn antye.
+
+                    - Faz 4 (2034–2035) — Nasyon an vin mèt tèt li nan teknoloji :
+                      - Genyen plizyè dizèn milye jèn gason ak jèn fi ki byen fòme epi k ap bati bèl lojisyèl nan peyi a ;
+                      - Peyi a vin gen tout enjenyè li bezwen pou jere, pwoteje epi fè tout gwo sistèm enfòmatik li yo mache san depann sou lòt moun ;
+                      - Lòt peyi nan Karayib la ak nan Lafrik rekonèt Ayiti kòm yon gwo modèl nan fason pou bati bèl teknoloji ki itil pèp la.
+
+                    3. Konklizyon Pati VI la :
+                    Pi gwo richès peyi d Ayiti se pa nan tann lòt moun vin ede nou, men se nan entèlijans, nan disiplin ak nan diyite tout pitit li yo. Lè nou bay jèn yo bonjan konesans teknik ak bon prensip moral, n ap bati yon jenerasyon moun vanyan k ap mennen peyi a nan somè a.
+                """.trimIndent(),
+                plannedStartPage = 133,
+                plannedEndPage = 134,
                 estimatedReadMinutes = 5,
                 status = BookContentStatus.IN_PROGRESS
             )

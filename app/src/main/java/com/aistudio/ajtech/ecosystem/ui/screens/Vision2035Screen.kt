@@ -146,7 +146,7 @@ fun Vision2035Screen(
         RoadmapPhaseCard(
             years = "Phase 3 : 2032 - 2035",
             title = "Souveraineté Complète & Exportation Mondiale",
-            details = "• Opérationnalité complète des 21 entités de l'écosystème\n• Exportation massive du savoir-faire logiciel haïtien à l'international\n• Consolidations des partenariats industriels et académiques"
+            details = "• Opérationnalité complète des 22 entités de l'écosystème\n• Exportation massive du savoir-faire logiciel haïtien à l'international\n• Consolidations des partenariats industriels et académiques"
         )
 
         Spacer(modifier = Modifier.height(24.dp))

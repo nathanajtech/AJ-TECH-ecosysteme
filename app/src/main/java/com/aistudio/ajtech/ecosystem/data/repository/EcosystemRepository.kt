@@ -24,8 +24,8 @@ object EcosystemRepository {
             visionHt = "Vin yon jeyan nan teknoloji.",
             problemFr = "Absence d'écosystème numérique intégré et souverain en Haïti, forte dépendance aux outils étrangers non adaptés au contexte économique et culturel local.",
             problemHt = "Mank yon ekosistèm dijital entegre e souveren an Ayiti, gwo depandans sou zouti etranje ki pa adapte ak reyalite kiltirèl ak ekonomik lokal la.",
-            solutionFr = "Un écosystème modulaire de 21 entités interconnectées couvrant la productivité, l'éducation, la finance, la santé, le cloud et l'énergie.",
-            solutionHt = "Yon ekosistèm modilè 21 antite ki konekte ansanm, ki kouvri pwodiktivite, edikasyon, finans, lasante, cloud ak enèji.",
+            solutionFr = "Un écosystème modulaire de 22 entités interconnectées couvrant la productivité, l'éducation, la finance, la santé, le cloud et l'énergie.",
+            solutionHt = "Yon ekosistèm modilè 22 antite ki konekte ansanm, ki kouvri pwodiktivite, edikasyon, finans, lasante, cloud ak enèji.",
             targetAudienceFr = "Citoyens haïtiens, entreprises locales, diaspora, institutions publiques et partenaires technologiques.",
             targetAudienceHt = "Sitwayen ayisyen, antrepriz lokal, dyaspora, enstitisyon piblik ak patnè teknolojik.",
             featuresFr = listOf("Architecture modulaire unifiée", "Souveraineté des données", "Interopérabilité native inter-applications", "Identité numérique transversale"),
@@ -34,16 +34,16 @@ object EcosystemRepository {
             architectureHt = "Arkitekti mikwosèvis distribye, API Gateway inifye, pwotokòl senkronizasyon offline-first ak depo ibrid lokal/cloud.",
             techStackFr = listOf("Kotlin Native / Multiplatform", "Jetpack Compose", "Node.js / TypeScript", "PostgreSQL", "PWA Architecture"),
             techStackHt = listOf("Kotlin Native / Multiplatform", "Jetpack Compose", "Node.js / TypeScript", "PostgreSQL", "Arkitekti PWA"),
-            aiRoleFr = "Moteur central d'assistance contextuelle bilingue (Français/Créole) pour l'ensemble des 21 entités (AJ-Assistant).",
-            aiRoleHt = "Motè santral pou asistans kontèktyèl bileng (Fransè/Kreyòl) pou tout 21 antite yo (AJ-Assistant).",
+            aiRoleFr = "Moteur central d'assistance contextuelle bilingue (Français/Créole) pour l'ensemble des 22 entités (AJ-Assistant).",
+            aiRoleHt = "Motè santral pou asistans kontèktyèl bileng (Fransè/Kreyòl) pou tout 22 antite yo (AJ-Assistant).",
             securityFr = "Chiffrement AES-256 de bout en bout, authentification multi-facteurs, conformité aux normes internationales de protection des données.",
             securityHt = "Chifreman AES-256 bout-an-bout, otantifikasyon milti-faktè, respè estanda entènasyonal sou pwoteksyon done.",
             businessModelFr = "En cours de conception (Abonnements SaaS modulaires, licences d'infrastructure, services professionnels et partenariats institutionnels).",
             businessModelHt = "An kou konsepsyon (Abònman SaaS modilè, lisans enfrastrikti, sèvis pwofesyonèl ak patenarya enstitisyonèl).",
             ajTechIntegrationFr = "Noyau centralisateur et garant des standards de sécurité, de design et d'interopérabilité de l'ensemble de l'écosystème.",
             ajTechIntegrationHt = "Nwayo santral ak garanti tout estanda sekirite, konsepsyon ak entèoperabilite pou tout ekosistèm nan.",
-            relatedEntitiesFr = "Connecté directement à l'ensemble des 20 autres entités de l'écosystème.",
-            relatedEntitiesHt = "Konekte dirèkteman ak tout 20 lòt antite ki nan ekosistèm nan.",
+            relatedEntitiesFr = "Connecté directement à l'ensemble des 21 autres entités de l'écosystème.",
+            relatedEntitiesHt = "Konekte dirèkteman ak tout 21 lòt antite ki nan ekosistèm nan.",
             roadmapFr = listOf("2025: Structuration de l'entreprise & Prototypes", "2026–2028: Consolidation du noyau & Déploiement des premières suites", "2029–2035: Écosystème complet & Expansion internationale"),
             roadmapHt = listOf("2025: Estriktirasyon konpayi an & Pwototip", "2026–2028: Konsolidasyon nwayo a & Lansman premye solisyon yo", "2029–2035: Ekosistèm konplè & Ekspansyon entènasyonal"),
             internationalOutlooksFr = "Positionner Haïti comme un pôle caribéen d'ingénierie logicielle et exporter la suite logicielle auprès des marchés émergents.",
@@ -330,8 +330,8 @@ object EcosystemRepository {
             securityHt = "Sekirite fizik ak lojik ranfòse, konfòmite ISO 27001 ak chifreman done ki estoke.",
             businessModelFr = "À définir (Facturation à l'usage et forfaits mensuels pour serveurs dédiés).",
             businessModelHt = "Pou defini (Fakti selon itilizasyon ak fòmil chak mwa pou sèvè dedye).",
-            ajTechIntegrationFr = "Socle d'infrastructure sous-jacent hébergeant l'intégralité des 21 entités d'AJ-TECH.",
-            ajTechIntegrationHt = "Enfrastrikti debaz ki kenbe epi ebèje tout 21 antite nan AJ-TECH.",
+            ajTechIntegrationFr = "Socle d'infrastructure sous-jacent hébergeant l'intégralité des 22 entités d'AJ-TECH.",
+            ajTechIntegrationHt = "Enfrastrikti debaz ki kenbe epi ebèje tout 22 antite nan AJ-TECH.",
             relatedEntitiesFr = "Toutes les entités de l'écosystème.",
             relatedEntitiesHt = "Tout antite ki nan ekosistèm nan.",
             roadmapFr = listOf("2029: Étude d'ingénierie datacenter", "2030: Déploiement du premier nœud pilote", "2031–2035: Extension nationale"),
@@ -414,8 +414,8 @@ object EcosystemRepository {
             businessModelHt = "Pou defini (Abònman pa bwat imèl pwofesyonèl chak mwa oswa chak ane).",
             ajTechIntegrationFr = "Gestionnaire de messagerie pour tous les comptes et notifications de l'écosystème.",
             ajTechIntegrationHt = "Jesyonè mesajri pou tout kont ak notifikasyon nan ekosistèm nan.",
-            relatedEntitiesFr = "AJ-Cloud, AJ-Fondation Biz, AJ-TECH.",
-            relatedEntitiesHt = "AJ-Cloud, AJ-Fondation Biz, AJ-TECH.",
+            relatedEntitiesFr = "AJ-Cloud, AJ-Biz, AJ-TECH.",
+            relatedEntitiesHt = "AJ-Cloud, AJ-Biz, AJ-TECH.",
             roadmapFr = listOf("2028: Spécifications des serveurs de messagerie", "2029: Phase bêta pour les entités AJ-TECH", "2030: Commercialisation"),
             roadmapHt = listOf("2028: Espesifikasyon sèvè mesajri yo", "2029: Faz béta pou antite AJ-TECH yo", "2030: Komèsyalizasyon"),
             internationalOutlooksFr = "Interopérabilité avec tous les standards mondiaux de messagerie électronique.",
@@ -545,12 +545,53 @@ object EcosystemRepository {
             internationalOutlooksHt = "Entegrasyon nan rezo katografi ouvè entènasyonal OpenStreetMap."
         ),
 
-        // 14. AJ-Fondation Biz
+        // 14. AJ-Fondation
         EcosystemEntity(
-            id = "aj_fondation_biz",
-            name = "AJ-Fondation Biz",
+            id = "aj_fondation",
+            name = "AJ-Fondation",
+            taglineFr = "Fondation Philanthropique & Bourses Technologiques",
+            taglineHt = "Fondasyon Filantwopik & Bous Teknolojik",
+            status = EntityStatus.CONCEPT,
+            originFr = "Créée pour porter l'engagement social, l'inclusion numérique et le soutien aux talents défavorisés en Haïti.",
+            originHt = "Kreye pou pote angajman sosyal, fasilite aksè nimerik ak ede jèn ki pa gen gwo mwayen an Ayiti.",
+            missionFr = "Soutenir l'éducation technologique, financer des bourses d'études et promouvoir l'émancipation par le numérique.",
+            missionHt = "Soutni edikasyon teknolojik, bay bous etid epi ankouraje devlopman jèn yo nan zafè nimerik.",
+            visionFr = "Offrir une formation et des opportunités professionnelles à plus de 10 000 jeunes haïtiens défavorisés d'ici 2035.",
+            visionHt = "Bay plis pase 10 000 jèn ayisyen ki pa gen mwayen fòmasyon ak opòtinite travay anvan lane 2035.",
+            problemFr = "Fracture numérique, manque de moyens financiers pour accéder aux formations de pointe et exclusion des talents de province.",
+            problemHt = "Mank mwayen pou peye gwo fòmasyon enfòmatik, difikilte pou jwenn bon zouti ak jèn nan pwovens ki pa jwenn chans.",
+            solutionFr = "Programmes de bourses d'études, dons de matériel informatique reconditionné, ateliers communautaires et mentorat.",
+            solutionHt = "Pwogram bous etid, bay òdinatè, atelye fòmasyon gratis nan kominote yo ak konsèy pou gide jèn yo.",
+            targetAudienceFr = "Jeunes talents, étudiants défavorisés, écoles communautaires, jeunes filles dans la tech, porteurs de projets à impact social.",
+            targetAudienceHt = "Jèn ki gen talan, etidyan ki pa gen anpil mwayen, lekòl kominotè, medam nan teknoloji ak pwojè sosyal.",
+            featuresFr = listOf("Bourses d'études pour formations technologiques", "Dons d'ordinateurs et kits solaires d'apprentissage", "Hackathons et concours d'innovation sociale", "Mentorat bénévole par des experts et la diaspora"),
+            featuresHt = listOf("Bous etid pou fòmasyon enfòmatik", "Kado òdinatè ak ti sistèm solè pou etidye", "Konkou inovasyon sosyal ak kreyativite", "Gid ak konsèy gratis nan men ekspè ak dyaspora a"),
+            architectureFr = "Organisation philanthropique à gouvernance transparente adossée à une plateforme de gestion des bourses et des dons.",
+            architectureHt = "Fondasyon k ap dirije ak transparans total ak yon platfòm pou jere bous ak kado.",
+            techStackFr = listOf("Kotlin Compose Multiplatform", "Web Portal", "PostgreSQL", "Transparence Ledger"),
+            techStackHt = listOf("Kotlin Compose Multiplatform", "Web Portal", "PostgreSQL", "Transparence Ledger"),
+            aiRoleFr = "Orientation personnalisée des boursiers et analyse d'impact des programmes sociaux.",
+            aiRoleHt = "Oryantasyon otomatik pou gide etidyan yo epi mezire bon enpak èd yo.",
+            securityFr = "Transparence publique des fonds alloués, audit indépendant et protection stricte des données personnelles des bénéficiaires.",
+            securityHt = "Transparans total sou tout lajan k ap rantre ak soti, kontwòl endepandan ak pwoteksyon lavi prive elèv yo.",
+            businessModelFr = "Non lucratif / Philanthropie (Mécénat d'entreprise AJ-TECH, dons de la diaspora, subventions internationales et partenariats).",
+            businessModelHt = "San bi likratif / Filantwopi (Èd konpayi AJ-TECH, kado dyaspora a, sibvansyon entènasyonal ak patenarya).",
+            ajTechIntegrationFr = "Bras philanthropique et d'impact social d'AJ-TECH, finançant les bourses pour EDUKA et EDH.",
+            ajTechIntegrationHt = "Bra sosyal ak filantwopik AJ-TECH, k ap peye bous pou elèv nan EDUKA ak EDH.",
+            relatedEntitiesFr = "EDUKA, EDH, AJ-Learn, AJ-TECH.",
+            relatedEntitiesHt = "EDUKA, EDH, AJ-Learn, AJ-TECH.",
+            roadmapFr = listOf("2027: Structuration de la charte de fondation et premier appel à candidatures", "2028: Octroi des 100 premières bourses d'études", "2030: Déploiement national dans 5 départements"),
+            roadmapHt = listOf("2027: Mete règleman fondasyon an kanpe ak premye enskripsyon", "2028: Bay 100 premye bous etid yo", "2030: Elaji nan 5 depatman nan peyi a"),
+            internationalOutlooksFr = "Mobilisation de la diaspora haïtienne et de fondations internationales pour cofinancer les bourses de formation technologique.",
+            internationalOutlooksHt = "Mobilize dyaspora ayisyen an ak gwo fondasyon entènasyonal pou finanse bous fòmasyon nan teknoloji."
+        ),
+
+        // 15. AJ-Biz
+        EcosystemEntity(
+            id = "aj_biz",
+            name = "AJ-Biz",
             taglineFr = "Accompagnement & Guichet Numérique pour Startups",
-            taglineHt = "Akwayans & Pòtay Dijital pou Ti Antrepriz",
+            taglineHt = "Akonpayman & Pòtay Dijital pou Ti Antrepriz",
             status = EntityStatus.CONCEPT,
             originFr = "Initié pour lever les barrières bureaucratiques et outiller les jeunes créateurs d'entreprises en Haïti.",
             originHt = "Kòmanse pou retire gwo baryè papye epi bay jèn k ap monte biznis an Ayiti bon zouti.",
@@ -578,15 +619,15 @@ object EcosystemRepository {
             businessModelHt = "An kou konsepsyon (Modèl gratis, akonpayman pèsonalize ak sèvis primyòm).",
             ajTechIntegrationFr = "Alimente l'écosystème en nouvelles entreprises utilisatrices des services AJ-TECH.",
             ajTechIntegrationHt = "Nouri ekosistèm nan ak nouvo biznis k ap itilize sèvis AJ-TECH yo.",
-            relatedEntitiesFr = "AJ-Pay, AJ-Commerce, AJ-Mail, AJ-TECH.",
-            relatedEntitiesHt = "AJ-Pay, AJ-Commerce, AJ-Mail, AJ-TECH.",
+            relatedEntitiesFr = "AJ-Pay, AJ-Commerce, AJ-Mail, AJ-Fondation, AJ-TECH.",
+            relatedEntitiesHt = "AJ-Pay, AJ-Commerce, AJ-Mail, AJ-Fondation, AJ-TECH.",
             roadmapFr = listOf("2027: Rédaction des guides légaux et fiscaux", "2028: Lancement de la plateforme", "2029: Programme d'accélération"),
             roadmapHt = listOf("2027: Ekri tout gid legal ak fiskal yo", "2028: Lansman platfòm nan", "2029: Pwogram akselerasyon"),
             internationalOutlooksFr = "Connexion des startups locales avec les investisseurs et réseaux d'affaires de la diaspora.",
             internationalOutlooksHt = "Konekte ti antrepriz lokal yo ak envestisè ak rezo biznis nan dyaspora a."
         ),
 
-        // 15. AJ-Commerce
+        // 16. AJ-Commerce
         EcosystemEntity(
             id = "aj_commerce",
             name = "AJ-Commerce",
@@ -781,8 +822,8 @@ object EcosystemRepository {
             securityHt = "Kache idantite moun k ap poze kesyon epi pa janm vann done konvèsasyon yo.",
             businessModelFr = "En cours de conception (Accès standard inclus dans AJ-TECH, API payante pour entreprises tierces).",
             businessModelHt = "An kou konsepsyon (Aksè debaz gratis nan AJ-TECH, API peye pou lòt konpayi).",
-            ajTechIntegrationFr = "Interface conversationnelle unifiée servant de support à travers toutes les 21 entités.",
-            ajTechIntegrationHt = "Mwayen prensipal pou pale ak poze kesyon sou tout 21 antite yo.",
+            ajTechIntegrationFr = "Interface conversationnelle unifiée servant de support à travers toutes les 22 entités.",
+            ajTechIntegrationHt = "Mwayen prensipal pou pale ak poze kesyon sou tout 22 antite yo.",
             relatedEntitiesFr = "Toutes les entités de l'écosystème.",
             relatedEntitiesHt = "Tout antite ki nan ekosistèm nan.",
             roadmapFr = listOf("2027: Constitution du corpus linguistique bilingue", "2028: Entraînement du modèle de base", "2029: Intégration globale"),
@@ -832,7 +873,7 @@ object EcosystemRepository {
             internationalOutlooksHt = "Adaptasyon pou lòt sistèm lekòl nan Karayib frankofòn ak kreylòfòn."
         ),
 
-        // 21. EDH (École du Digital Haïti)
+        // 22. EDH (École du Digital Haïti)
         EcosystemEntity(
             id = "edh",
             name = "EDH",
@@ -855,13 +896,13 @@ object EcosystemRepository {
                 "Parcours certifiants en développement (Kotlin, Compose, Cloud, IA)",
                 "Bootcamps intensifs et hackathons sponsorisés",
                 "Plateforme d'apprentissage e-learning accessible hors-ligne",
-                "Passerelle directe de recrutement au sein des 21 entités AJ-TECH"
+                "Passerelle directe de recrutement au sein des 22 entités AJ-TECH"
             ),
             featuresHt = listOf(
                 "Pwogram ak sètifika nan devlopman (Kotlin, Compose, Cloud, IA)",
                 "Fòmasyon entansif (bootcamps) ak konkou teknoloji (hackathons)",
                 "Platfòm aprantisaj ki ka travay menm san entènèt",
-                "Opòtinite dirèk pou jwenn estaj ak travay nan 21 antite AJ-TECH yo"
+                "Opòtinite dirèk pou jwenn estaj ak travay nan 22 antite AJ-TECH yo"
             ),
             architectureFr = "Plateforme éducative modulaire LMS (Learning Management System) basée sur AJ-Cloud avec intégration des environnements de code immersifs.",
             architectureHt = "Platfòm edikatif LMS modilè ki bati sou AJ-Cloud ak espas pratik pou ekri kòd dirèkteman.",
@@ -873,8 +914,8 @@ object EcosystemRepository {
             securityHt = "Koneksyon sekirize ak AJ-ID, sètifika ki pa ka falsifye ak pwoteksyon done pèsonèl etidyan yo.",
             businessModelFr = "Bourses d'excellence, abonnements formation pro, et partenariats corporatifs pour l'insertion de talents.",
             businessModelHt = "Bous detid, abònman fòmasyon pwofesyonèl ak patenarya ak gwo konpayi pou anbochaj.",
-            ajTechIntegrationFr = "Fournit le vivier de développeurs, ingénieurs et chercheurs pour alimenter la croissance des 21 entités de l'écosystème AJ-TECH.",
-            ajTechIntegrationHt = "Fòme tout enjenyè, devlopè ak espesyalis ki nesesè pou devlope ak agrandi 21 antite nan ekosistèm AJ-TECH la.",
+            ajTechIntegrationFr = "Fournit le vivier de développeurs, ingénieurs et chercheurs pour alimenter la croissance des 22 entités de l'écosystème AJ-TECH.",
+            ajTechIntegrationHt = "Fòme tout enjenyè, devlopè ak espesyalis ki nesesè pou devlope ak agrandi 22 antite nan ekosistèm AJ-TECH la.",
             relatedEntitiesFr = "EDUKA, AJ-Cloud, AJ-ID, AJ-TECH.",
             relatedEntitiesHt = "EDUKA, AJ-Cloud, AJ-ID, AJ-TECH.",
             roadmapFr = listOf(

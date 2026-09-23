@@ -27,9 +27,9 @@ class ExampleRobolectricTest {
   }
 
   @Test
-  fun `verify ecosystem entities count is exactly 21`() {
+  fun `verify ecosystem entities count is exactly 22`() {
     val entities = EcosystemRepository.entities
-    assertEquals(21, entities.size)
+    assertEquals(22, entities.size)
   }
 
   @Test
@@ -48,9 +48,9 @@ class ExampleRobolectricTest {
   }
 
   @Test
-  fun `verify all 21 entities have complete 18 normalized fields in FR and HT`() {
+  fun `verify all 22 entities have complete 18 normalized fields in FR and HT`() {
     val entities = EcosystemRepository.entities
-    assertEquals(21, entities.size)
+    assertEquals(22, entities.size)
 
     for (entity in entities) {
       // 1. Nom
@@ -151,7 +151,7 @@ class ExampleRobolectricTest {
     val conceptCount = EcosystemRepository.getEntitiesByStatus(EntityStatus.CONCEPT).size
     val plannedCount = EcosystemRepository.getEntitiesByStatus(EntityStatus.PLANNED).size
 
-    assertEquals(21, opCount + devCount + conceptCount + plannedCount)
+    assertEquals(22, opCount + devCount + conceptCount + plannedCount)
   }
 }
 
